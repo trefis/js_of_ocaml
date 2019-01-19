@@ -5,17 +5,7 @@
 ==[[bindings|Binding a JS library]]
 ==[[rev-bindings|Export OCaml code to JavaScript]]
 ==[[../api/index.html|API]]
-
-=Compiler
-==[[options|Command line options]]
-==[[linker|Link javascript code]]
-==[[separate-compilation|Separate compilation]]
-==[[tailcall|About tailcall optimization]]
-
-=Misc
-==[[debug|How to debug a program]]
 ==[[contribute|How to contribute]]
-==[[performances|Performances]]
 
 =Js_of_ocaml examples
 ==<<a_file src="toplevel/index.html"|An OCaml toplevel running in the browser>>

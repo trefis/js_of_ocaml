@@ -4,7 +4,7 @@
 
 A Camlp4 syntax extension is available for manipulating object properties,
 invoking methods and creating objects.
-We advise to use the {{index.html} Ppx} syntax extension instead.
+We advise to use the {{:index.html} Ppx} syntax extension instead.
 
 The syntax and typing rules are as follows:
 
