@@ -8,7 +8,11 @@
   (kind ppx_rewriter)
   (preprocess (pps ppx_tools_versioned.metaquot_408)))
 
-
 (rule
   (targets ppx_js_internal.ml)
   (action (copy %{dep:../lib_internal/ppx_js_internal.ml} %{targets})))
+
+(documentation
+  (package js_of_ocaml-ppx)
+  (mld_files ("index" camlp4))
+)

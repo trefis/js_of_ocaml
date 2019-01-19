@@ -4,3 +4,6 @@
   (libraries js_of_ocaml lwt)
   (wrapped (transition "Will be removed past 2019-04-01"))
   (preprocess (pps js_of_ocaml-ppx)))
+
+
+(documentation (package js_of_ocaml-lwt))

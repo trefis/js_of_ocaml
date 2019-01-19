@@ -6,13 +6,6 @@
 ==[[rev-bindings|Export OCaml code to JavaScript]]
 ==[[../api/index.html|API]]
 
-=Js_of_ocaml_lwt - Reference Manual
-==[[lwt|Lwt support]]
-
-=Syntaxes
-==[[ppx|Ppx syntax extension]]
-==[[camlp4|Camlp4 syntax extension]]
-
 =Compiler
 ==[[options|Command line options]]
 ==[[linker|Link javascript code]]

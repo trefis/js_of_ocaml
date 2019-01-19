@@ -18,57 +18,70 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  *)
 
-(** Programming mouse or keyboard events handlers using Lwt *)
+(** Programming events handlers using Lwt *)
 
 open Js_of_ocaml
 
+(** {b Reminder}: Event capturing starts with the outer most element
+        in the DOM and works inwards to the HTML element the event took
+        place on (capture phase) and then out again (bubbling phase). *)
+
+(** {2 Examples of use} *)
+
+(** {4 Waiting for a click on before continuing} *)
+
 (**
-   Reminder:
-   Event capturing starts with the outer most element in the DOM and
-   works inwards to the HTML element the event took place on (capture phase)
-   and then out again (bubbling phase).
+   {[
+     let%lwt _ = Lwt_js_events.click element1
+     in ...
+   ]}
+*)
 
-   Examples of use:
+(** {4 Doing some operation for each value change in an input element} *)
 
-   Waiting for a click on [elt1] before continuing:
+(**
+   {[
+     Lwt_js_events.(async (fun () ->
+       clicks input1 (fun ev _ -> ...)))
+   ]}
+*)
 
-   {[let%lwt _ = Lwt_js_events.click elt1 in]}
+(** {4 Defining a thread that waits for ESC key on an element} *)
 
-   Doing some operation for each value change in input element [inp]:
+(**
+   {[
+     let rec esc elt =
+       let%lwt ev = keydown elt in
+       if ev##.keyCode = 27
+       then Lwt.return ev
+       else esc elt
+   ]} *)
 
-   {[Lwt_js_events.(async (fun () ->
-      clicks inp1 (fun ev _ -> ...)
-   ))]}
+(** {4 Waiting for a click or escape key before continuing} *)
 
-   Defining a thread that waits for ESC key on an element:
+(**
+   {[
+     let%lwt () =
+       Lwt.pick
+         [ (let%lwt _ = esc Dom_html.document in Lwt.return ())
+         ; (let%lwt _ = click Dom_html.document in Lwt.return ())
+         ]
+     in ...
+   ]}
+*)
 
-   {[let rec esc elt =
-      let%lwt ev = keydown elt in
-      if ev##.keyCode = 27
-      then Lwt.return ev
-      else esc elt]}
-
-   Waiting for a click or escape key before continuing:
-
-   {[let%lwt () =
-       Lwt.pick [(let%lwt _ = esc Dom_html.document in Lwt.return ());
-                 (let%lwt _ = click Dom_html.document in Lwt.return ())]
-     in ...]}
-
-  {2 Create Lwt threads for events} *)
+(**{2 Create Lwt threads for events} *)
 
 val make_event :
      (#Dom_html.event as 'a) Js.t Dom_html.Event.typ
   -> ?use_capture:bool
   -> #Dom_html.eventTarget Js.t
   -> 'a Js.t Lwt.t
-(** [make_event ev target] creates a Lwt thread that waits
-    for the event [ev] to happen on [target] (once).
-    This thread isa cancellable using [Lwt.cancel].
-    If you set the optional parameter [~use_capture:true],
-    the event will be caught during the capture phase,
-    otherwise it is caught during the bubbling phase
-    (default).
+(** [make_event ev target] creates a Lwt thread that waits for the
+    event [ev] to happen on [target] (once).  This thread is a
+    cancellable using [Lwt.cancel].  If you set the optional parameter
+    [~use_capture:true], the event will be caught during the capture
+    phase, otherwise it is caught during the bubbling phase (default).
 *)
 
 val seq_loop :
@@ -82,20 +95,21 @@ val seq_loop :
     thread that waits for the event [ev] to happen on [target], then
     execute handler, and start again waiting for the event. Events
     happening during the execution of the handler are ignored. See
-    [async_loop] and [buffered_loop] for alternative semantics.
+    {!async_loop} and {!buffered_loop} for alternative semantics.
 
-    For example, the [clicks] function below is defined by:
+    For example, the {!clicks} function below is defined by:
 
-    [let clicks ?use_capture t = seq_loop click ?use_capture t]
+    {[
+      let clicks ?use_capture t = seq_loop click ?use_capture t
+    ]}
 
-    The thread returned is cancellable using [Lwt.cancel].
-    In order for the loop thread to be canceled from within the handler,
-    the latter receives the former as its second parameter.
+    The thread returned is cancellable using {!value:Lwt.cancel}.  In order
+    for the loop thread to be canceled from within the handler, the
+    latter receives the former as its second parameter.
 
     By default, cancelling the loop will not cancel the potential
-    currently running handler. This behaviour can be changed by
-    setting the [cancel_handler] parameter to true.
-*)
+    currently running handler. This behaviour can be changed by setting
+    the [cancel_handler] parameter to true.  *)
 
 val async_loop :
      (?use_capture:bool -> 'target -> 'event Lwt.t)
@@ -103,7 +117,7 @@ val async_loop :
   -> 'target
   -> ('event -> unit Lwt.t -> unit Lwt.t)
   -> unit Lwt.t
-(** [async_loop] is similar to [seq_loop], but each handler runs
+(** {!async_loop} is similar to {!seq_loop}, but each handler runs
     independently. No event is thus missed, but since several
     instances of the handler can be run concurrently, it is up to the
     programmer to ensure that they interact correctly.
@@ -120,7 +134,7 @@ val buffered_loop :
   -> 'target
   -> ('event -> unit Lwt.t -> unit Lwt.t)
   -> unit Lwt.t
-(** [buffered_loop] is similar to [seq_loop], but any event that
+(** {!buffered_loop} is similar to {!seq_loop}, but any event that
     occurs during an execution of the handler is queued instead of
     being ignored.
 
@@ -139,7 +153,7 @@ val buffered_loop :
 
 val async : (unit -> 'a Lwt.t) -> unit
 (** [async t] records a thread to be executed later.
-    It is implemented by calling yield, then Lwt.async.
+    It is implemented by calling yield, then {!value:Lwt.async}.
     This is useful if you want to create a new event listener
     when you are inside an event handler.
     This avoids the current event to be caught by the new event handler
@@ -153,15 +167,16 @@ val func_limited_loop :
   -> 'a
   -> ('b -> unit Lwt.t -> unit Lwt.t)
   -> unit Lwt.t
-(** [func_limited_loop event delay_fun target handler] will behave like
-    [Lwt_js_events.async_loop event target handler] but it will run [delay_fun]
-    first, and execute [handler] only when [delay_fun] is finished and
-    no other event occurred in the meantime.
+(** [func_limited_loop event delay_fun target handler] will behave
+    like [async_loop event target handler] but it will
+    run [delay_fun] first, and execute [handler] only when [delay_fun]
+    is finished and no other event occurred in the meantime.
 
     This allows to limit the number of events caught.
 
-    Be careful, it is an asynchrone loop, so if you give too little time,
-    several instances of your handler could be run in same time **)
+    Be careful, it is an asynchrone loop, so if you give too little
+    time, several instances of your handler could be run in same time.
+   *)
 
 val limited_loop :
      (?use_capture:bool -> 'a -> 'b Lwt.t)
@@ -171,7 +186,7 @@ val limited_loop :
   -> ('b -> unit Lwt.t -> unit Lwt.t)
   -> unit Lwt.t
 (** Same as func_limited_loop but take time instead of function
-    By default elapsed_time = 0.1s = 100ms **)
+    By default elapsed_time = 100ms *)
 
 (**  {2 Predefined functions for some types of events} *)
 

@@ -33,3 +33,5 @@
          jsoo_link.1
          jsoo_minify.1
          ))
+
+(documentation (package js_of_ocaml-compiler))
