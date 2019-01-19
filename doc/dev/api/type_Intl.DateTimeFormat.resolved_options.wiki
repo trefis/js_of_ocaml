@@ -1,42 +1,16 @@
 <<code language="ocaml" | object
-  method calendar :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method day :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.optdef_prop
-  method era :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.optdef_prop
-  method hour :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.optdef_prop
-  method hour12 : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method locale :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method minute :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.optdef_prop
-  method month :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.optdef_prop
-  method numberingSystem :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method second :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.optdef_prop
-  method timeZone :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method timeZoneName :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.optdef_prop
-  method weekday :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.optdef_prop
-  method year :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.optdef_prop
+  method calendar : Js.js_string Js.t Js.readonly_prop
+  method day : Js.js_string Js.t Js.optdef_prop
+  method era : Js.js_string Js.t Js.optdef_prop
+  method hour : Js.js_string Js.t Js.optdef_prop
+  method hour12 : bool Js.t Js.readonly_prop
+  method locale : Js.js_string Js.t Js.readonly_prop
+  method minute : Js.js_string Js.t Js.optdef_prop
+  method month : Js.js_string Js.t Js.optdef_prop
+  method numberingSystem : Js.js_string Js.t Js.readonly_prop
+  method second : Js.js_string Js.t Js.optdef_prop
+  method timeZone : Js.js_string Js.t Js.readonly_prop
+  method timeZoneName : Js.js_string Js.t Js.optdef_prop
+  method weekday : Js.js_string Js.t Js.optdef_prop
+  method year : Js.js_string Js.t Js.optdef_prop
 end >>

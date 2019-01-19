@@ -1,19 +1,8 @@
 <<code language="ocaml" | object
-  method clear : unit Js_of_ocaml__.Js.meth
-  method getItem :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method key :
-    int ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method length : int Js_of_ocaml__.Js.readonly_prop
-  method removeItem :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
-  method setItem :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
+  method clear : unit Js.meth
+  method getItem : Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+  method key : int -> Js.js_string Js.t Js.opt Js.meth
+  method length : int Js.readonly_prop
+  method removeItem : Js.js_string Js.t -> unit Js.meth
+  method setItem : Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
 end >>

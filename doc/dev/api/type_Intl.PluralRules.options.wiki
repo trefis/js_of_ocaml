@@ -1,6 +1,4 @@
 <<code language="ocaml" | object
-  method _type :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method localeMatcher :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method _type : Js.js_string Js.t Js.prop
+  method localeMatcher : Js.js_string Js.t Js.prop
 end >>

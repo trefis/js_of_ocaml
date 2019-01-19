@@ -1,7 +1,5 @@
 <<code language="ocaml" | object
-  method matrixTransform :
-    Dom_svg.matrix Js_of_ocaml__.Js.t ->
-    Dom_svg.point Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method x : float Js_of_ocaml__.Js.readonly_prop
-  method y : float Js_of_ocaml__.Js.readonly_prop
+  method matrixTransform : Dom_svg.matrix Js.t -> Dom_svg.point Js.t Js.meth
+  method x : float Js.readonly_prop
+  method y : float Js.readonly_prop
 end >>

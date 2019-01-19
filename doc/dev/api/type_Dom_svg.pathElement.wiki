@@ -1,245 +1,131 @@
 <<code language="ocaml" | object
-  method animatedNormalizedPathSegList :
-    Dom_svg.pathSegList Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method animatedPathSegList :
-    Dom_svg.pathSegList Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method appendChild :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method attributes :
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Dom.namedNodeMap Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method childNodes :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Dom.nodeList Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.prop
-  method className :
-    Dom_svg.animatedString Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method cloneNode :
-    bool Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+  method animatedNormalizedPathSegList : Dom_svg.pathSegList Js.t Js.prop
+  method animatedPathSegList : Dom_svg.pathSegList Js.t Js.prop
+  method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
+  method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+  method childNodes : Dom.node Dom.nodeList Js.t Js.prop
+  method className : Dom_svg.animatedString Js.t Js.readonly_prop
+  method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
   method compareDocumentPosition :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.DocumentPosition.t Js_of_ocaml__.Js.meth
+    Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
   method createSVGPathSegArcAbs :
     float ->
     float ->
     float ->
-    float ->
-    float ->
-    bool Js_of_ocaml__.Js.t ->
-    bool Js_of_ocaml__.Js.t -> Dom_svg.pathSegArc Js_of_ocaml__.Js.meth
+    float -> float -> bool Js.t -> bool Js.t -> Dom_svg.pathSegArc Js.meth
   method createSVGPathSegArcRel :
     float ->
     float ->
     float ->
-    float ->
-    float ->
-    bool Js_of_ocaml__.Js.t ->
-    bool Js_of_ocaml__.Js.t -> Dom_svg.pathSegArc Js_of_ocaml__.Js.meth
-  method createSVGPathSegClosePath :
-    Dom_svg.pathSegClosePath Js_of_ocaml__.Js.meth
+    float -> float -> bool Js.t -> bool Js.t -> Dom_svg.pathSegArc Js.meth
+  method createSVGPathSegClosePath : Dom_svg.pathSegClosePath Js.meth
   method createSVGPathSegCurvetoCubicAbs :
     float ->
     float ->
-    float ->
-    float ->
-    float -> float -> Dom_svg.pathSegCurvetoCubic Js_of_ocaml__.Js.meth
+    float -> float -> float -> float -> Dom_svg.pathSegCurvetoCubic Js.meth
   method createSVGPathSegCurvetoCubicRel :
     float ->
     float ->
-    float ->
-    float ->
-    float -> float -> Dom_svg.pathSegCurvetoCubic Js_of_ocaml__.Js.meth
+    float -> float -> float -> float -> Dom_svg.pathSegCurvetoCubic Js.meth
   method createSVGPathSegCurvetoCubicSmoothAbs :
     float ->
-    float ->
-    float -> float -> Dom_svg.pathSegCurvetoCubicSmooth Js_of_ocaml__.Js.meth
+    float -> float -> float -> Dom_svg.pathSegCurvetoCubicSmooth Js.meth
   method createSVGPathSegCurvetoCubicSmoothRel :
     float ->
-    float ->
-    float -> float -> Dom_svg.pathSegCurvetoCubicSmooth Js_of_ocaml__.Js.meth
+    float -> float -> float -> Dom_svg.pathSegCurvetoCubicSmooth Js.meth
   method createSVGPathSegCurvetoQuadraticAbs :
     float ->
-    float ->
-    float -> float -> Dom_svg.pathSegCurvetoQuadratic Js_of_ocaml__.Js.meth
+    float -> float -> float -> Dom_svg.pathSegCurvetoQuadratic Js.meth
   method createSVGPathSegCurvetoQuadraticRel :
     float ->
-    float ->
-    float -> float -> Dom_svg.pathSegCurvetoQuadratic Js_of_ocaml__.Js.meth
+    float -> float -> float -> Dom_svg.pathSegCurvetoQuadratic Js.meth
   method createSVGPathSegCurvetoQuadraticSmoothAbs :
-    float ->
-    float -> Dom_svg.pathSegCurvetoQuadraticSmooth Js_of_ocaml__.Js.meth
+    float -> float -> Dom_svg.pathSegCurvetoQuadraticSmooth Js.meth
   method createSVGPathSegCurvetoQuadraticSmoothRel :
-    float ->
-    float -> Dom_svg.pathSegCurvetoQuadraticSmooth Js_of_ocaml__.Js.meth
+    float -> float -> Dom_svg.pathSegCurvetoQuadraticSmooth Js.meth
   method createSVGPathSegLinetoAbs :
-    float -> float -> Dom_svg.pathSegLineto Js_of_ocaml__.Js.meth
+    float -> float -> Dom_svg.pathSegLineto Js.meth
   method createSVGPathSegLinetoHorizontalAbs :
-    float -> Dom_svg.pathSegLinetoHorizontal Js_of_ocaml__.Js.meth
+    float -> Dom_svg.pathSegLinetoHorizontal Js.meth
   method createSVGPathSegLinetoHorizontalRel :
-    float -> Dom_svg.pathSegLinetoHorizontal Js_of_ocaml__.Js.meth
+    float -> Dom_svg.pathSegLinetoHorizontal Js.meth
   method createSVGPathSegLinetoRel :
-    float -> float -> Dom_svg.pathSegLineto Js_of_ocaml__.Js.meth
+    float -> float -> Dom_svg.pathSegLineto Js.meth
   method createSVGPathSegLinetoVerticalAbs :
-    float -> Dom_svg.pathSegLinetoVertical Js_of_ocaml__.Js.meth
+    float -> Dom_svg.pathSegLinetoVertical Js.meth
   method createSVGPathSegLinetoVerticalRel :
-    float -> Dom_svg.pathSegLinetoVertical Js_of_ocaml__.Js.meth
+    float -> Dom_svg.pathSegLinetoVertical Js.meth
   method createSVGPathSegMovetoAbs :
-    float -> float -> Dom_svg.pathSegMoveto Js_of_ocaml__.Js.meth
+    float -> float -> Dom_svg.pathSegMoveto Js.meth
   method createSVGPathSegMovetoRel :
-    float -> float -> Dom_svg.pathSegMoveto Js_of_ocaml__.Js.meth
+    float -> float -> Dom_svg.pathSegMoveto Js.meth
   method externalResourcesRequired :
-    Dom_svg.animatedBoolean Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method farthestViewportElement :
-    Dom_svg.element Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method firstChild :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.prop
-  method getAttribute :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
+    Dom_svg.animatedBoolean Js.t Js.readonly_prop
+  method farthestViewportElement : Dom_svg.element Js.t Js.readonly_prop
+  method firstChild : Dom.node Js.t Js.opt Js.prop
+  method getAttribute : Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
   method getAttributeNS :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method getAttributeNode :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
+    Js.js_string Js.t ->
+    Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+  method getAttributeNode : Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
   method getAttributeNodeNS :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method getBBox : Dom_svg.rect Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method getCTM : Dom_svg.matrix Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+    Js.js_string Js.t -> Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+  method getBBox : Dom_svg.rect Js.t Js.meth
+  method getCTM : Dom_svg.matrix Js.t Js.meth
   method getElementsByTagName :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.element Js_of_ocaml__.Dom.nodeList Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.meth
+    Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
   method getPathSegAtLength : float -> int
-  method getPointAtLength :
-    float -> Dom_svg.point Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method getScreenCTM :
-    Dom_svg.matrix Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method getTotalLength : float Js_of_ocaml__.Js.meth
+  method getPointAtLength : float -> Dom_svg.point Js.t Js.meth
+  method getScreenCTM : Dom_svg.matrix Js.t Js.meth
+  method getTotalLength : float Js.meth
   method getTransformToElement :
-    Dom_svg.element Js_of_ocaml__.Js.t ->
-    Dom_svg.matrix Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method hasAttribute :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+    Dom_svg.element Js.t -> Dom_svg.matrix Js.t Js.meth
+  method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
   method hasAttributeNS :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method hasChildNodes : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method hasExtension :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method id :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+    Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
+  method hasChildNodes : bool Js.t Js.meth
+  method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
+  method id : Js.js_string Js.t Js.prop
   method insertBefore :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt ->
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method lastChild :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.prop
+    Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
+  method lastChild : Dom.node Js.t Js.opt Js.prop
   method lookupNamespaceURI :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method lookupPrefix :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method namespaceURI :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.prop
-  method nearestViewportElement :
-    Dom_svg.element Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method nextSibling :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.prop
-  method nodeName :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method nodeType : Js_of_ocaml__.Dom.nodeType Js_of_ocaml__.Js.readonly_prop
-  method nodeValue :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.readonly_prop
-  method normalizedPathSegList :
-    Dom_svg.pathSegList Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method ownerSVGElement :
-    Dom_svg.svgElement Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method parentNode :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.prop
-  method pathLength :
-    Dom_svg.animatedNumber Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method pathSegList :
-    Dom_svg.pathSegList Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method previousSibling :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.prop
-  method removeAttribute :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
+    Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+  method lookupPrefix : Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+  method namespaceURI : Js.js_string Js.t Js.opt Js.prop
+  method nearestViewportElement : Dom_svg.element Js.t Js.readonly_prop
+  method nextSibling : Dom.node Js.t Js.opt Js.prop
+  method nodeName : Js.js_string Js.t Js.readonly_prop
+  method nodeType : Dom.nodeType Js.readonly_prop
+  method nodeValue : Js.js_string Js.t Js.opt Js.readonly_prop
+  method normalizedPathSegList : Dom_svg.pathSegList Js.t Js.prop
+  method ownerSVGElement : Dom_svg.svgElement Js.t Js.readonly_prop
+  method parentNode : Dom.node Js.t Js.opt Js.prop
+  method pathLength : Dom_svg.animatedNumber Js.t Js.readonly_prop
+  method pathSegList : Dom_svg.pathSegList Js.t Js.prop
+  method previousSibling : Dom.node Js.t Js.opt Js.prop
+  method removeAttribute : Js.js_string Js.t -> unit Js.meth
   method removeAttributeNS :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
-  method removeAttributeNode :
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method removeChild :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+    Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+  method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
+  method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
   method replaceChild :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method requiredExtensions :
-    Dom_svg.stringList Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method requiredFeatures :
-    Dom_svg.stringList Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
+    Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
+  method requiredExtensions : Dom_svg.stringList Js.t Js.readonly_prop
+  method requiredFeatures : Dom_svg.stringList Js.t Js.readonly_prop
   method setAttribute :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
+    Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
   method setAttributeNS :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
-  method setAttributeNode :
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method setAttributeNodeNS :
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method style :
-    Js_of_ocaml__.Dom_html.cssStyleDeclaration Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method systemLanguage :
-    Dom_svg.stringList Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method tagName :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method transform :
-    Dom_svg.animatedTransformList Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method viewportElement :
-    Dom_svg.element Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method xmlbase :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method xmllang :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method xmlspace :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+    Js.js_string Js.t ->
+    Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+  method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+  method setAttributeNodeNS : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+  method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
+  method systemLanguage : Dom_svg.stringList Js.t Js.readonly_prop
+  method tagName : Js.js_string Js.t Js.readonly_prop
+  method transform : Dom_svg.animatedTransformList Js.t Js.readonly_prop
+  method viewportElement : Dom_svg.element Js.t Js.readonly_prop
+  method xmlbase : Js.js_string Js.t Js.prop
+  method xmllang : Js.js_string Js.t Js.prop
+  method xmlspace : Js.js_string Js.t Js.prop
 end >>

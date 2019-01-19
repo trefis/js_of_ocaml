@@ -1,19 +1,11 @@
 <<code language="ocaml" | object
-  method colorType : Dom_svg.colorType Js_of_ocaml__.Js.readonly_prop
-  method iccColor :
-    Dom_svg.iccColor Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method rgbColor :
-    Dom_svg.rgbColor Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
+  method colorType : Dom_svg.colorType Js.readonly_prop
+  method iccColor : Dom_svg.iccColor Js.t Js.readonly_prop
+  method rgbColor : Dom_svg.rgbColor Js.t Js.readonly_prop
   method setColor :
     Dom_svg.colorType ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
-  method setRGBColor :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
+    Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+  method setRGBColor : Js.js_string Js.t -> unit Js.meth
   method setRGBColorICCColor :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
+    Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
 end >>

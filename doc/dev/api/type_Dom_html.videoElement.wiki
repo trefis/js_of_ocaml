@@ -1,328 +1,185 @@
 <<code language="ocaml" | object ('a)
-  method appendChild :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method attributes :
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Dom.namedNodeMap Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method autoplay : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method blur : unit Js_of_ocaml__.Js.meth
-  method buffered :
-    timeRanges Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method canPlayType :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method childNodes :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Dom.nodeList Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.prop
-  method classList :
-    tokenList Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method className :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method click : unit Js_of_ocaml__.Js.meth
-  method clientHeight : int Js_of_ocaml__.Js.readonly_prop
-  method clientLeft : int Js_of_ocaml__.Js.readonly_prop
-  method clientTop : int Js_of_ocaml__.Js.readonly_prop
-  method clientWidth : int Js_of_ocaml__.Js.readonly_prop
-  method cloneNode :
-    bool Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+  method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
+  method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
+  method autoplay : bool Js.t Js.prop
+  method blur : unit Js.meth
+  method buffered : timeRanges Js.t Js.readonly_prop
+  method canPlayType : Js.js_string Js.t -> Js.js_string Js.t Js.meth
+  method childNodes : Dom.node Dom.nodeList Js.t Js.prop
+  method classList : tokenList Js.t Js.readonly_prop
+  method className : Js.js_string Js.t Js.prop
+  method click : unit Js.meth
+  method clientHeight : int Js.readonly_prop
+  method clientLeft : int Js.readonly_prop
+  method clientTop : int Js.readonly_prop
+  method clientWidth : int Js.readonly_prop
+  method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
   method compareDocumentPosition :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.DocumentPosition.t Js_of_ocaml__.Js.meth
-  method controls : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method currentSrc :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method currentTime : float Js_of_ocaml__.Js.prop
-  method dir :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method duration : float Js_of_ocaml__.Js.readonly_prop
-  method ended : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method firstChild :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.prop
-  method focus : unit Js_of_ocaml__.Js.meth
-  method getAttribute :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
+    Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
+  method controls : bool Js.t Js.prop
+  method currentSrc : Js.js_string Js.t Js.readonly_prop
+  method currentTime : float Js.prop
+  method dir : Js.js_string Js.t Js.prop
+  method duration : float Js.readonly_prop
+  method ended : bool Js.t Js.readonly_prop
+  method firstChild : Dom.node Js.t Js.opt Js.prop
+  method focus : unit Js.meth
+  method getAttribute : Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
   method getAttributeNS :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method getAttributeNode :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
+    Js.js_string Js.t ->
+    Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+  method getAttributeNode : Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
   method getAttributeNodeNS :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method getBoundingClientRect :
-    clientRect Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method getClientRects :
-    clientRectList Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+    Js.js_string Js.t -> Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+  method getBoundingClientRect : clientRect Js.t Js.meth
+  method getClientRects : clientRectList Js.t Js.meth
   method getElementsByTagName :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.element Js_of_ocaml__.Dom.nodeList Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.meth
-  method hasAttribute :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+    Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
+  method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
   method hasAttributeNS :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method hasChildNodes : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method id :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method innerHTML :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+    Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
+  method hasChildNodes : bool Js.t Js.meth
+  method id : Js.js_string Js.t Js.prop
+  method innerHTML : Js.js_string Js.t Js.prop
   method insertBefore :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt ->
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method lang :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method lastChild :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.prop
-  method load : unit Js_of_ocaml__.Js.meth
+    Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
+  method lang : Js.js_string Js.t Js.prop
+  method lastChild : Dom.node Js.t Js.opt Js.prop
+  method load : unit Js.meth
   method lookupNamespaceURI :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method lookupPrefix :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method loop : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method mediagroup :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method muted : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method namespaceURI :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.prop
-  method networkState : networkState Js_of_ocaml__.Js.readonly_prop
-  method networkState_int : int Js_of_ocaml__.Js.readonly_prop
-  method nextSibling :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.prop
-  method nodeName :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method nodeType : Js_of_ocaml__.Dom.nodeType Js_of_ocaml__.Js.readonly_prop
-  method nodeValue :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.readonly_prop
-  method offsetHeight : int Js_of_ocaml__.Js.readonly_prop
-  method offsetLeft : int Js_of_ocaml__.Js.readonly_prop
-  method offsetParent :
-    element Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.readonly_prop
-  method offsetTop : int Js_of_ocaml__.Js.readonly_prop
-  method offsetWidth : int Js_of_ocaml__.Js.readonly_prop
+    Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+  method lookupPrefix : Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+  method loop : bool Js.t Js.prop
+  method mediagroup : Js.js_string Js.t Js.prop
+  method muted : bool Js.t Js.prop
+  method namespaceURI : Js.js_string Js.t Js.opt Js.prop
+  method networkState : networkState Js.readonly_prop
+  method networkState_int : int Js.readonly_prop
+  method nextSibling : Dom.node Js.t Js.opt Js.prop
+  method nodeName : Js.js_string Js.t Js.readonly_prop
+  method nodeType : Dom.nodeType Js.readonly_prop
+  method nodeValue : Js.js_string Js.t Js.opt Js.readonly_prop
+  method offsetHeight : int Js.readonly_prop
+  method offsetLeft : int Js.readonly_prop
+  method offsetParent : element Js.t Js.opt Js.readonly_prop
+  method offsetTop : int Js.readonly_prop
+  method offsetWidth : int Js.readonly_prop
   method onanimationcancel :
-    ('a Js_of_ocaml__.Js.t, animationEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
   method onanimationend :
-    ('a Js_of_ocaml__.Js.t, animationEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
   method onanimationiteration :
-    ('a Js_of_ocaml__.Js.t, animationEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
   method onanimationstart :
-    ('a Js_of_ocaml__.Js.t, animationEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, animationEvent Js.t) event_listener Js.writeonly_prop
   method oncanplay :
-    ('self Js_of_ocaml__.Js.t, mediaEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('self Js.t, mediaEvent Js.t) event_listener Js.writeonly_prop
   method oncanplaythrough :
-    ('self Js_of_ocaml__.Js.t, mediaEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('self Js.t, mediaEvent Js.t) event_listener Js.writeonly_prop
   method onclick :
-    ('a Js_of_ocaml__.Js.t, mouseEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
   method ondblclick :
-    ('a Js_of_ocaml__.Js.t, mouseEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
-  method ondrag :
-    ('a Js_of_ocaml__.Js.t, dragEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
+  method ondrag : ('a Js.t, dragEvent Js.t) event_listener Js.writeonly_prop
   method ondragend :
-    ('a Js_of_ocaml__.Js.t, dragEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, dragEvent Js.t) event_listener Js.writeonly_prop
   method ondragenter :
-    ('a Js_of_ocaml__.Js.t, dragEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, dragEvent Js.t) event_listener Js.writeonly_prop
   method ondragleave :
-    ('a Js_of_ocaml__.Js.t, dragEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, dragEvent Js.t) event_listener Js.writeonly_prop
   method ondragover :
-    ('a Js_of_ocaml__.Js.t, dragEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, dragEvent Js.t) event_listener Js.writeonly_prop
   method ondragstart :
-    ('a Js_of_ocaml__.Js.t, dragEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
-  method ondrop :
-    ('a Js_of_ocaml__.Js.t, dragEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, dragEvent Js.t) event_listener Js.writeonly_prop
+  method ondrop : ('a Js.t, dragEvent Js.t) event_listener Js.writeonly_prop
   method ondurationchange :
-    ('self Js_of_ocaml__.Js.t, mediaEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('self Js.t, mediaEvent Js.t) event_listener Js.writeonly_prop
   method onemptied :
-    ('self Js_of_ocaml__.Js.t, mediaEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('self Js.t, mediaEvent Js.t) event_listener Js.writeonly_prop
   method onended :
-    ('self Js_of_ocaml__.Js.t, mediaEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('self Js.t, mediaEvent Js.t) event_listener Js.writeonly_prop
   method onkeydown :
-    ('a Js_of_ocaml__.Js.t, keyboardEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, keyboardEvent Js.t) event_listener Js.writeonly_prop
   method onkeypress :
-    ('a Js_of_ocaml__.Js.t, keyboardEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, keyboardEvent Js.t) event_listener Js.writeonly_prop
   method onkeyup :
-    ('a Js_of_ocaml__.Js.t, keyboardEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, keyboardEvent Js.t) event_listener Js.writeonly_prop
   method onloadeddata :
-    ('self Js_of_ocaml__.Js.t, mediaEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('self Js.t, mediaEvent Js.t) event_listener Js.writeonly_prop
   method onloadedmetadata :
-    ('self Js_of_ocaml__.Js.t, mediaEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('self Js.t, mediaEvent Js.t) event_listener Js.writeonly_prop
   method onloadstart :
-    ('self Js_of_ocaml__.Js.t, mediaEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('self Js.t, mediaEvent Js.t) event_listener Js.writeonly_prop
   method onmousedown :
-    ('a Js_of_ocaml__.Js.t, mouseEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
   method onmousemove :
-    ('a Js_of_ocaml__.Js.t, mouseEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
   method onmouseout :
-    ('a Js_of_ocaml__.Js.t, mouseEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
   method onmouseover :
-    ('a Js_of_ocaml__.Js.t, mouseEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
   method onmouseup :
-    ('a Js_of_ocaml__.Js.t, mouseEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, mouseEvent Js.t) event_listener Js.writeonly_prop
   method onpause :
-    ('self Js_of_ocaml__.Js.t, mediaEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('self Js.t, mediaEvent Js.t) event_listener Js.writeonly_prop
   method onplay :
-    ('self Js_of_ocaml__.Js.t, mediaEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('self Js.t, mediaEvent Js.t) event_listener Js.writeonly_prop
   method onplaying :
-    ('self Js_of_ocaml__.Js.t, mediaEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('self Js.t, mediaEvent Js.t) event_listener Js.writeonly_prop
   method onratechange :
-    ('self Js_of_ocaml__.Js.t, mediaEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
-  method onscroll :
-    ('a Js_of_ocaml__.Js.t, event Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('self Js.t, mediaEvent Js.t) event_listener Js.writeonly_prop
+  method onscroll : ('a Js.t, event Js.t) event_listener Js.writeonly_prop
   method onseeked :
-    ('self Js_of_ocaml__.Js.t, mediaEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('self Js.t, mediaEvent Js.t) event_listener Js.writeonly_prop
   method onseeking :
-    ('self Js_of_ocaml__.Js.t, mediaEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('self Js.t, mediaEvent Js.t) event_listener Js.writeonly_prop
   method onstalled :
-    ('self Js_of_ocaml__.Js.t, mediaEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('self Js.t, mediaEvent Js.t) event_listener Js.writeonly_prop
   method onsuspend :
-    ('self Js_of_ocaml__.Js.t, mediaEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('self Js.t, mediaEvent Js.t) event_listener Js.writeonly_prop
   method onvolumechange :
-    ('self Js_of_ocaml__.Js.t, mediaEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
+    ('self Js.t, mediaEvent Js.t) event_listener Js.writeonly_prop
   method onwaiting :
-    ('self Js_of_ocaml__.Js.t, mediaEvent Js_of_ocaml__.Js.t) event_listener
-    Js_of_ocaml__.Js.writeonly_prop
-  method outerHTML :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method parentNode :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.prop
-  method pause : unit Js_of_ocaml__.Js.meth
-  method paused : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method play : unit Js_of_ocaml__.Js.meth
-  method playbackRate : float Js_of_ocaml__.Js.prop
-  method played :
-    timeRanges Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method preload :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method previousSibling :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.prop
-  method querySelector :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    element Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt Js_of_ocaml__.Js.meth
+    ('self Js.t, mediaEvent Js.t) event_listener Js.writeonly_prop
+  method outerHTML : Js.js_string Js.t Js.prop
+  method parentNode : Dom.node Js.t Js.opt Js.prop
+  method pause : unit Js.meth
+  method paused : bool Js.t Js.readonly_prop
+  method play : unit Js.meth
+  method playbackRate : float Js.prop
+  method played : timeRanges Js.t Js.readonly_prop
+  method preload : Js.js_string Js.t Js.prop
+  method previousSibling : Dom.node Js.t Js.opt Js.prop
+  method querySelector : Js.js_string Js.t -> element Js.t Js.opt Js.meth
   method querySelectorAll :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    element Js_of_ocaml__.Dom.nodeList Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.meth
-  method readyState : readyState Js_of_ocaml__.Js.readonly_prop
-  method readyState_int : int Js_of_ocaml__.Js.readonly_prop
-  method removeAttribute :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
+    Js.js_string Js.t -> element Dom.nodeList Js.t Js.meth
+  method readyState : readyState Js.readonly_prop
+  method readyState_int : int Js.readonly_prop
+  method removeAttribute : Js.js_string Js.t -> unit Js.meth
   method removeAttributeNS :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
-  method removeAttributeNode :
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method removeChild :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+    Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+  method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
+  method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
   method replaceChild :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method scrollHeight : int Js_of_ocaml__.Js.prop
-  method scrollIntoView :
-    bool Js_of_ocaml__.Js.t -> unit Js_of_ocaml__.Js.meth
-  method scrollLeft : int Js_of_ocaml__.Js.prop
-  method scrollTop : int Js_of_ocaml__.Js.prop
-  method scrollWidth : int Js_of_ocaml__.Js.prop
-  method seekable :
-    timeRanges Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method seeking : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
+    Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
+  method scrollHeight : int Js.prop
+  method scrollIntoView : bool Js.t -> unit Js.meth
+  method scrollLeft : int Js.prop
+  method scrollTop : int Js.prop
+  method scrollWidth : int Js.prop
+  method seekable : timeRanges Js.t Js.readonly_prop
+  method seeking : bool Js.t Js.readonly_prop
   method setAttribute :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
+    Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
   method setAttributeNS :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
-  method setAttributeNode :
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method setAttributeNodeNS :
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method src :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method style : cssStyleDeclaration Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method tagName :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method textContent :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.prop
-  method title :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method volume : float Js_of_ocaml__.Js.prop
+    Js.js_string Js.t ->
+    Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+  method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+  method setAttributeNodeNS : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+  method src : Js.js_string Js.t Js.prop
+  method style : cssStyleDeclaration Js.t Js.prop
+  method tagName : Js.js_string Js.t Js.readonly_prop
+  method textContent : Js.js_string Js.t Js.opt Js.prop
+  method title : Js.js_string Js.t Js.prop
+  method volume : float Js.prop
 end >>

@@ -1,5 +1,5 @@
 <<code language="ocaml" | object
-  method end_ : int -> float Js_of_ocaml__.Js.meth
-  method length : int Js_of_ocaml__.Js.readonly_prop
-  method start : int -> float Js_of_ocaml__.Js.meth
+  method end_ : int -> float Js.meth
+  method length : int Js.readonly_prop
+  method start : int -> float Js.meth
 end >>

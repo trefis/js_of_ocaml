@@ -1,6 +1,4 @@
 <<code language="ocaml" | object
-  method xmllang :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method xmlspace :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method xmllang : Js.js_string Js.t Js.prop
+  method xmlspace : Js.js_string Js.t Js.prop
 end >>

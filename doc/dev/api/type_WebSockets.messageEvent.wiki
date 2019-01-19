@@ -1,19 +1,9 @@
 <<code language="ocaml" | object
-  method _type :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method currentTarget :
-    'a Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt Js_of_ocaml__.Js.readonly_prop
-  method data :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method data_blob :
-    Js_of_ocaml__.File.blob Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method data_buffer :
-    Js_of_ocaml__.Typed_array.arrayBuffer Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method srcElement :
-    'a Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt Js_of_ocaml__.Js.readonly_prop
-  method target :
-    'a Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt Js_of_ocaml__.Js.readonly_prop
+  method _type : Js.js_string Js.t Js.readonly_prop
+  method currentTarget : 'a Js.t Js.opt Js.readonly_prop
+  method data : Js.js_string Js.t Js.readonly_prop
+  method data_blob : File.blob Js.t Js.readonly_prop
+  method data_buffer : Typed_array.arrayBuffer Js.t Js.readonly_prop
+  method srcElement : 'a Js.t Js.opt Js.readonly_prop
+  method target : 'a Js.t Js.opt Js.readonly_prop
 end >>

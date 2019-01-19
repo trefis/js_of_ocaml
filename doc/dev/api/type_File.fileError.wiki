@@ -1,1 +1,1 @@
-<<code language="ocaml" | object method code : int Js_of_ocaml__.Js.readonly_prop end >>
+<<code language="ocaml" | object method code : int Js.readonly_prop end >>

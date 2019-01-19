@@ -1,10 +1,6 @@
 <<code language="ocaml" | object
   method querySelector :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Dom_html.element Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
+    Js.js_string Js.t -> Dom_html.element Js.t Js.opt Js.meth
   method querySelectorAll :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Dom_html.element Js_of_ocaml__.Dom.nodeList Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.meth
+    Js.js_string Js.t -> Dom_html.element Dom.nodeList Js.t Js.meth
 end >>

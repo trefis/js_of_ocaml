@@ -1,91 +1,54 @@
 <<code language="ocaml" | sig
   class type object_options =
-    object
-      method localeMatcher :
-        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-    end
-  val object_options : unit -> object_options Js_of_ocaml__.Js.t
+    object method localeMatcher : Js.js_string Js.t Js.prop end
+  val object_options : unit -> object_options Js.t
   class type _object =
     object
       method supportedLocalesOf :
-        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-        Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t ->
-        object_options Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef ->
-        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-        Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+        Js.js_string Js.t Js.js_array Js.t ->
+        object_options Js.t Js.optdef ->
+        Js.js_string Js.t Js.js_array Js.t Js.meth
     end
   class type resolved_options =
     object
-      method currency :
-        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-        Js_of_ocaml__.Js.optdef_prop
-      method currencyDisplay :
-        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-        Js_of_ocaml__.Js.optdef_prop
-      method locale :
-        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-        Js_of_ocaml__.Js.readonly_prop
-      method maximumFractionDigits : int Js_of_ocaml__.Js.optdef_prop
-      method maximumSignificantDigits : int Js_of_ocaml__.Js.optdef_prop
-      method minimumFractionDigits : int Js_of_ocaml__.Js.optdef_prop
-      method minimumIntegerDigits : int Js_of_ocaml__.Js.optdef_prop
-      method minimumSignificantDigits : int Js_of_ocaml__.Js.optdef_prop
-      method numberingSystem :
-        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-        Js_of_ocaml__.Js.readonly_prop
-      method style :
-        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-        Js_of_ocaml__.Js.readonly_prop
-      method useGrouping :
-        bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
+      method currency : Js.js_string Js.t Js.optdef_prop
+      method currencyDisplay : Js.js_string Js.t Js.optdef_prop
+      method locale : Js.js_string Js.t Js.readonly_prop
+      method maximumFractionDigits : int Js.optdef_prop
+      method maximumSignificantDigits : int Js.optdef_prop
+      method minimumFractionDigits : int Js.optdef_prop
+      method minimumIntegerDigits : int Js.optdef_prop
+      method minimumSignificantDigits : int Js.optdef_prop
+      method numberingSystem : Js.js_string Js.t Js.readonly_prop
+      method style : Js.js_string Js.t Js.readonly_prop
+      method useGrouping : bool Js.t Js.readonly_prop
     end
   class type options =
     object
-      method currency :
-        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
-        Js_of_ocaml__.Js.prop
-      method currencyDisplay :
-        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
-        Js_of_ocaml__.Js.prop
-      method localeMatcher :
-        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-      method maximumFractionDigits :
-        int Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-      method maximumSignificantDigits :
-        int Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-      method minimumFractionDigits :
-        int Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-      method minimumIntegerDigits :
-        int Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-      method minimumSignificantDigits :
-        int Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-      method style :
-        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-      method useGrouping : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+      method currency : Js.js_string Js.t Js.optdef Js.prop
+      method currencyDisplay : Js.js_string Js.t Js.optdef Js.prop
+      method localeMatcher : Js.js_string Js.t Js.prop
+      method maximumFractionDigits : int Js.optdef Js.prop
+      method maximumSignificantDigits : int Js.optdef Js.prop
+      method minimumFractionDigits : int Js.optdef Js.prop
+      method minimumIntegerDigits : int Js.optdef Js.prop
+      method minimumSignificantDigits : int Js.optdef Js.prop
+      method style : Js.js_string Js.t Js.prop
+      method useGrouping : bool Js.t Js.prop
     end
-  val options : unit -> Intl.NumberFormat.options Js_of_ocaml__.Js.t
+  val options : unit -> Intl.NumberFormat.options Js.t
   class type format_part =
     object
-      method _type :
-        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-        Js_of_ocaml__.Js.readonly_prop
-      method _value :
-        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-        Js_of_ocaml__.Js.readonly_prop
+      method _type : Js.js_string Js.t Js.readonly_prop
+      method _value : Js.js_string Js.t Js.readonly_prop
     end
   class type t =
     object
-      method format :
-        (Js_of_ocaml__.Js.number Js_of_ocaml__.Js.t ->
-         Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t)
-        Js_of_ocaml__.Js.readonly_prop
+      method format : (Js.number Js.t -> Js.js_string Js.t) Js.readonly_prop
       method formatToParts :
-        Js_of_ocaml__.Js.number Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef ->
-        Intl.NumberFormat.format_part Js_of_ocaml__.Js.t
-        Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+        Js.number Js.t Js.optdef ->
+        Intl.NumberFormat.format_part Js.t Js.js_array Js.t Js.meth
       method resolvedOptions :
-        unit ->
-        Intl.NumberFormat.resolved_options Js_of_ocaml__.Js.t
-        Js_of_ocaml__.Js.meth
+        unit -> Intl.NumberFormat.resolved_options Js.t Js.meth
     end
 end >>

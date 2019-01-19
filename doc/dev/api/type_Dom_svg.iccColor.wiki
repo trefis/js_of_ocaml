@@ -1,6 +1,4 @@
 <<code language="ocaml" | object
-  method colorProfile :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method colors :
-    Dom_svg.numberList Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
+  method colorProfile : Js.js_string Js.t Js.prop
+  method colors : Dom_svg.numberList Js.t Js.readonly_prop
 end >>

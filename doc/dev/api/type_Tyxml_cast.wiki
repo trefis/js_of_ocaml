@@ -5,8 +5,7 @@
              type 'a elt
              val elt :
                'a Tyxml_cast.MakeTo.elt ->
-               Js_of_ocaml__.Js_of_ocaml.Dom.node
-               Js_of_ocaml__.Js_of_ocaml.Js.t
+               Js_of_ocaml.Dom.node Js_of_ocaml.Js.t
            end) ->
       sig
         type 'a elt = 'a C.elt
@@ -342,8 +341,8 @@
       (C : sig
              type 'a elt
              val elt :
-               Js_of_ocaml__.Js_of_ocaml.Dom.node
-               Js_of_ocaml__.Js_of_ocaml.Js.t -> 'a Tyxml_cast.MakeOf.elt
+               Js_of_ocaml.Dom.node Js_of_ocaml.Js.t ->
+               'a Tyxml_cast.MakeOf.elt
            end) ->
       sig
         type 'a elt = 'a C.elt

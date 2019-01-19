@@ -1,1 +1,1 @@
-<<code language="ocaml" | object method zoomAndPan : Dom_svg.zoomAndPanType Js_of_ocaml__.Js.prop end >>
+<<code language="ocaml" | object method zoomAndPan : Dom_svg.zoomAndPanType Js.prop end >>

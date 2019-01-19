@@ -1,4 +1,4 @@
 <<code language="ocaml" | object
-  method item : int -> Dom_svg.elementInstance Js_of_ocaml__.Js.t
-  method length : int Js_of_ocaml__.Js.readonly_prop
+  method item : int -> Dom_svg.elementInstance Js.t
+  method length : int Js.readonly_prop
 end >>

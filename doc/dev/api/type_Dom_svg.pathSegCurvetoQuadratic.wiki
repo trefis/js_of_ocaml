@@ -1,10 +1,8 @@
 <<code language="ocaml" | object
-  method pathSegType : Dom_svg.pathSegmentType Js_of_ocaml__.Js.readonly_prop
-  method pathSegTypeAsLetter :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method x : float Js_of_ocaml__.Js.prop
-  method x1 : float Js_of_ocaml__.Js.prop
-  method y : float Js_of_ocaml__.Js.prop
-  method y1 : float Js_of_ocaml__.Js.prop
+  method pathSegType : Dom_svg.pathSegmentType Js.readonly_prop
+  method pathSegTypeAsLetter : Js.js_string Js.t Js.readonly_prop
+  method x : float Js.prop
+  method x1 : float Js.prop
+  method y : float Js.prop
+  method y1 : float Js.prop
 end >>

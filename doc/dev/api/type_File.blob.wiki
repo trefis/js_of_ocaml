@@ -1,13 +1,7 @@
 <<code language="ocaml" | object
-  method _type :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method size : int Js_of_ocaml__.Js.readonly_prop
-  method slice :
-    int -> int -> File.blob Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+  method _type : Js.js_string Js.t Js.readonly_prop
+  method size : int Js.readonly_prop
+  method slice : int -> int -> File.blob Js.t Js.meth
   method slice_withContentType :
-    int ->
-    int ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    File.blob Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+    int -> int -> Js.js_string Js.t -> File.blob Js.t Js.meth
 end >>

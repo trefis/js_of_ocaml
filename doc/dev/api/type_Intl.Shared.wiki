@@ -1,17 +1,12 @@
 <<code language="ocaml" | sig
   class type object_options =
-    object
-      method localeMatcher :
-        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-    end
-  val object_options : unit -> Intl.Shared.object_options Js_of_ocaml__.Js.t
+    object method localeMatcher : Js.js_string Js.t Js.prop end
+  val object_options : unit -> Intl.Shared.object_options Js.t
   class type _object =
     object
       method supportedLocalesOf :
-        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-        Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t ->
-        Intl.Shared.object_options Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef ->
-        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-        Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+        Js.js_string Js.t Js.js_array Js.t ->
+        Intl.Shared.object_options Js.t Js.optdef ->
+        Js.js_string Js.t Js.js_array Js.t Js.meth
     end
 end >>

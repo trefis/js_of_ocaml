@@ -160,10 +160,9 @@
     | HSLA of (int * int * int * float)
   val rgb : ?a:float -> int -> int -> int -> CSS.Color.t
   val hsl : ?a:float -> int -> int -> int -> CSS.Color.t
-  type js_t = private Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+  type js_t = private Js.js_string Js.t
   val string_of_t : CSS.Color.t -> string
   val js : CSS.Color.t -> CSS.Color.js_t
   val ml : CSS.Color.js_t -> CSS.Color.t
-  val js_t_of_js_string :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t -> CSS.Color.js_t
+  val js_t_of_js_string : Js.js_string Js.t -> CSS.Color.js_t
 end >>

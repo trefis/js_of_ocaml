@@ -1,1 +1,1 @@
-<<code language="ocaml" | [bool Js_of_ocaml__.Js.t] Dom_svg.animated >>
+<<code language="ocaml" | [bool Js.t] Dom_svg.animated >>

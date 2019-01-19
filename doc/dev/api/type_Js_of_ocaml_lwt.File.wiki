@@ -1,0 +1,109 @@
+<<code language="ocaml" | sig
+  class type blob =
+    object
+      method _type : Js.js_string Js.t Js.readonly_prop
+      method size : int Js.readonly_prop
+      method slice : int -> int -> blob Js.t Js.meth
+      method slice_withContentType :
+        int -> int -> Js.js_string Js.t -> blob Js.t Js.meth
+    end
+  type 'a make_blob =
+      ?contentType:string ->
+      ?endings:[ `Native | `Transparent ] -> 'a -> blob Js.t
+  val blob_from_string : string make_blob
+  val blob_from_any :
+    [ `arrayBuffer of Typed_array.arrayBuffer Js.t
+    | `arrayBufferView of Typed_array.arrayBufferView Js.t
+    | `blob of blob Js.t
+    | `js_string of Js.js_string Js.t
+    | `string of string ] list make_blob
+  class type file =
+    object
+      method _type : Js.js_string Js.t Js.readonly_prop
+      method lastModifiedDate : Js.js_string Js.t Js.readonly_prop
+      method name : Js.js_string Js.t Js.readonly_prop
+      method size : int Js.readonly_prop
+      method slice : int -> int -> blob Js.t Js.meth
+      method slice_withContentType :
+        int -> int -> Js.js_string Js.t -> blob Js.t Js.meth
+    end
+  type file_any = File.file_any
+  module CoerceTo = File.CoerceTo
+  class type fileList =
+    object
+      method item : int -> file Js.t Js.opt Js.meth
+      method length : int Js.readonly_prop
+    end
+  class type fileError = object method code : int Js.readonly_prop end
+  class type ['a] progressEvent =
+    object
+      method _type : Js.js_string Js.t Js.readonly_prop
+      method currentTarget : 'a Js.t Js.opt Js.readonly_prop
+      method lengthComputable : bool Js.t Js.readonly_prop
+      method loaded : int Js.readonly_prop
+      method srcElement : 'a Js.t Js.opt Js.readonly_prop
+      method target : 'a Js.t Js.opt Js.readonly_prop
+      method total : int Js.readonly_prop
+    end
+  class type progressEventTarget =
+    object ('a)
+      method onabort :
+        ('a Js.t, 'a progressEvent Js.t) Dom.event_listener Js.writeonly_prop
+      method onerror :
+        ('a Js.t, 'a progressEvent Js.t) Dom.event_listener Js.writeonly_prop
+      method onload :
+        ('a Js.t, 'a progressEvent Js.t) Dom.event_listener Js.writeonly_prop
+      method onloadend :
+        ('a Js.t, 'a progressEvent Js.t) Dom.event_listener Js.writeonly_prop
+      method onloadstart :
+        ('a Js.t, 'a progressEvent Js.t) Dom.event_listener Js.writeonly_prop
+      method onprogress :
+        ('a Js.t, 'a progressEvent Js.t) Dom.event_listener Js.writeonly_prop
+    end
+  type readyState = File.readyState = EMPTY | LOADING | DONE
+  class type fileReader =
+    object ('a)
+      method abort : unit Js.meth
+      method error : fileError Js.t Js.readonly_prop
+      method onabort :
+        ('a Js.t, 'a progressEvent Js.t) Dom.event_listener Js.writeonly_prop
+      method onerror :
+        ('a Js.t, 'a progressEvent Js.t) Dom.event_listener Js.writeonly_prop
+      method onload :
+        ('a Js.t, 'a progressEvent Js.t) Dom.event_listener Js.writeonly_prop
+      method onloadend :
+        ('a Js.t, 'a progressEvent Js.t) Dom.event_listener Js.writeonly_prop
+      method onloadstart :
+        ('a Js.t, 'a progressEvent Js.t) Dom.event_listener Js.writeonly_prop
+      method onprogress :
+        ('a Js.t, 'a progressEvent Js.t) Dom.event_listener Js.writeonly_prop
+      method readAsArrayBuffer : #blob Js.t -> unit Js.meth
+      method readAsBinaryString : #blob Js.t -> unit Js.meth
+      method readAsDataURL : #blob Js.t -> unit Js.meth
+      method readAsText : #blob Js.t -> unit Js.meth
+      method readAsText_withEncoding :
+        #blob Js.t -> Js.js_string Js.t -> unit Js.meth
+      method readyState : readyState Js.readonly_prop
+      method result : file_any Js.readonly_prop
+    end
+  module ReaderEvent = File.ReaderEvent
+  val filename : file Js.t -> Js.js_string Js.t
+  val fileReader : fileReader Js.t Js.constr
+  val addEventListener :
+    (#progressEventTarget as 'a) Js.t ->
+    'b Dom.Event.typ ->
+    ('a Js.t, 'b) Dom.event_listener -> bool Js.t -> Dom.event_listener_id
+  val readAsBinaryString :
+    #Js_of_ocaml.File.blob Js_of_ocaml.Js.t ->
+    Js_of_ocaml.Js.js_string Js_of_ocaml.Js.t Lwt.t
+  val readAsText :
+    #Js_of_ocaml.File.blob Js_of_ocaml.Js.t ->
+    Js_of_ocaml.Js.js_string Js_of_ocaml.Js.t Lwt.t
+  val readAsText_withEncoding :
+    #Js_of_ocaml.File.blob Js_of_ocaml.Js.t ->
+    Js_of_ocaml.Js.js_string Js_of_ocaml.Js.t ->
+    Js_of_ocaml.Js.js_string Js_of_ocaml.Js.t Lwt.t
+  val readAsDataURL :
+    #Js_of_ocaml.File.blob Js_of_ocaml.Js.t ->
+    Js_of_ocaml.Js.js_string Js_of_ocaml.Js.t Lwt.t
+end >>

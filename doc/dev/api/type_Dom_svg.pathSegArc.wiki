@@ -1,12 +1,10 @@
 <<code language="ocaml" | object
-  method angle : float Js_of_ocaml__.Js.prop
-  method largeArcFlag : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method pathSegType : Dom_svg.pathSegmentType Js_of_ocaml__.Js.readonly_prop
-  method pathSegTypeAsLetter :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method r1 : float Js_of_ocaml__.Js.prop
-  method r2 : float Js_of_ocaml__.Js.prop
-  method sweepFlag : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method y : float Js_of_ocaml__.Js.prop
+  method angle : float Js.prop
+  method largeArcFlag : bool Js.t Js.prop
+  method pathSegType : Dom_svg.pathSegmentType Js.readonly_prop
+  method pathSegTypeAsLetter : Js.js_string Js.t Js.readonly_prop
+  method r1 : float Js.prop
+  method r2 : float Js.prop
+  method sweepFlag : bool Js.t Js.prop
+  method y : float Js.prop
 end >>

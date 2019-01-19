@@ -1,12 +1,10 @@
 <<code language="ocaml" | object
-  method clientX : int Js_of_ocaml__.Js.readonly_prop
-  method clientY : int Js_of_ocaml__.Js.readonly_prop
-  method identifier : int Js_of_ocaml__.Js.readonly_prop
-  method pageX : int Js_of_ocaml__.Js.readonly_prop
-  method pageY : int Js_of_ocaml__.Js.readonly_prop
-  method screenX : int Js_of_ocaml__.Js.readonly_prop
-  method screenY : int Js_of_ocaml__.Js.readonly_prop
-  method target :
-    Dom_html.element Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
-    Js_of_ocaml__.Js.readonly_prop
+  method clientX : int Js.readonly_prop
+  method clientY : int Js.readonly_prop
+  method identifier : int Js.readonly_prop
+  method pageX : int Js.readonly_prop
+  method pageY : int Js.readonly_prop
+  method screenX : int Js.readonly_prop
+  method screenY : int Js.readonly_prop
+  method target : Dom_html.element Js.t Js.optdef Js.readonly_prop
 end >>

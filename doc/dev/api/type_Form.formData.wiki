@@ -1,9 +1,4 @@
 <<code language="ocaml" | object
-  method append :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
-  method append_blob :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.File.blob Js_of_ocaml__.Js.t -> unit Js_of_ocaml__.Js.meth
+  method append : Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+  method append_blob : Js.js_string Js.t -> File.blob Js.t -> unit Js.meth
 end >>

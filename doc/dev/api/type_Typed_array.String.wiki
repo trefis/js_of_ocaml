@@ -1,3 +1,1 @@
-<<code language="ocaml" | sig
-  val of_arrayBuffer : Typed_array.arrayBuffer Js_of_ocaml__.Js.t -> string
-end >>
+<<code language="ocaml" | sig val of_arrayBuffer : Typed_array.arrayBuffer Js.t -> string end >>

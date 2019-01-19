@@ -3,65 +3,48 @@
   type watchId
   class type coordinates =
     object
-      method accuracy : float Js_of_ocaml__.Js.readonly_prop
-      method altitude :
-        float Js_of_ocaml__.Js.opt Js_of_ocaml__.Js.readonly_prop
-      method altitudeAccuracy :
-        float Js_of_ocaml__.Js.opt Js_of_ocaml__.Js.readonly_prop
-      method heading :
-        float Js_of_ocaml__.Js.opt Js_of_ocaml__.Js.readonly_prop
-      method latitude : float Js_of_ocaml__.Js.readonly_prop
-      method longitude : float Js_of_ocaml__.Js.readonly_prop
-      method speed :
-        float Js_of_ocaml__.Js.opt Js_of_ocaml__.Js.readonly_prop
+      method accuracy : float Js.readonly_prop
+      method altitude : float Js.opt Js.readonly_prop
+      method altitudeAccuracy : float Js.opt Js.readonly_prop
+      method heading : float Js.opt Js.readonly_prop
+      method latitude : float Js.readonly_prop
+      method longitude : float Js.readonly_prop
+      method speed : float Js.opt Js.readonly_prop
     end
   class type position =
     object
-      method coords :
-        Geolocation.coordinates Js_of_ocaml__.Js.t
-        Js_of_ocaml__.Js.readonly_prop
-      method timestamp : Js_of_ocaml__.Js.date Js_of_ocaml__.Js.readonly_prop
+      method coords : Geolocation.coordinates Js.t Js.readonly_prop
+      method timestamp : Js.date Js.readonly_prop
     end
   class type positionOptions =
     object
-      method enableHighAccuracy : bool Js_of_ocaml__.Js.writeonly_prop
-      method maximumAge : int Js_of_ocaml__.Js.writeonly_prop
-      method timeout : int Js_of_ocaml__.Js.writeonly_prop
+      method enableHighAccuracy : bool Js.writeonly_prop
+      method maximumAge : int Js.writeonly_prop
+      method timeout : int Js.writeonly_prop
     end
   class type positionError =
     object
       method _PERMISSION_DENIED_ :
-        Geolocation.positionErrorCode Js_of_ocaml__.Js.readonly_prop
+        Geolocation.positionErrorCode Js.readonly_prop
       method _POSITION_UNAVAILABLE_ :
-        Geolocation.positionErrorCode Js_of_ocaml__.Js.readonly_prop
-      method _TIMEOUT :
-        Geolocation.positionErrorCode Js_of_ocaml__.Js.readonly_prop
-      method code :
-        Geolocation.positionErrorCode Js_of_ocaml__.Js.readonly_prop
-      method message :
-        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-        Js_of_ocaml__.Js.readonly_prop
+        Geolocation.positionErrorCode Js.readonly_prop
+      method _TIMEOUT : Geolocation.positionErrorCode Js.readonly_prop
+      method code : Geolocation.positionErrorCode Js.readonly_prop
+      method message : Js.js_string Js.t Js.readonly_prop
     end
   class type geolocation =
     object
-      method clearWatch : Geolocation.watchId -> unit Js_of_ocaml__.Js.meth
+      method clearWatch : Geolocation.watchId -> unit Js.meth
       method getCurrentPosition :
-        (Geolocation.position Js_of_ocaml__.Js.t -> unit)
-        Js_of_ocaml__.Js.callback ->
-        (Geolocation.positionError Js_of_ocaml__.Js.t -> unit)
-        Js_of_ocaml__.Js.callback ->
-        Geolocation.positionOptions Js_of_ocaml__.Js.t ->
-        unit Js_of_ocaml__.Js.meth
+        (Geolocation.position Js.t -> unit) Js.callback ->
+        (Geolocation.positionError Js.t -> unit) Js.callback ->
+        Geolocation.positionOptions Js.t -> unit Js.meth
       method watchPosition :
-        (Geolocation.position Js_of_ocaml__.Js.t -> unit)
-        Js_of_ocaml__.Js.callback ->
-        (Geolocation.positionError Js_of_ocaml__.Js.t -> unit)
-        Js_of_ocaml__.Js.callback ->
-        Geolocation.positionOptions Js_of_ocaml__.Js.t ->
-        Geolocation.watchId Js_of_ocaml__.Js.meth
+        (Geolocation.position Js.t -> unit) Js.callback ->
+        (Geolocation.positionError Js.t -> unit) Js.callback ->
+        Geolocation.positionOptions Js.t -> Geolocation.watchId Js.meth
     end
-  val empty_position_options :
-    unit -> Geolocation.positionOptions Js_of_ocaml__.Js.t
-  val geolocation : Geolocation.geolocation Js_of_ocaml__.Js.t
+  val empty_position_options : unit -> Geolocation.positionOptions Js.t
+  val geolocation : Geolocation.geolocation Js.t
   val is_supported : unit -> bool
 end >>

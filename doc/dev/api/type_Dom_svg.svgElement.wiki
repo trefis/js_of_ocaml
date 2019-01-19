@@ -1,238 +1,120 @@
 <<code language="ocaml" | object
-  method animationsPaused : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method appendChild :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method attributes :
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Dom.namedNodeMap Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
+  method animationsPaused : bool Js.t Js.meth
+  method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
+  method attributes : Dom.attr Dom.namedNodeMap Js.t Js.readonly_prop
   method checkEnclosure :
-    Dom_svg.element Js_of_ocaml__.Js.t ->
-    Dom_svg.rect Js_of_ocaml__.Js.t -> bool Js_of_ocaml__.Js.t
+    Dom_svg.element Js.t -> Dom_svg.rect Js.t -> bool Js.t
   method checkIntersection :
-    Dom_svg.element Js_of_ocaml__.Js.t ->
-    Dom_svg.rect Js_of_ocaml__.Js.t -> bool Js_of_ocaml__.Js.t
-  method childNodes :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Dom.nodeList Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.prop
-  method className :
-    Dom_svg.animatedString Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method cloneNode :
-    bool Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+    Dom_svg.element Js.t -> Dom_svg.rect Js.t -> bool Js.t
+  method childNodes : Dom.node Dom.nodeList Js.t Js.prop
+  method className : Dom_svg.animatedString Js.t Js.readonly_prop
+  method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
   method compareDocumentPosition :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.DocumentPosition.t Js_of_ocaml__.Js.meth
-  method contentScriptType :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method contentStyleType :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method createSVGAngle :
-    Dom_svg.angle Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method createSVGLength :
-    Dom_svg.length Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method createSVGMatrix :
-    Dom_svg.matrix Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method createSVGNumber :
-    Js_of_ocaml__.Js.number Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method createSVGPoint :
-    Dom_svg.point Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method createSVGRect :
-    Dom_svg.rect Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method createSVGTransform :
-    Dom_svg.transform Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+    Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
+  method contentScriptType : Js.js_string Js.t Js.prop
+  method contentStyleType : Js.js_string Js.t Js.prop
+  method createSVGAngle : Dom_svg.angle Js.t Js.meth
+  method createSVGLength : Dom_svg.length Js.t Js.meth
+  method createSVGMatrix : Dom_svg.matrix Js.t Js.meth
+  method createSVGNumber : Js.number Js.t Js.meth
+  method createSVGPoint : Dom_svg.point Js.t Js.meth
+  method createSVGRect : Dom_svg.rect Js.t Js.meth
+  method createSVGTransform : Dom_svg.transform Js.t Js.meth
   method createSVGTransformFromMatrix :
-    Dom_svg.matrix Js_of_ocaml__.Js.t ->
-    Dom_svg.transform Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method currentScale : float Js_of_ocaml__.Js.prop
-  method currentTranslate :
-    Dom_svg.point Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method currentView :
-    Dom_svg.viewSpec Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method deselectAll : unit Js_of_ocaml__.Js.meth
+    Dom_svg.matrix Js.t -> Dom_svg.transform Js.t Js.meth
+  method currentScale : float Js.prop
+  method currentTranslate : Dom_svg.point Js.t Js.readonly_prop
+  method currentView : Dom_svg.viewSpec Js.t Js.readonly_prop
+  method deselectAll : unit Js.meth
   method externalResourcesRequired :
-    Dom_svg.animatedBoolean Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method farthestViewportElement :
-    Dom_svg.element Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method firstChild :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.prop
-  method forceRedraw : unit Js_of_ocaml__.Js.meth
-  method getAttribute :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
+    Dom_svg.animatedBoolean Js.t Js.readonly_prop
+  method farthestViewportElement : Dom_svg.element Js.t Js.readonly_prop
+  method firstChild : Dom.node Js.t Js.opt Js.prop
+  method forceRedraw : unit Js.meth
+  method getAttribute : Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
   method getAttributeNS :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method getAttributeNode :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
+    Js.js_string Js.t ->
+    Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+  method getAttributeNode : Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
   method getAttributeNodeNS :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method getBBox : Dom_svg.rect Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method getCTM : Dom_svg.matrix Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method getCurrentTime : float Js_of_ocaml__.Js.meth
-  method getElementById :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.element Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+    Js.js_string Js.t -> Js.js_string Js.t -> Dom.attr Js.t Js.opt Js.meth
+  method getBBox : Dom_svg.rect Js.t Js.meth
+  method getCTM : Dom_svg.matrix Js.t Js.meth
+  method getCurrentTime : float Js.meth
+  method getElementById : Js.js_string Js.t -> Dom.element Js.t Js.meth
   method getElementsByTagName :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.element Js_of_ocaml__.Dom.nodeList Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.meth
+    Js.js_string Js.t -> Dom.element Dom.nodeList Js.t Js.meth
   method getEnclosureList :
-    Dom_svg.rect Js_of_ocaml__.Js.t ->
-    Dom_svg.element Js_of_ocaml__.Js.t ->
-    Dom_svg.element Js_of_ocaml__.Dom.nodeList Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.meth
+    Dom_svg.rect Js.t ->
+    Dom_svg.element Js.t -> Dom_svg.element Dom.nodeList Js.t Js.meth
   method getIntersectionList :
-    Dom_svg.rect Js_of_ocaml__.Js.t ->
-    Dom_svg.element Js_of_ocaml__.Js.t ->
-    Dom_svg.element Js_of_ocaml__.Dom.nodeList Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.meth
-  method getScreenCTM :
-    Dom_svg.matrix Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+    Dom_svg.rect Js.t ->
+    Dom_svg.element Js.t -> Dom_svg.element Dom.nodeList Js.t Js.meth
+  method getScreenCTM : Dom_svg.matrix Js.t Js.meth
   method getTransformToElement :
-    Dom_svg.element Js_of_ocaml__.Js.t ->
-    Dom_svg.matrix Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method hasAttribute :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+    Dom_svg.element Js.t -> Dom_svg.matrix Js.t Js.meth
+  method hasAttribute : Js.js_string Js.t -> bool Js.t Js.meth
   method hasAttributeNS :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method hasChildNodes : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method hasExtension :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method height :
-    Dom_svg.animatedLength Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method id :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+    Js.js_string Js.t -> Js.js_string Js.t -> bool Js.t Js.meth
+  method hasChildNodes : bool Js.t Js.meth
+  method hasExtension : Js.js_string Js.t -> bool Js.t Js.meth
+  method height : Dom_svg.animatedLength Js.t Js.readonly_prop
+  method id : Js.js_string Js.t Js.prop
   method insertBefore :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt ->
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method lastChild :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.prop
+    Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
+  method lastChild : Dom.node Js.t Js.opt Js.prop
   method lookupNamespaceURI :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method lookupPrefix :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method namespaceURI :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.prop
-  method nearestViewportElement :
-    Dom_svg.element Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method nextSibling :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.prop
-  method nodeName :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method nodeType : Js_of_ocaml__.Dom.nodeType Js_of_ocaml__.Js.readonly_prop
-  method nodeValue :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.readonly_prop
-  method ownerSVGElement :
-    Dom_svg.svgElement Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method parentNode :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.prop
-  method pauseAnimations : unit Js_of_ocaml__.Js.meth
-  method pixelUnitToMillimeterX : float Js_of_ocaml__.Js.readonly_prop
-  method pixelUnitToMillimeterY : float Js_of_ocaml__.Js.readonly_prop
+    Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+  method lookupPrefix : Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+  method namespaceURI : Js.js_string Js.t Js.opt Js.prop
+  method nearestViewportElement : Dom_svg.element Js.t Js.readonly_prop
+  method nextSibling : Dom.node Js.t Js.opt Js.prop
+  method nodeName : Js.js_string Js.t Js.readonly_prop
+  method nodeType : Dom.nodeType Js.readonly_prop
+  method nodeValue : Js.js_string Js.t Js.opt Js.readonly_prop
+  method ownerSVGElement : Dom_svg.svgElement Js.t Js.readonly_prop
+  method parentNode : Dom.node Js.t Js.opt Js.prop
+  method pauseAnimations : unit Js.meth
+  method pixelUnitToMillimeterX : float Js.readonly_prop
+  method pixelUnitToMillimeterY : float Js.readonly_prop
   method preserveAspectRatio :
-    Dom_svg.animatedPreserveAspectRatio Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method previousSibling :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.prop
-  method removeAttribute :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
+    Dom_svg.animatedPreserveAspectRatio Js.t Js.readonly_prop
+  method previousSibling : Dom.node Js.t Js.opt Js.prop
+  method removeAttribute : Js.js_string Js.t -> unit Js.meth
   method removeAttributeNS :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
-  method removeAttributeNode :
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method removeChild :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+    Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+  method removeAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.meth
+  method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
   method replaceChild :
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method requiredExtensions :
-    Dom_svg.stringList Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method requiredFeatures :
-    Dom_svg.stringList Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method screenPixelUnitToMillimeterX : float Js_of_ocaml__.Js.readonly_prop
-  method screenPixelUnitToMillimeterY : float Js_of_ocaml__.Js.readonly_prop
+    Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
+  method requiredExtensions : Dom_svg.stringList Js.t Js.readonly_prop
+  method requiredFeatures : Dom_svg.stringList Js.t Js.readonly_prop
+  method screenPixelUnitToMillimeterX : float Js.readonly_prop
+  method screenPixelUnitToMillimeterY : float Js.readonly_prop
   method setAttribute :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
+    Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
   method setAttributeNS :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
-  method setAttributeNode :
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method setAttributeNodeNS :
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Dom.attr Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method setCurrentTime : int -> unit Js_of_ocaml__.Js.meth
-  method style :
-    Js_of_ocaml__.Dom_html.cssStyleDeclaration Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method suspendRedraw : int -> Dom_svg.suspendHandleID Js_of_ocaml__.Js.meth
-  method systemLanguage :
-    Dom_svg.stringList Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method tagName :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method unpauseAnimations : unit Js_of_ocaml__.Js.meth
-  method unsuspendRedraw :
-    Dom_svg.suspendHandleID -> unit Js_of_ocaml__.Js.meth
-  method unsuspendRedrawAll : unit Js_of_ocaml__.Js.meth
-  method useCurrentView :
-    bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method viewBox :
-    Dom_svg.animatedRect Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method viewport :
-    Dom_svg.rect Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method viewportElement :
-    Dom_svg.element Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method width :
-    Dom_svg.animatedLength Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method x :
-    Dom_svg.animatedLength Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method xmlbase :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method xmllang :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method xmlspace :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method y :
-    Dom_svg.animatedLength Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method zoomAndPan : Dom_svg.zoomAndPanType Js_of_ocaml__.Js.prop
+    Js.js_string Js.t ->
+    Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
+  method setAttributeNode : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+  method setAttributeNodeNS : Dom.attr Js.t -> Dom.attr Js.t Js.opt Js.meth
+  method setCurrentTime : int -> unit Js.meth
+  method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
+  method suspendRedraw : int -> Dom_svg.suspendHandleID Js.meth
+  method systemLanguage : Dom_svg.stringList Js.t Js.readonly_prop
+  method tagName : Js.js_string Js.t Js.readonly_prop
+  method unpauseAnimations : unit Js.meth
+  method unsuspendRedraw : Dom_svg.suspendHandleID -> unit Js.meth
+  method unsuspendRedrawAll : unit Js.meth
+  method useCurrentView : bool Js.t Js.readonly_prop
+  method viewBox : Dom_svg.animatedRect Js.t Js.readonly_prop
+  method viewport : Dom_svg.rect Js.t Js.readonly_prop
+  method viewportElement : Dom_svg.element Js.t Js.readonly_prop
+  method width : Dom_svg.animatedLength Js.t Js.readonly_prop
+  method x : Dom_svg.animatedLength Js.t Js.readonly_prop
+  method xmlbase : Js.js_string Js.t Js.prop
+  method xmllang : Js.js_string Js.t Js.prop
+  method xmlspace : Js.js_string Js.t Js.prop
+  method y : Dom_svg.animatedLength Js.t Js.readonly_prop
+  method zoomAndPan : Dom_svg.zoomAndPanType Js.prop
 end >>

@@ -2,433 +2,239 @@
   module type Shared =
     sig
       class type object_options =
-        object
-          method localeMatcher :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.prop
-        end
-      val object_options :
-        unit -> Intl.Shared.object_options Js_of_ocaml__.Js.t
+        object method localeMatcher : Js.js_string Js.t Js.prop end
+      val object_options : unit -> Intl.Shared.object_options Js.t
       class type _object =
         object
           method supportedLocalesOf :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t ->
-            Intl.Shared.object_options Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef ->
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.meth
+            Js.js_string Js.t Js.js_array Js.t ->
+            Intl.Shared.object_options Js.t Js.optdef ->
+            Js.js_string Js.t Js.js_array Js.t Js.meth
         end
     end
   module Collator :
     sig
       class type object_options =
-        object
-          method localeMatcher :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.prop
-        end
-      val object_options : unit -> object_options Js_of_ocaml__.Js.t
+        object method localeMatcher : Js.js_string Js.t Js.prop end
+      val object_options : unit -> object_options Js.t
       class type _object =
         object
           method supportedLocalesOf :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t ->
-            object_options Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef ->
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.meth
+            Js.js_string Js.t Js.js_array Js.t ->
+            object_options Js.t Js.optdef ->
+            Js.js_string Js.t Js.js_array Js.t Js.meth
         end
       class type resolved_options =
         object
-          method caseFirst :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.readonly_prop
-          method collation :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.readonly_prop
-          method ignorePunctuation :
-            bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-          method locale :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.readonly_prop
-          method numeric :
-            bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-          method sensitivity :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.readonly_prop
-          method usage :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.readonly_prop
+          method caseFirst : Js.js_string Js.t Js.readonly_prop
+          method collation : Js.js_string Js.t Js.readonly_prop
+          method ignorePunctuation : bool Js.t Js.readonly_prop
+          method locale : Js.js_string Js.t Js.readonly_prop
+          method numeric : bool Js.t Js.readonly_prop
+          method sensitivity : Js.js_string Js.t Js.readonly_prop
+          method usage : Js.js_string Js.t Js.readonly_prop
         end
       class type options =
         object
-          method caseFirst :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.prop
-          method ignorePunctuation :
-            bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-          method localeMatcher :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.prop
-          method numeric : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-          method sensitivity :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.prop
-          method usage :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.prop
+          method caseFirst : Js.js_string Js.t Js.prop
+          method ignorePunctuation : bool Js.t Js.prop
+          method localeMatcher : Js.js_string Js.t Js.prop
+          method numeric : bool Js.t Js.prop
+          method sensitivity : Js.js_string Js.t Js.prop
+          method usage : Js.js_string Js.t Js.prop
         end
-      val options : unit -> Intl.Collator.options Js_of_ocaml__.Js.t
+      val options : unit -> Intl.Collator.options Js.t
       class type t =
         object
           method compare :
-            (Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-             Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t -> int)
-            Js_of_ocaml__.Js.readonly_prop
+            (Js.js_string Js.t -> Js.js_string Js.t -> int) Js.readonly_prop
           method resolvedOptions :
-            unit ->
-            Intl.Collator.resolved_options Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.meth
+            unit -> Intl.Collator.resolved_options Js.t Js.meth
         end
     end
   module DateTimeFormat :
     sig
       class type object_options =
-        object
-          method localeMatcher :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.prop
-        end
-      val object_options : unit -> object_options Js_of_ocaml__.Js.t
+        object method localeMatcher : Js.js_string Js.t Js.prop end
+      val object_options : unit -> object_options Js.t
       class type _object =
         object
           method supportedLocalesOf :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t ->
-            object_options Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef ->
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.meth
+            Js.js_string Js.t Js.js_array Js.t ->
+            object_options Js.t Js.optdef ->
+            Js.js_string Js.t Js.js_array Js.t Js.meth
         end
       class type resolved_options =
         object
-          method calendar :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.readonly_prop
-          method day :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef_prop
-          method era :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef_prop
-          method hour :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef_prop
-          method hour12 :
-            bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-          method locale :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.readonly_prop
-          method minute :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef_prop
-          method month :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef_prop
-          method numberingSystem :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.readonly_prop
-          method second :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef_prop
-          method timeZone :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.readonly_prop
-          method timeZoneName :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef_prop
-          method weekday :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef_prop
-          method year :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef_prop
+          method calendar : Js.js_string Js.t Js.readonly_prop
+          method day : Js.js_string Js.t Js.optdef_prop
+          method era : Js.js_string Js.t Js.optdef_prop
+          method hour : Js.js_string Js.t Js.optdef_prop
+          method hour12 : bool Js.t Js.readonly_prop
+          method locale : Js.js_string Js.t Js.readonly_prop
+          method minute : Js.js_string Js.t Js.optdef_prop
+          method month : Js.js_string Js.t Js.optdef_prop
+          method numberingSystem : Js.js_string Js.t Js.readonly_prop
+          method second : Js.js_string Js.t Js.optdef_prop
+          method timeZone : Js.js_string Js.t Js.readonly_prop
+          method timeZoneName : Js.js_string Js.t Js.optdef_prop
+          method weekday : Js.js_string Js.t Js.optdef_prop
+          method year : Js.js_string Js.t Js.optdef_prop
         end
       class type options =
         object
-          method day :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-          method era :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-          method formatMatcher :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.prop
-          method hour :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-          method hour12 :
-            bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
-            Js_of_ocaml__.Js.prop
-          method hourCycle :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-          method localeMatcher :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.prop
-          method minute :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-          method month :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-          method second :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-          method timeZone :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-          method timeZoneName :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-          method weekday :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-          method year :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
+          method day : Js.js_string Js.t Js.optdef Js.prop
+          method era : Js.js_string Js.t Js.optdef Js.prop
+          method formatMatcher : Js.js_string Js.t Js.prop
+          method hour : Js.js_string Js.t Js.optdef Js.prop
+          method hour12 : bool Js.t Js.optdef Js.prop
+          method hourCycle : Js.js_string Js.t Js.optdef Js.prop
+          method localeMatcher : Js.js_string Js.t Js.prop
+          method minute : Js.js_string Js.t Js.optdef Js.prop
+          method month : Js.js_string Js.t Js.optdef Js.prop
+          method second : Js.js_string Js.t Js.optdef Js.prop
+          method timeZone : Js.js_string Js.t Js.optdef Js.prop
+          method timeZoneName : Js.js_string Js.t Js.optdef Js.prop
+          method weekday : Js.js_string Js.t Js.optdef Js.prop
+          method year : Js.js_string Js.t Js.optdef Js.prop
         end
-      val options : unit -> Intl.DateTimeFormat.options Js_of_ocaml__.Js.t
+      val options : unit -> Intl.DateTimeFormat.options Js.t
       class type format_part =
         object
-          method _type :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.readonly_prop
-          method _value :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.readonly_prop
+          method _type : Js.js_string Js.t Js.readonly_prop
+          method _value : Js.js_string Js.t Js.readonly_prop
         end
       class type t =
         object
           method format :
-            (Js_of_ocaml__.Js.date Js_of_ocaml__.Js.t ->
-             Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t)
-            Js_of_ocaml__.Js.readonly_prop
+            (Js.date Js.t -> Js.js_string Js.t) Js.readonly_prop
           method formatToParts :
-            Js_of_ocaml__.Js.date Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef ->
-            Intl.DateTimeFormat.format_part Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.meth
+            Js.date Js.t Js.optdef ->
+            Intl.DateTimeFormat.format_part Js.t Js.js_array Js.t Js.meth
           method resolvedOptions :
-            unit ->
-            Intl.DateTimeFormat.resolved_options Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.meth
+            unit -> Intl.DateTimeFormat.resolved_options Js.t Js.meth
         end
     end
   module NumberFormat :
     sig
       class type object_options =
-        object
-          method localeMatcher :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.prop
-        end
-      val object_options : unit -> object_options Js_of_ocaml__.Js.t
+        object method localeMatcher : Js.js_string Js.t Js.prop end
+      val object_options : unit -> object_options Js.t
       class type _object =
         object
           method supportedLocalesOf :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t ->
-            object_options Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef ->
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.meth
+            Js.js_string Js.t Js.js_array Js.t ->
+            object_options Js.t Js.optdef ->
+            Js.js_string Js.t Js.js_array Js.t Js.meth
         end
       class type resolved_options =
         object
-          method currency :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef_prop
-          method currencyDisplay :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef_prop
-          method locale :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.readonly_prop
-          method maximumFractionDigits : int Js_of_ocaml__.Js.optdef_prop
-          method maximumSignificantDigits : int Js_of_ocaml__.Js.optdef_prop
-          method minimumFractionDigits : int Js_of_ocaml__.Js.optdef_prop
-          method minimumIntegerDigits : int Js_of_ocaml__.Js.optdef_prop
-          method minimumSignificantDigits : int Js_of_ocaml__.Js.optdef_prop
-          method numberingSystem :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.readonly_prop
-          method style :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.readonly_prop
-          method useGrouping :
-            bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
+          method currency : Js.js_string Js.t Js.optdef_prop
+          method currencyDisplay : Js.js_string Js.t Js.optdef_prop
+          method locale : Js.js_string Js.t Js.readonly_prop
+          method maximumFractionDigits : int Js.optdef_prop
+          method maximumSignificantDigits : int Js.optdef_prop
+          method minimumFractionDigits : int Js.optdef_prop
+          method minimumIntegerDigits : int Js.optdef_prop
+          method minimumSignificantDigits : int Js.optdef_prop
+          method numberingSystem : Js.js_string Js.t Js.readonly_prop
+          method style : Js.js_string Js.t Js.readonly_prop
+          method useGrouping : bool Js.t Js.readonly_prop
         end
       class type options =
         object
-          method currency :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-          method currencyDisplay :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-          method localeMatcher :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.prop
-          method maximumFractionDigits :
-            int Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-          method maximumSignificantDigits :
-            int Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-          method minimumFractionDigits :
-            int Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-          method minimumIntegerDigits :
-            int Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-          method minimumSignificantDigits :
-            int Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
-          method style :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.prop
-          method useGrouping : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+          method currency : Js.js_string Js.t Js.optdef Js.prop
+          method currencyDisplay : Js.js_string Js.t Js.optdef Js.prop
+          method localeMatcher : Js.js_string Js.t Js.prop
+          method maximumFractionDigits : int Js.optdef Js.prop
+          method maximumSignificantDigits : int Js.optdef Js.prop
+          method minimumFractionDigits : int Js.optdef Js.prop
+          method minimumIntegerDigits : int Js.optdef Js.prop
+          method minimumSignificantDigits : int Js.optdef Js.prop
+          method style : Js.js_string Js.t Js.prop
+          method useGrouping : bool Js.t Js.prop
         end
-      val options : unit -> Intl.NumberFormat.options Js_of_ocaml__.Js.t
+      val options : unit -> Intl.NumberFormat.options Js.t
       class type format_part =
         object
-          method _type :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.readonly_prop
-          method _value :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.readonly_prop
+          method _type : Js.js_string Js.t Js.readonly_prop
+          method _value : Js.js_string Js.t Js.readonly_prop
         end
       class type t =
         object
           method format :
-            (Js_of_ocaml__.Js.number Js_of_ocaml__.Js.t ->
-             Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t)
-            Js_of_ocaml__.Js.readonly_prop
+            (Js.number Js.t -> Js.js_string Js.t) Js.readonly_prop
           method formatToParts :
-            Js_of_ocaml__.Js.number Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.optdef ->
-            Intl.NumberFormat.format_part Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.meth
+            Js.number Js.t Js.optdef ->
+            Intl.NumberFormat.format_part Js.t Js.js_array Js.t Js.meth
           method resolvedOptions :
-            unit ->
-            Intl.NumberFormat.resolved_options Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.meth
+            unit -> Intl.NumberFormat.resolved_options Js.t Js.meth
         end
     end
   module PluralRules :
     sig
       class type object_options =
-        object
-          method localeMatcher :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.prop
-        end
-      val object_options : unit -> object_options Js_of_ocaml__.Js.t
+        object method localeMatcher : Js.js_string Js.t Js.prop end
+      val object_options : unit -> object_options Js.t
       class type _object =
         object
           method supportedLocalesOf :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t ->
-            object_options Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef ->
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.meth
+            Js.js_string Js.t Js.js_array Js.t ->
+            object_options Js.t Js.optdef ->
+            Js.js_string Js.t Js.js_array Js.t Js.meth
         end
       class type resolved_options =
         object
-          method _type :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.readonly_prop
-          method locale :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.readonly_prop
-          method maximumFractionDigits : int Js_of_ocaml__.Js.optdef_prop
-          method maximumSignificantDigits : int Js_of_ocaml__.Js.optdef_prop
-          method minimumFractionDigits : int Js_of_ocaml__.Js.optdef_prop
-          method minimumIntegerDigits : int Js_of_ocaml__.Js.optdef_prop
-          method minimumSignificantDigits : int Js_of_ocaml__.Js.optdef_prop
+          method _type : Js.js_string Js.t Js.readonly_prop
+          method locale : Js.js_string Js.t Js.readonly_prop
+          method maximumFractionDigits : int Js.optdef_prop
+          method maximumSignificantDigits : int Js.optdef_prop
+          method minimumFractionDigits : int Js.optdef_prop
+          method minimumIntegerDigits : int Js.optdef_prop
+          method minimumSignificantDigits : int Js.optdef_prop
           method pluralCategories :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.readonly_prop
+            Js.js_string Js.t Js.js_array Js.t Js.readonly_prop
         end
       class type options =
         object
-          method _type :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.prop
-          method localeMatcher :
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.prop
+          method _type : Js.js_string Js.t Js.prop
+          method localeMatcher : Js.js_string Js.t Js.prop
         end
-      val options : unit -> Intl.PluralRules.options Js_of_ocaml__.Js.t
+      val options : unit -> Intl.PluralRules.options Js.t
       class type t =
         object
           method resolvedOptions :
-            unit ->
-            Intl.PluralRules.resolved_options Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.meth
-          method select :
-            Js_of_ocaml__.Js.number Js_of_ocaml__.Js.t ->
-            Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-            Js_of_ocaml__.Js.meth
+            unit -> Intl.PluralRules.resolved_options Js.t Js.meth
+          method select : Js.number Js.t -> Js.js_string Js.t Js.meth
         end
     end
   class type intl =
     object
-      method _Collator :
-        Intl.Collator._object Js_of_ocaml__.Js.t
-        Js_of_ocaml__.Js.readonly_prop
+      method _Collator : Intl.Collator._object Js.t Js.readonly_prop
       method _DateTimeFormat :
-        Intl.DateTimeFormat._object Js_of_ocaml__.Js.t
-        Js_of_ocaml__.Js.readonly_prop
-      method _NumberFormat :
-        Intl.NumberFormat._object Js_of_ocaml__.Js.t
-        Js_of_ocaml__.Js.readonly_prop
-      method _PluralRules :
-        Intl.PluralRules._object Js_of_ocaml__.Js.t
-        Js_of_ocaml__.Js.readonly_prop
+        Intl.DateTimeFormat._object Js.t Js.readonly_prop
+      method _NumberFormat : Intl.NumberFormat._object Js.t Js.readonly_prop
+      method _PluralRules : Intl.PluralRules._object Js.t Js.readonly_prop
       method getCanonicalLocales :
-        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-        Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t ->
-        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-        Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+        Js.js_string Js.t Js.js_array Js.t ->
+        Js.js_string Js.t Js.js_array Js.t Js.meth
     end
-  val intl : Intl.intl Js_of_ocaml__.Js.t
+  val intl : Intl.intl Js.t
   val collator_constr :
-    (Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.js_array
-     Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef ->
-     Intl.Collator.options Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef ->
-     Intl.Collator.t Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Js.constr
+    (Js.js_string Js.t Js.js_array Js.t Js.optdef ->
+     Intl.Collator.options Js.t Js.optdef -> Intl.Collator.t Js.t)
+    Js.constr
   val dateTimeFormat_constr :
-    (Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.js_array
-     Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef ->
-     Intl.DateTimeFormat.options Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef ->
-     Intl.DateTimeFormat.t Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Js.constr
+    (Js.js_string Js.t Js.js_array Js.t Js.optdef ->
+     Intl.DateTimeFormat.options Js.t Js.optdef -> Intl.DateTimeFormat.t Js.t)
+    Js.constr
   val numberFormat_constr :
-    (Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.js_array
-     Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef ->
-     Intl.NumberFormat.options Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef ->
-     Intl.NumberFormat.t Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Js.constr
+    (Js.js_string Js.t Js.js_array Js.t Js.optdef ->
+     Intl.NumberFormat.options Js.t Js.optdef -> Intl.NumberFormat.t Js.t)
+    Js.constr
   val pluralRules_constr :
-    (Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.js_array
-     Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef ->
-     Intl.PluralRules.options Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef ->
-     Intl.PluralRules.t Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Js.constr
+    (Js.js_string Js.t Js.js_array Js.t Js.optdef ->
+     Intl.PluralRules.options Js.t Js.optdef -> Intl.PluralRules.t Js.t)
+    Js.constr
   val is_supported : unit -> bool
 end >>

@@ -1,29 +1,11 @@
 <<code language="ocaml" | object
-  method _type :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method currentTarget :
-    element Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.readonly_prop
-  method key :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.readonly_prop
-  method newValue :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.readonly_prop
-  method oldValue :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.readonly_prop
-  method srcElement :
-    element Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.readonly_prop
-  method storageArea :
-    Dom_html.storage Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.readonly_prop
-  method target :
-    element Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.readonly_prop
-  method url :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
+  method _type : Js.js_string Js.t Js.readonly_prop
+  method currentTarget : element Js.t Js.opt Js.readonly_prop
+  method key : Js.js_string Js.t Js.opt Js.readonly_prop
+  method newValue : Js.js_string Js.t Js.opt Js.readonly_prop
+  method oldValue : Js.js_string Js.t Js.opt Js.readonly_prop
+  method srcElement : element Js.t Js.opt Js.readonly_prop
+  method storageArea : Dom_html.storage Js.t Js.opt Js.readonly_prop
+  method target : element Js.t Js.opt Js.readonly_prop
+  method url : Js.js_string Js.t Js.readonly_prop
 end >>

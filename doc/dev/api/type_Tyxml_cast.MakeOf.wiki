@@ -2,8 +2,7 @@
   (C : sig
          type 'a elt
          val elt :
-           Js_of_ocaml__.Js_of_ocaml.Dom.node Js_of_ocaml__.Js_of_ocaml.Js.t ->
-           'a Tyxml_cast.MakeOf.elt
+           Js_of_ocaml.Dom.node Js_of_ocaml.Js.t -> 'a Tyxml_cast.MakeOf.elt
        end) ->
   sig
     type 'a elt = 'a C.elt

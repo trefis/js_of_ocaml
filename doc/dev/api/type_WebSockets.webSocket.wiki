@@ -1,128 +1,89 @@
 <<code language="ocaml" | object ('a)
-  method binaryType :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method bufferedAmount : int Js_of_ocaml__.Js.readonly_prop
-  method close : unit Js_of_ocaml__.Js.meth
-  method close_withCode : int -> unit Js_of_ocaml__.Js.meth
-  method close_withCodeAndReason :
-    int ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
-  method extensions :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
+  method binaryType : Js.js_string Js.t Js.prop
+  method bufferedAmount : int Js.readonly_prop
+  method close : unit Js.meth
+  method close_withCode : int -> unit Js.meth
+  method close_withCodeAndReason : int -> Js.js_string Js.t -> unit Js.meth
+  method extensions : Js.js_string Js.t Js.readonly_prop
   method onanimationcancel :
-    ('a Js_of_ocaml__.Js.t,
-     Js_of_ocaml__.Dom_html.animationEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method onanimationend :
-    ('a Js_of_ocaml__.Js.t,
-     Js_of_ocaml__.Dom_html.animationEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method onanimationiteration :
-    ('a Js_of_ocaml__.Js.t,
-     Js_of_ocaml__.Dom_html.animationEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method onanimationstart :
-    ('a Js_of_ocaml__.Js.t,
-     Js_of_ocaml__.Dom_html.animationEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, Dom_html.animationEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method onclick :
-    ('a Js_of_ocaml__.Js.t,
-     Js_of_ocaml__.Dom_html.mouseEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method onclose :
-    ('a Js_of_ocaml__.Js.t, 'a WebSockets.closeEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, 'a WebSockets.closeEvent Js.t) Dom.event_listener
+    Js.writeonly_prop
   method ondblclick :
-    ('a Js_of_ocaml__.Js.t,
-     Js_of_ocaml__.Dom_html.mouseEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method ondrag :
-    ('a Js_of_ocaml__.Js.t,
-     Js_of_ocaml__.Dom_html.dragEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, Dom_html.dragEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method ondragend :
-    ('a Js_of_ocaml__.Js.t,
-     Js_of_ocaml__.Dom_html.dragEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, Dom_html.dragEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method ondragenter :
-    ('a Js_of_ocaml__.Js.t,
-     Js_of_ocaml__.Dom_html.dragEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, Dom_html.dragEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method ondragleave :
-    ('a Js_of_ocaml__.Js.t,
-     Js_of_ocaml__.Dom_html.dragEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, Dom_html.dragEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method ondragover :
-    ('a Js_of_ocaml__.Js.t,
-     Js_of_ocaml__.Dom_html.dragEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, Dom_html.dragEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method ondragstart :
-    ('a Js_of_ocaml__.Js.t,
-     Js_of_ocaml__.Dom_html.dragEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, Dom_html.dragEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method ondrop :
-    ('a Js_of_ocaml__.Js.t,
-     Js_of_ocaml__.Dom_html.dragEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, Dom_html.dragEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method onerror :
-    ('a Js_of_ocaml__.Js.t, 'a Js_of_ocaml__.Dom.event Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, 'a Dom.event Js.t) Dom.event_listener Js.writeonly_prop
   method onkeydown :
-    ('a Js_of_ocaml__.Js.t,
-     Js_of_ocaml__.Dom_html.keyboardEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, Dom_html.keyboardEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method onkeypress :
-    ('a Js_of_ocaml__.Js.t,
-     Js_of_ocaml__.Dom_html.keyboardEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, Dom_html.keyboardEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method onkeyup :
-    ('a Js_of_ocaml__.Js.t,
-     Js_of_ocaml__.Dom_html.keyboardEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, Dom_html.keyboardEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method onmessage :
-    ('a Js_of_ocaml__.Js.t, 'a WebSockets.messageEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, 'a WebSockets.messageEvent Js.t) Dom.event_listener
+    Js.writeonly_prop
   method onmousedown :
-    ('a Js_of_ocaml__.Js.t,
-     Js_of_ocaml__.Dom_html.mouseEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method onmousemove :
-    ('a Js_of_ocaml__.Js.t,
-     Js_of_ocaml__.Dom_html.mouseEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method onmouseout :
-    ('a Js_of_ocaml__.Js.t,
-     Js_of_ocaml__.Dom_html.mouseEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method onmouseover :
-    ('a Js_of_ocaml__.Js.t,
-     Js_of_ocaml__.Dom_html.mouseEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method onmouseup :
-    ('a Js_of_ocaml__.Js.t,
-     Js_of_ocaml__.Dom_html.mouseEvent Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, Dom_html.mouseEvent Js.t) Dom_html.event_listener
+    Js.writeonly_prop
   method onopen :
-    ('a Js_of_ocaml__.Js.t, 'a Js_of_ocaml__.Dom.event Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom.event_listener Js_of_ocaml__.Js.writeonly_prop
+    ('a Js.t, 'a Dom.event Js.t) Dom.event_listener Js.writeonly_prop
   method onscroll :
-    ('a Js_of_ocaml__.Js.t, Js_of_ocaml__.Dom_html.event Js_of_ocaml__.Js.t)
-    Js_of_ocaml__.Dom_html.event_listener Js_of_ocaml__.Js.writeonly_prop
-  method protocol :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method readyState : WebSockets.readyState Js_of_ocaml__.Js.readonly_prop
-  method send :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
-  method send_blob :
-    Js_of_ocaml__.File.blob Js_of_ocaml__.Js.t -> unit Js_of_ocaml__.Js.meth
-  method send_buffer :
-    Js_of_ocaml__.Typed_array.arrayBuffer Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
-  method url :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
+    ('a Js.t, Dom_html.event Js.t) Dom_html.event_listener Js.writeonly_prop
+  method protocol : Js.js_string Js.t Js.readonly_prop
+  method readyState : WebSockets.readyState Js.readonly_prop
+  method send : Js.js_string Js.t -> unit Js.meth
+  method send_blob : File.blob Js.t -> unit Js.meth
+  method send_buffer : Typed_array.arrayBuffer Js.t -> unit Js.meth
+  method url : Js.js_string Js.t Js.readonly_prop
 end >>

@@ -1,20 +1,9 @@
 <<code language="ocaml" | object
-  method caseFirst :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method collation :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method ignorePunctuation :
-    bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method locale :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method numeric : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
-  method sensitivity :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method usage :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
+  method caseFirst : Js.js_string Js.t Js.readonly_prop
+  method collation : Js.js_string Js.t Js.readonly_prop
+  method ignorePunctuation : bool Js.t Js.readonly_prop
+  method locale : Js.js_string Js.t Js.readonly_prop
+  method numeric : bool Js.t Js.readonly_prop
+  method sensitivity : Js.js_string Js.t Js.readonly_prop
+  method usage : Js.js_string Js.t Js.readonly_prop
 end >>

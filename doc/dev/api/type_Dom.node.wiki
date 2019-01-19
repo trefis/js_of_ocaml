@@ -1,53 +1,25 @@
 <<code language="ocaml" | object
-  method appendChild :
-    Dom.node Js_of_ocaml__.Js.t ->
-    Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method childNodes :
-    Dom.node Dom.nodeList Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method cloneNode :
-    bool Js_of_ocaml__.Js.t ->
-    Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+  method appendChild : Dom.node Js.t -> Dom.node Js.t Js.meth
+  method childNodes : Dom.node Dom.nodeList Js.t Js.prop
+  method cloneNode : bool Js.t -> Dom.node Js.t Js.meth
   method compareDocumentPosition :
-    Dom.node Js_of_ocaml__.Js.t ->
-    Dom.DocumentPosition.t Js_of_ocaml__.Js.meth
-  method firstChild :
-    Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt Js_of_ocaml__.Js.prop
-  method hasChildNodes : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+    Dom.node Js.t -> Dom.DocumentPosition.t Js.meth
+  method firstChild : Dom.node Js.t Js.opt Js.prop
+  method hasChildNodes : bool Js.t Js.meth
   method insertBefore :
-    Dom.node Js_of_ocaml__.Js.t ->
-    Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt ->
-    Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method lastChild :
-    Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt Js_of_ocaml__.Js.prop
+    Dom.node Js.t -> Dom.node Js.t Js.opt -> Dom.node Js.t Js.meth
+  method lastChild : Dom.node Js.t Js.opt Js.prop
   method lookupNamespaceURI :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method lookupPrefix :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.meth
-  method namespaceURI :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.prop
-  method nextSibling :
-    Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt Js_of_ocaml__.Js.prop
-  method nodeName :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
-    Js_of_ocaml__.Js.readonly_prop
-  method nodeType : Dom.nodeType Js_of_ocaml__.Js.readonly_prop
-  method nodeValue :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
-    Js_of_ocaml__.Js.readonly_prop
-  method parentNode :
-    Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt Js_of_ocaml__.Js.prop
-  method previousSibling :
-    Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt Js_of_ocaml__.Js.prop
-  method removeChild :
-    Dom.node Js_of_ocaml__.Js.t ->
-    Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+    Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+  method lookupPrefix : Js.js_string Js.t -> Js.js_string Js.t Js.opt Js.meth
+  method namespaceURI : Js.js_string Js.t Js.opt Js.prop
+  method nextSibling : Dom.node Js.t Js.opt Js.prop
+  method nodeName : Js.js_string Js.t Js.readonly_prop
+  method nodeType : Dom.nodeType Js.readonly_prop
+  method nodeValue : Js.js_string Js.t Js.opt Js.readonly_prop
+  method parentNode : Dom.node Js.t Js.opt Js.prop
+  method previousSibling : Dom.node Js.t Js.opt Js.prop
+  method removeChild : Dom.node Js.t -> Dom.node Js.t Js.meth
   method replaceChild :
-    Dom.node Js_of_ocaml__.Js.t ->
-    Dom.node Js_of_ocaml__.Js.t ->
-    Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+    Dom.node Js.t -> Dom.node Js.t -> Dom.node Js.t Js.meth
 end >>

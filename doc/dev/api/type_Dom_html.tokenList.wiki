@@ -1,21 +1,9 @@
 <<code language="ocaml" | object
-  method add :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
-  method contains :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
-  method item :
-    int ->
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
-    Js_of_ocaml__.Js.meth
-  method length : int Js_of_ocaml__.Js.readonly_prop
-  method remove :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    unit Js_of_ocaml__.Js.meth
-  method stringifier :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
-  method toggle :
-    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
-    bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+  method add : Js.js_string Js.t -> unit Js.meth
+  method contains : Js.js_string Js.t -> bool Js.t Js.meth
+  method item : int -> Js.js_string Js.t Js.optdef Js.meth
+  method length : int Js.readonly_prop
+  method remove : Js.js_string Js.t -> unit Js.meth
+  method stringifier : Js.js_string Js.t Js.prop
+  method toggle : Js.js_string Js.t -> bool Js.t Js.meth
 end >>
