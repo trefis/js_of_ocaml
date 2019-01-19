@@ -1,0 +1,23 @@
+<<code language="ocaml" | object
+  method currency :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+    Js_of_ocaml__.Js.optdef_prop
+  method currencyDisplay :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+    Js_of_ocaml__.Js.optdef_prop
+  method locale :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+    Js_of_ocaml__.Js.readonly_prop
+  method maximumFractionDigits : int Js_of_ocaml__.Js.optdef_prop
+  method maximumSignificantDigits : int Js_of_ocaml__.Js.optdef_prop
+  method minimumFractionDigits : int Js_of_ocaml__.Js.optdef_prop
+  method minimumIntegerDigits : int Js_of_ocaml__.Js.optdef_prop
+  method minimumSignificantDigits : int Js_of_ocaml__.Js.optdef_prop
+  method numberingSystem :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+    Js_of_ocaml__.Js.readonly_prop
+  method style :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+    Js_of_ocaml__.Js.readonly_prop
+  method useGrouping : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
+end >>

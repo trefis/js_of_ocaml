@@ -1,1 +1,1 @@
-<<code language="ocaml" | [Dom_svg.pathSeg Js.t] Dom_svg.list >>
+<<code language="ocaml" | [Dom_svg.pathSeg Js_of_ocaml__.Js.t] Dom_svg.list >>

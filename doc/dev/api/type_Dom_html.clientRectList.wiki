@@ -1,4 +1,7 @@
 <<code language="ocaml" | object
-  method item : int -> Dom_html.clientRect Js.t Js.opt Js.meth
-  method length : int Js.readonly_prop
+  method item :
+    int ->
+    Dom_html.clientRect Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
+    Js_of_ocaml__.Js.meth
+  method length : int Js_of_ocaml__.Js.readonly_prop
 end >>

@@ -1,9 +1,11 @@
 <<code language="ocaml" | object
-  method convertToSpecifiedUnits : Dom_svg.lengthUnitType -> unit Js.meth
+  method convertToSpecifiedUnits :
+    Dom_svg.lengthUnitType -> unit Js_of_ocaml__.Js.meth
   method newValueSpecifiedUnits :
-    Dom_svg.lengthUnitType -> float -> unit Js.meth
-  method unitType : Dom_svg.lengthUnitType Js.readonly_prop
-  method value : float Js.prop
-  method valueAsString : Js.js_string Js.t Js.prop
-  method valueInSpecifiedUnits : float Js.prop
+    Dom_svg.lengthUnitType -> float -> unit Js_of_ocaml__.Js.meth
+  method unitType : Dom_svg.lengthUnitType Js_of_ocaml__.Js.readonly_prop
+  method value : float Js_of_ocaml__.Js.prop
+  method valueAsString :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method valueInSpecifiedUnits : float Js_of_ocaml__.Js.prop
 end >>

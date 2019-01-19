@@ -1,1 +1,4 @@
-<<code language="ocaml" | object method animVal : 'a Js.prop method baseVal : 'a Js.prop end >>
+<<code language="ocaml" | object
+  method animVal : 'a Js_of_ocaml__.Js.prop
+  method baseVal : 'a Js_of_ocaml__.Js.prop
+end >>

@@ -1,4 +1,4 @@
 <<code language="ocaml" | object
   method externalResourcesRequired :
-    Dom_svg.animatedBoolean Js.t Js.readonly_prop
+    Dom_svg.animatedBoolean Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
 end >>

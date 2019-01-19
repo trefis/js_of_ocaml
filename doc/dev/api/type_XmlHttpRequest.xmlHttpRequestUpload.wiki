@@ -1,20 +1,26 @@
 <<code language="ocaml" | object ('a)
   method onabort :
-    ('a Js.t, 'a File.progressEvent Js.t) Dom.event_listener
-    Js.writeonly_prop
+    ('a Js_of_ocaml__.Js.t,
+     'a Js_of_ocaml__.File.progressEvent Js_of_ocaml__.Js.t)
+    Js_of_ocaml__.Dom.event_listener Js_of_ocaml__.Js.writeonly_prop
   method onerror :
-    ('a Js.t, 'a File.progressEvent Js.t) Dom.event_listener
-    Js.writeonly_prop
+    ('a Js_of_ocaml__.Js.t,
+     'a Js_of_ocaml__.File.progressEvent Js_of_ocaml__.Js.t)
+    Js_of_ocaml__.Dom.event_listener Js_of_ocaml__.Js.writeonly_prop
   method onload :
-    ('a Js.t, 'a File.progressEvent Js.t) Dom.event_listener
-    Js.writeonly_prop
+    ('a Js_of_ocaml__.Js.t,
+     'a Js_of_ocaml__.File.progressEvent Js_of_ocaml__.Js.t)
+    Js_of_ocaml__.Dom.event_listener Js_of_ocaml__.Js.writeonly_prop
   method onloadend :
-    ('a Js.t, 'a File.progressEvent Js.t) Dom.event_listener
-    Js.writeonly_prop
+    ('a Js_of_ocaml__.Js.t,
+     'a Js_of_ocaml__.File.progressEvent Js_of_ocaml__.Js.t)
+    Js_of_ocaml__.Dom.event_listener Js_of_ocaml__.Js.writeonly_prop
   method onloadstart :
-    ('a Js.t, 'a File.progressEvent Js.t) Dom.event_listener
-    Js.writeonly_prop
+    ('a Js_of_ocaml__.Js.t,
+     'a Js_of_ocaml__.File.progressEvent Js_of_ocaml__.Js.t)
+    Js_of_ocaml__.Dom.event_listener Js_of_ocaml__.Js.writeonly_prop
   method onprogress :
-    ('a Js.t, 'a File.progressEvent Js.t) Dom.event_listener
-    Js.writeonly_prop
+    ('a Js_of_ocaml__.Js.t,
+     'a Js_of_ocaml__.File.progressEvent Js_of_ocaml__.Js.t)
+    Js_of_ocaml__.Dom.event_listener Js_of_ocaml__.Js.writeonly_prop
 end >>

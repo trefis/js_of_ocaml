@@ -15,7 +15,7 @@
     | In of float
     | Pt of float
     | Pc of float
-  type js_t = private Js.js_string Js.t
+  type js_t = private Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
   val string_of_t : CSS.Length.t -> string
   val js : CSS.Length.t -> CSS.Length.js_t
   val ml : CSS.Length.js_t -> CSS.Length.t

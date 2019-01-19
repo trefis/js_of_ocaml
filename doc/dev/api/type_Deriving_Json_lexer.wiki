@@ -1,7 +1,8 @@
 <<code language="ocaml" | sig
   type lexbuf
   val init_lexer :
-    ?buf:Buffer.t -> Lexing.lexbuf -> Deriving_Json_lexer.lexbuf
+    ?buf:Stdlib.Buffer.t ->
+    Stdlib.Lexing.lexbuf -> Deriving_Json_lexer.lexbuf
   val tag_error : typename:string -> Deriving_Json_lexer.lexbuf -> 'a
   val read_int : Deriving_Json_lexer.lexbuf -> int
   val read_bounded_int :

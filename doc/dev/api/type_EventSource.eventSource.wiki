@@ -1,15 +1,16 @@
 <<code language="ocaml" | object ('a)
-  method close : unit Js.meth
+  method close : unit Js_of_ocaml__.Js.meth
   method onerror :
-    ('a Js.t, 'a EventSource.messageEvent Js.t) Dom.event_listener
-    Js.writeonly_prop
+    ('a Js_of_ocaml__.Js.t, 'a EventSource.messageEvent Js_of_ocaml__.Js.t)
+    Js_of_ocaml__.Dom.event_listener Js_of_ocaml__.Js.writeonly_prop
   method onmessage :
-    ('a Js.t, 'a EventSource.messageEvent Js.t) Dom.event_listener
-    Js.writeonly_prop
+    ('a Js_of_ocaml__.Js.t, 'a EventSource.messageEvent Js_of_ocaml__.Js.t)
+    Js_of_ocaml__.Dom.event_listener Js_of_ocaml__.Js.writeonly_prop
   method onopen :
-    ('a Js.t, 'a EventSource.messageEvent Js.t) Dom.event_listener
-    Js.writeonly_prop
-  method readyState : EventSource.state Js.readonly_prop
-  method url : string Js.t Js.readonly_prop
-  method withCredentials : bool Js.t Js.readonly_prop
+    ('a Js_of_ocaml__.Js.t, 'a EventSource.messageEvent Js_of_ocaml__.Js.t)
+    Js_of_ocaml__.Dom.event_listener Js_of_ocaml__.Js.writeonly_prop
+  method readyState : EventSource.state Js_of_ocaml__.Js.readonly_prop
+  method url : string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
+  method withCredentials :
+    bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
 end >>

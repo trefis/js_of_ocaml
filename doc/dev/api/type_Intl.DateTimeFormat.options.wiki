@@ -1,0 +1,41 @@
+<<code language="ocaml" | object
+  method day :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+    Js_of_ocaml__.Js.prop
+  method era :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+    Js_of_ocaml__.Js.prop
+  method formatMatcher :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method hour :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+    Js_of_ocaml__.Js.prop
+  method hour12 :
+    bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
+  method hourCycle :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+    Js_of_ocaml__.Js.prop
+  method localeMatcher :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method minute :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+    Js_of_ocaml__.Js.prop
+  method month :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+    Js_of_ocaml__.Js.prop
+  method second :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+    Js_of_ocaml__.Js.prop
+  method timeZone :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+    Js_of_ocaml__.Js.prop
+  method timeZoneName :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+    Js_of_ocaml__.Js.prop
+  method weekday :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+    Js_of_ocaml__.Js.prop
+  method year :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+    Js_of_ocaml__.Js.prop
+end >>

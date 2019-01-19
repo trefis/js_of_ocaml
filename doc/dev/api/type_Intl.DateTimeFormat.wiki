@@ -1,0 +1,127 @@
+<<code language="ocaml" | sig
+  class type object_options =
+    object
+      method localeMatcher :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+    end
+  val object_options : unit -> object_options Js_of_ocaml__.Js.t
+  class type _object =
+    object
+      method supportedLocalesOf :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t ->
+        object_options Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef ->
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+    end
+  class type resolved_options =
+    object
+      method calendar :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.readonly_prop
+      method day :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.optdef_prop
+      method era :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.optdef_prop
+      method hour :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.optdef_prop
+      method hour12 : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
+      method locale :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.readonly_prop
+      method minute :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.optdef_prop
+      method month :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.optdef_prop
+      method numberingSystem :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.readonly_prop
+      method second :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.optdef_prop
+      method timeZone :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.readonly_prop
+      method timeZoneName :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.optdef_prop
+      method weekday :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.optdef_prop
+      method year :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.optdef_prop
+    end
+  class type options =
+    object
+      method day :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+        Js_of_ocaml__.Js.prop
+      method era :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+        Js_of_ocaml__.Js.prop
+      method formatMatcher :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+      method hour :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+        Js_of_ocaml__.Js.prop
+      method hour12 :
+        bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef Js_of_ocaml__.Js.prop
+      method hourCycle :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+        Js_of_ocaml__.Js.prop
+      method localeMatcher :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+      method minute :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+        Js_of_ocaml__.Js.prop
+      method month :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+        Js_of_ocaml__.Js.prop
+      method second :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+        Js_of_ocaml__.Js.prop
+      method timeZone :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+        Js_of_ocaml__.Js.prop
+      method timeZoneName :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+        Js_of_ocaml__.Js.prop
+      method weekday :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+        Js_of_ocaml__.Js.prop
+      method year :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+        Js_of_ocaml__.Js.prop
+    end
+  val options : unit -> Intl.DateTimeFormat.options Js_of_ocaml__.Js.t
+  class type format_part =
+    object
+      method _type :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.readonly_prop
+      method _value :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.readonly_prop
+    end
+  class type t =
+    object
+      method format :
+        (Js_of_ocaml__.Js.date Js_of_ocaml__.Js.t ->
+         Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t)
+        Js_of_ocaml__.Js.readonly_prop
+      method formatToParts :
+        Js_of_ocaml__.Js.date Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef ->
+        Intl.DateTimeFormat.format_part Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+      method resolvedOptions :
+        unit ->
+        Intl.DateTimeFormat.resolved_options Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.meth
+    end
+end >>

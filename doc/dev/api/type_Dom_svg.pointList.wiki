@@ -1,1 +1,1 @@
-<<code language="ocaml" | [Dom_svg.point Js.t] Dom_svg.list >>
+<<code language="ocaml" | [Dom_svg.point Js_of_ocaml__.Js.t] Dom_svg.list >>

@@ -1,14 +1,28 @@
 <<code language="ocaml" | object
-  method assign : Js.js_string Js.t -> unit Js.meth
-  method hash : Js.js_string Js.t Js.prop
-  method host : Js.js_string Js.t Js.prop
-  method hostname : Js.js_string Js.t Js.prop
-  method href : Js.js_string Js.t Js.prop
-  method origin : Js.js_string Js.t Js.optdef Js.readonly_prop
-  method pathname : Js.js_string Js.t Js.prop
-  method port : Js.js_string Js.t Js.prop
-  method protocol : Js.js_string Js.t Js.prop
-  method reload : unit Js.meth
-  method replace : Js.js_string Js.t -> unit Js.meth
-  method search : Js.js_string Js.t Js.prop
+  method assign :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
+    unit Js_of_ocaml__.Js.meth
+  method hash :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method host :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method hostname :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method href :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method origin :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+    Js_of_ocaml__.Js.readonly_prop
+  method pathname :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method port :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method protocol :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method reload : unit Js_of_ocaml__.Js.meth
+  method replace :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
+    unit Js_of_ocaml__.Js.meth
+  method search :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
 end >>

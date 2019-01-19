@@ -1,10 +1,10 @@
 <<code language="ocaml" | object
-  method appendItem : 'a -> 'a Js.meth
-  method clear : unit Js.meth
-  method getItem : int -> 'a Js.meth
-  method initialize : 'a -> 'a Js.meth
-  method insertItemBefore : 'a -> int -> 'a Js.meth
-  method numberOfItems : int Js.readonly_prop
-  method removeItem : int -> 'a Js.meth
-  method replaceItem : 'a -> int -> 'a Js.meth
+  method appendItem : 'a -> 'a Js_of_ocaml__.Js.meth
+  method clear : unit Js_of_ocaml__.Js.meth
+  method getItem : int -> 'a Js_of_ocaml__.Js.meth
+  method initialize : 'a -> 'a Js_of_ocaml__.Js.meth
+  method insertItemBefore : 'a -> int -> 'a Js_of_ocaml__.Js.meth
+  method numberOfItems : int Js_of_ocaml__.Js.readonly_prop
+  method removeItem : int -> 'a Js_of_ocaml__.Js.meth
+  method replaceItem : 'a -> int -> 'a Js_of_ocaml__.Js.meth
 end >>

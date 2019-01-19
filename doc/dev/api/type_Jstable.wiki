@@ -1,8 +1,15 @@
 <<code language="ocaml" | sig
   type 'a t
   val create : unit -> 'a Jstable.t
-  val add : 'a Jstable.t -> Js.js_string Js.t -> 'a -> unit
-  val remove : 'a Jstable.t -> Js.js_string Js.t -> unit
-  val find : 'a Jstable.t -> Js.js_string Js.t -> 'a Js.optdef
-  val keys : 'a Jstable.t -> Js.js_string Js.t list
+  val add :
+    'a Jstable.t ->
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t -> 'a -> unit
+  val remove :
+    'a Jstable.t -> Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t -> unit
+  val find :
+    'a Jstable.t ->
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
+    'a Js_of_ocaml__.Js.optdef
+  val keys :
+    'a Jstable.t -> Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t list
 end >>

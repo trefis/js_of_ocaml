@@ -288,8 +288,8 @@
       called~.
       ~Typical usage is the following~:
       
-<<code language='ocaml'|Js.coerce_opt (Dom_html.document##getElementById id)
-      Dom_html.CoerceTo.div (fun _ -> assert false)>>
+{{{Js.coerce_opt (Dom_html.document##getElementById id)
+      Dom_html.CoerceTo.div (fun _ -> assert false)}}}
 
 >>
 
@@ -318,13 +318,14 @@
 >>
 <<pre id="VALexport_all" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|export~_all>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|'a <<a_api text="t" | type Js.t >> <<span class="ocsforge_color_delimiter"| -> >> unit>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|export~_all obj>> export every key of <<span class="odocwiki_inlinecode"|obj>> object~.
 
-<<code language='ocaml'|export_all
+{{{
+export_all
   object%js
     method add x y = x +. y
     method abs x = abs_float x
     val zero = 0.
   end
->>
+}}}
 
 >>
 

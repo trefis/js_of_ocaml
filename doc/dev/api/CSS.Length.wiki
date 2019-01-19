@@ -35,7 +35,7 @@
     https~:~/~/developer~.mozilla~.org~/en~/~C~S~S~/length and specification~:
     http~:~/~/www~.w~3~.org~/~T~R~/css~3~-values~/~#lengths
 >>
-<<pre class="ocsforge_color odocwiki_code" id="TYPEjs_t"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|js~_t>> <<span class="ocsforge_color_delimiter"|~=>> private <<span class="odocwiki_type"|<<a_api text="Js.js_string" | class type Js.js_string >> <<a_api text="Js.t" | type Js.t >>>> >><<div class="odocwiki_info"|~Js representation of lengths~.
+<<pre class="ocsforge_color odocwiki_code" id="TYPEjs_t"|<<span class="ocsforge_color_keyword"|type>> <<span class="odocwiki_name"|js~_t>> <<span class="ocsforge_color_delimiter"|~=>> private <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Js_of_ocaml__>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|js_string>> <<span class="ocsforge_color_uid"|Js_of_ocaml__>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_uid"|Js>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>> >><<div class="odocwiki_info"|~Js representation of lengths~.
 >>
 
 ~Conversion functions

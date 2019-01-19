@@ -1,9 +1,9 @@
 <<code language="ocaml" | sig
   type 'a t
   val make :
-    (Buffer.t -> 'a -> unit) ->
+    (Stdlib.Buffer.t -> 'a -> unit) ->
     (Deriving_Json_lexer.lexbuf -> 'a) -> 'a Deriving_Json.t
-  val write : 'a Deriving_Json.t -> Buffer.t -> 'a -> unit
+  val write : 'a Deriving_Json.t -> Stdlib.Buffer.t -> 'a -> unit
   val read : 'a Deriving_Json.t -> Deriving_Json_lexer.lexbuf -> 'a
   val to_string : 'a Deriving_Json.t -> 'a -> string
   val from_string : 'a Deriving_Json.t -> string -> 'a
@@ -11,7 +11,7 @@
     sig
       type a
       val t : Deriving_Json.Json.a Deriving_Json.t
-      val write : Buffer.t -> Deriving_Json.Json.a -> unit
+      val write : Stdlib.Buffer.t -> Deriving_Json.Json.a -> unit
       val read : Deriving_Json_lexer.lexbuf -> Deriving_Json.Json.a
       val to_string : Deriving_Json.Json.a -> string
       val from_string : string -> Deriving_Json.Json.a
@@ -48,13 +48,13 @@
   module type Json_min =
     sig
       type a
-      val write : Buffer.t -> Deriving_Json.Json_min.a -> unit
+      val write : Stdlib.Buffer.t -> Deriving_Json.Json_min.a -> unit
       val read : Deriving_Json_lexer.lexbuf -> Deriving_Json.Json_min.a
     end
   module type Json_min' =
     sig
       type a
-      val write : Buffer.t -> Deriving_Json.Json_min'.a -> unit
+      val write : Stdlib.Buffer.t -> Deriving_Json.Json_min'.a -> unit
       val read : Deriving_Json_lexer.lexbuf -> Deriving_Json.Json_min'.a
       val match_variant : [ `Cst of int | `NCst of int ] -> bool
       val read_variant :
@@ -265,19 +265,22 @@
   val read_list :
     (Deriving_Json_lexer.lexbuf -> 'a) ->
     Deriving_Json_lexer.lexbuf -> 'a list
-  val write_list : (Buffer.t -> 'a -> unit) -> Buffer.t -> 'a list -> unit
+  val write_list :
+    (Stdlib.Buffer.t -> 'a -> unit) -> Stdlib.Buffer.t -> 'a list -> unit
   val read_ref :
     (Deriving_Json_lexer.lexbuf -> 'a) ->
-    Deriving_Json_lexer.lexbuf -> 'a Pervasives.ref
+    Deriving_Json_lexer.lexbuf -> 'a Stdlib.ref
   val write_ref :
-    (Buffer.t -> 'a -> unit) -> Buffer.t -> 'a Pervasives.ref -> unit
+    (Stdlib.Buffer.t -> 'a -> unit) ->
+    Stdlib.Buffer.t -> 'a Stdlib.ref -> unit
   val read_option :
     (Deriving_Json_lexer.lexbuf -> 'a) ->
     Deriving_Json_lexer.lexbuf -> 'a option
   val write_option :
-    (Buffer.t -> 'a -> unit) -> Buffer.t -> 'a option -> unit
+    (Stdlib.Buffer.t -> 'a -> unit) -> Stdlib.Buffer.t -> 'a option -> unit
   val read_array :
     (Deriving_Json_lexer.lexbuf -> 'a) ->
     Deriving_Json_lexer.lexbuf -> 'a array
-  val write_array : (Buffer.t -> 'a -> unit) -> Buffer.t -> 'a array -> unit
+  val write_array :
+    (Stdlib.Buffer.t -> 'a -> unit) -> Stdlib.Buffer.t -> 'a array -> unit
 end >>

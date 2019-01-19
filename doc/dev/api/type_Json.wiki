@@ -1,4 +1,4 @@
 <<code language="ocaml" | sig
-  val output : 'a -> Js.js_string Js.t
-  val unsafe_input : Js.js_string Js.t -> 'a
+  val output : 'a -> Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+  val unsafe_input : Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t -> 'a
 end >>

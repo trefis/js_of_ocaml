@@ -1,0 +1,14 @@
+<<code language="ocaml" | object
+  method format :
+    (Js_of_ocaml__.Js.number Js_of_ocaml__.Js.t ->
+     Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t)
+    Js_of_ocaml__.Js.readonly_prop
+  method formatToParts :
+    Js_of_ocaml__.Js.number Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef ->
+    Intl.NumberFormat.format_part Js_of_ocaml__.Js.t
+    Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+  method resolvedOptions :
+    unit ->
+    Intl.NumberFormat.resolved_options Js_of_ocaml__.Js.t
+    Js_of_ocaml__.Js.meth
+end >>

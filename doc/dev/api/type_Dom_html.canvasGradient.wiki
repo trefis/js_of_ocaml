@@ -1,1 +1,6 @@
-<<code language="ocaml" | object method addColorStop : float -> Js.js_string Js.t -> unit Js.meth end >>
+<<code language="ocaml" | object
+  method addColorStop :
+    float ->
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
+    unit Js_of_ocaml__.Js.meth
+end >>

@@ -1,58 +1,83 @@
 <<code language="ocaml" | sig
-  type 'a typ = 'a Dom.Event.typ
-  val click : Dom_html.mouseEvent Js.t typ
-  val dblclick : Dom_html.mouseEvent Js.t typ
-  val mousedown : Dom_html.mouseEvent Js.t typ
-  val mouseup : Dom_html.mouseEvent Js.t typ
-  val mouseover : Dom_html.mouseEvent Js.t typ
-  val mousemove : Dom_html.mouseEvent Js.t typ
-  val mouseout : Dom_html.mouseEvent Js.t typ
-  val keypress : Dom_html.keyboardEvent Js.t typ
-  val keydown : Dom_html.keyboardEvent Js.t typ
-  val keyup : Dom_html.keyboardEvent Js.t typ
-  val mousewheel : Dom_html.mousewheelEvent Js.t typ
-  val _DOMMouseScroll : Dom_html.mouseScrollEvent Js.t typ
-  val touchstart : Dom_html.touchEvent Js.t typ
-  val touchmove : Dom_html.touchEvent Js.t typ
-  val touchend : Dom_html.touchEvent Js.t typ
-  val touchcancel : Dom_html.touchEvent Js.t typ
-  val dragstart : Dom_html.dragEvent Js.t typ
-  val dragend : Dom_html.dragEvent Js.t typ
-  val dragenter : Dom_html.dragEvent Js.t typ
-  val dragover : Dom_html.dragEvent Js.t typ
-  val dragleave : Dom_html.dragEvent Js.t typ
-  val drag : Dom_html.dragEvent Js.t typ
-  val drop : Dom_html.dragEvent Js.t typ
-  val hashchange : Dom_html.hashChangeEvent Js.t typ
-  val change : Dom_html.event Js.t typ
-  val input : Dom_html.event Js.t typ
-  val timeupdate : Dom_html.event Js.t typ
-  val submit : Dom_html.event Js.t typ
-  val scroll : Dom_html.event Js.t typ
-  val focus : Dom_html.event Js.t typ
-  val blur : Dom_html.event Js.t typ
-  val load : Dom_html.event Js.t typ
-  val unload : Dom_html.event Js.t typ
-  val beforeunload : Dom_html.event Js.t typ
-  val resize : Dom_html.event Js.t typ
-  val orientationchange : Dom_html.event Js.t typ
-  val popstate : Dom_html.popStateEvent Js.t typ
-  val error : Dom_html.event Js.t typ
-  val abort : Dom_html.event Js.t typ
-  val select : Dom_html.event Js.t typ
-  val online : Dom_html.event Js.t typ
-  val offline : Dom_html.event Js.t typ
-  val checking : Dom_html.event Js.t typ
-  val noupdate : Dom_html.event Js.t typ
-  val downloading : Dom_html.event Js.t typ
-  val progress : Dom_html.event Js.t typ
-  val updateready : Dom_html.event Js.t typ
-  val cached : Dom_html.event Js.t typ
-  val obsolete : Dom_html.event Js.t typ
-  val domContentLoaded : Dom_html.event Js.t typ
-  val animationstart : Dom_html.animationEvent Js.t typ
-  val animationend : Dom_html.animationEvent Js.t typ
-  val animationiteration : Dom_html.animationEvent Js.t typ
-  val animationcancel : Dom_html.animationEvent Js.t typ
+  type 'a typ = 'a Js_of_ocaml__.Dom.Event.typ
+  val click : Js_of_ocaml.Dom_html.mouseEvent Js_of_ocaml__.Js.t typ
+  val dblclick : Js_of_ocaml.Dom_html.mouseEvent Js_of_ocaml__.Js.t typ
+  val mousedown : Js_of_ocaml.Dom_html.mouseEvent Js_of_ocaml__.Js.t typ
+  val mouseup : Js_of_ocaml.Dom_html.mouseEvent Js_of_ocaml__.Js.t typ
+  val mouseover : Js_of_ocaml.Dom_html.mouseEvent Js_of_ocaml__.Js.t typ
+  val mousemove : Js_of_ocaml.Dom_html.mouseEvent Js_of_ocaml__.Js.t typ
+  val mouseout : Js_of_ocaml.Dom_html.mouseEvent Js_of_ocaml__.Js.t typ
+  val keypress : Js_of_ocaml.Dom_html.keyboardEvent Js_of_ocaml__.Js.t typ
+  val keydown : Js_of_ocaml.Dom_html.keyboardEvent Js_of_ocaml__.Js.t typ
+  val keyup : Js_of_ocaml.Dom_html.keyboardEvent Js_of_ocaml__.Js.t typ
+  val mousewheel :
+    Js_of_ocaml.Dom_html.mousewheelEvent Js_of_ocaml__.Js.t typ
+  val _DOMMouseScroll :
+    Js_of_ocaml.Dom_html.mouseScrollEvent Js_of_ocaml__.Js.t typ
+  val touchstart : Js_of_ocaml.Dom_html.touchEvent Js_of_ocaml__.Js.t typ
+  val touchmove : Js_of_ocaml.Dom_html.touchEvent Js_of_ocaml__.Js.t typ
+  val touchend : Js_of_ocaml.Dom_html.touchEvent Js_of_ocaml__.Js.t typ
+  val touchcancel : Js_of_ocaml.Dom_html.touchEvent Js_of_ocaml__.Js.t typ
+  val dragstart : Js_of_ocaml.Dom_html.dragEvent Js_of_ocaml__.Js.t typ
+  val dragend : Js_of_ocaml.Dom_html.dragEvent Js_of_ocaml__.Js.t typ
+  val dragenter : Js_of_ocaml.Dom_html.dragEvent Js_of_ocaml__.Js.t typ
+  val dragover : Js_of_ocaml.Dom_html.dragEvent Js_of_ocaml__.Js.t typ
+  val dragleave : Js_of_ocaml.Dom_html.dragEvent Js_of_ocaml__.Js.t typ
+  val drag : Js_of_ocaml.Dom_html.dragEvent Js_of_ocaml__.Js.t typ
+  val drop : Js_of_ocaml.Dom_html.dragEvent Js_of_ocaml__.Js.t typ
+  val hashchange :
+    Js_of_ocaml.Dom_html.hashChangeEvent Js_of_ocaml__.Js.t typ
+  val change : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val input : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val timeupdate : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val submit : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val scroll : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val focus : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val blur : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val load : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val unload : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val beforeunload : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val resize : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val orientationchange : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val popstate : Js_of_ocaml.Dom_html.popStateEvent Js_of_ocaml__.Js.t typ
+  val error : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val abort : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val select : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val online : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val offline : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val checking : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val noupdate : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val downloading : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val progress : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val updateready : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val cached : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val obsolete : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val domContentLoaded : Js_of_ocaml.Dom_html.event Js_of_ocaml__.Js.t typ
+  val animationstart :
+    Js_of_ocaml.Dom_html.animationEvent Js_of_ocaml__.Js.t typ
+  val animationend :
+    Js_of_ocaml.Dom_html.animationEvent Js_of_ocaml__.Js.t typ
+  val animationiteration :
+    Js_of_ocaml.Dom_html.animationEvent Js_of_ocaml__.Js.t typ
+  val animationcancel :
+    Js_of_ocaml.Dom_html.animationEvent Js_of_ocaml__.Js.t typ
+  val canplay : Js_of_ocaml.Dom_html.mediaEvent Js_of_ocaml__.Js.t typ
+  val canplaythrough : Js_of_ocaml.Dom_html.mediaEvent Js_of_ocaml__.Js.t typ
+  val durationchange : Js_of_ocaml.Dom_html.mediaEvent Js_of_ocaml__.Js.t typ
+  val emptied : Js_of_ocaml.Dom_html.mediaEvent Js_of_ocaml__.Js.t typ
+  val ended : Js_of_ocaml.Dom_html.mediaEvent Js_of_ocaml__.Js.t typ
+  val loadeddata : Js_of_ocaml.Dom_html.mediaEvent Js_of_ocaml__.Js.t typ
+  val loadedmetadata : Js_of_ocaml.Dom_html.mediaEvent Js_of_ocaml__.Js.t typ
+  val loadstart : Js_of_ocaml.Dom_html.mediaEvent Js_of_ocaml__.Js.t typ
+  val pause : Js_of_ocaml.Dom_html.mediaEvent Js_of_ocaml__.Js.t typ
+  val play : Js_of_ocaml.Dom_html.mediaEvent Js_of_ocaml__.Js.t typ
+  val playing : Js_of_ocaml.Dom_html.mediaEvent Js_of_ocaml__.Js.t typ
+  val ratechange : Js_of_ocaml.Dom_html.mediaEvent Js_of_ocaml__.Js.t typ
+  val seeked : Js_of_ocaml.Dom_html.mediaEvent Js_of_ocaml__.Js.t typ
+  val seeking : Js_of_ocaml.Dom_html.mediaEvent Js_of_ocaml__.Js.t typ
+  val stalled : Js_of_ocaml.Dom_html.mediaEvent Js_of_ocaml__.Js.t typ
+  val suspend : Js_of_ocaml.Dom_html.mediaEvent Js_of_ocaml__.Js.t typ
+  val volumechange : Js_of_ocaml.Dom_html.mediaEvent Js_of_ocaml__.Js.t typ
+  val waiting : Js_of_ocaml.Dom_html.mediaEvent Js_of_ocaml__.Js.t typ
   val make : string -> 'a typ
 end >>

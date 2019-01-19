@@ -1,11 +1,17 @@
 <<code language="ocaml" | object
-  method clearWatch : Geolocation.watchId -> unit Js.meth
+  method clearWatch : Geolocation.watchId -> unit Js_of_ocaml__.Js.meth
   method getCurrentPosition :
-    (Geolocation.position Js.t -> unit) Js.callback ->
-    (Geolocation.positionError Js.t -> unit) Js.callback ->
-    Geolocation.positionOptions Js.t -> unit Js.meth
+    (Geolocation.position Js_of_ocaml__.Js.t -> unit)
+    Js_of_ocaml__.Js.callback ->
+    (Geolocation.positionError Js_of_ocaml__.Js.t -> unit)
+    Js_of_ocaml__.Js.callback ->
+    Geolocation.positionOptions Js_of_ocaml__.Js.t ->
+    unit Js_of_ocaml__.Js.meth
   method watchPosition :
-    (Geolocation.position Js.t -> unit) Js.callback ->
-    (Geolocation.positionError Js.t -> unit) Js.callback ->
-    Geolocation.positionOptions Js.t -> Geolocation.watchId Js.meth
+    (Geolocation.position Js_of_ocaml__.Js.t -> unit)
+    Js_of_ocaml__.Js.callback ->
+    (Geolocation.positionError Js_of_ocaml__.Js.t -> unit)
+    Js_of_ocaml__.Js.callback ->
+    Geolocation.positionOptions Js_of_ocaml__.Js.t ->
+    Geolocation.watchId Js_of_ocaml__.Js.meth
 end >>

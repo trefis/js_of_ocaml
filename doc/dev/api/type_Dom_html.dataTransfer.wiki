@@ -1,12 +1,28 @@
 <<code language="ocaml" | object
-  method addElement : Dom_html.element Js.t -> unit Js.meth
-  method clearData : Js.js_string Js.t -> unit Js.meth
-  method clearData_all : unit Js.meth
-  method dropEffect : Js.js_string Js.t Js.prop
-  method effectAllowed : Js.js_string Js.t Js.prop
-  method files : File.fileList Js.t Js.readonly_prop
-  method getData : Js.js_string Js.t -> Js.js_string Js.t Js.meth
-  method setData : Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
-  method setDragImage : Dom_html.element Js.t -> int -> int -> unit Js.meth
-  method types : Dom.stringList Js.t Js.readonly_prop
+  method addElement :
+    Dom_html.element Js_of_ocaml__.Js.t -> unit Js_of_ocaml__.Js.meth
+  method clearData :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
+    unit Js_of_ocaml__.Js.meth
+  method clearData_all : unit Js_of_ocaml__.Js.meth
+  method dropEffect :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method effectAllowed :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method files :
+    Js_of_ocaml__.File.fileList Js_of_ocaml__.Js.t
+    Js_of_ocaml__.Js.readonly_prop
+  method getData :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+  method setData :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
+    unit Js_of_ocaml__.Js.meth
+  method setDragImage :
+    Dom_html.element Js_of_ocaml__.Js.t ->
+    int -> int -> unit Js_of_ocaml__.Js.meth
+  method types :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.js_array
+    Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
 end >>

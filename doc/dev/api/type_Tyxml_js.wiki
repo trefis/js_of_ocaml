@@ -9,11 +9,15 @@
       val uri_of_string : (string, uri) W.ft
       type aname = string
       type event_handler =
-          Js_of_ocaml.Dom_html.event Js_of_ocaml.Js.t -> bool
+          Js_of_ocaml__.Js_of_ocaml.Dom_html.event
+          Js_of_ocaml__.Js_of_ocaml.Js.t -> bool
       type mouse_event_handler =
-          Js_of_ocaml.Dom_html.mouseEvent Js_of_ocaml.Js.t -> bool
+          Js_of_ocaml__.Js_of_ocaml.Dom_html.mouseEvent
+          Js_of_ocaml__.Js_of_ocaml.Js.t -> bool
       type keyboard_event_handler =
-          Js_of_ocaml.Dom_html.keyboardEvent Js_of_ocaml.Js.t -> bool
+          Js_of_ocaml__.Js_of_ocaml.Dom_html.keyboardEvent
+          Js_of_ocaml__.Js_of_ocaml.Js.t -> bool
+      type touch_event_handler
       type attrib
       val float_attrib : aname -> float wrap -> attrib
       val int_attrib : aname -> int wrap -> attrib
@@ -24,9 +28,11 @@
       val mouse_event_handler_attrib : aname -> mouse_event_handler -> attrib
       val keyboard_event_handler_attrib :
         aname -> keyboard_event_handler -> attrib
+      val touch_event_handler_attrib : aname -> touch_event_handler -> attrib
       val uri_attrib : aname -> uri wrap -> attrib
       val uris_attrib : aname -> uri list wrap -> attrib
-      type elt = Js_of_ocaml.Dom.node Js_of_ocaml.Js.t
+      type elt =
+          Js_of_ocaml__.Js_of_ocaml.Dom.node Js_of_ocaml__.Js_of_ocaml.Js.t
       type ename = string
       val empty : unit -> elt
       val comment : string -> elt
@@ -61,11 +67,15 @@
       val uri_of_string : (string, uri) W.ft
       type aname = string
       type event_handler =
-          Js_of_ocaml.Dom_html.event Js_of_ocaml.Js.t -> bool
+          Js_of_ocaml__.Js_of_ocaml.Dom_html.event
+          Js_of_ocaml__.Js_of_ocaml.Js.t -> bool
       type mouse_event_handler =
-          Js_of_ocaml.Dom_html.mouseEvent Js_of_ocaml.Js.t -> bool
+          Js_of_ocaml__.Js_of_ocaml.Dom_html.mouseEvent
+          Js_of_ocaml__.Js_of_ocaml.Js.t -> bool
       type keyboard_event_handler =
-          Js_of_ocaml.Dom_html.keyboardEvent Js_of_ocaml.Js.t -> bool
+          Js_of_ocaml__.Js_of_ocaml.Dom_html.keyboardEvent
+          Js_of_ocaml__.Js_of_ocaml.Js.t -> bool
+      type touch_event_handler
       type attrib
       val float_attrib : aname -> float wrap -> attrib
       val int_attrib : aname -> int wrap -> attrib
@@ -76,9 +86,11 @@
       val mouse_event_handler_attrib : aname -> mouse_event_handler -> attrib
       val keyboard_event_handler_attrib :
         aname -> keyboard_event_handler -> attrib
+      val touch_event_handler_attrib : aname -> touch_event_handler -> attrib
       val uri_attrib : aname -> uri wrap -> attrib
       val uris_attrib : aname -> uri list wrap -> attrib
-      type elt = Js_of_ocaml.Dom.node Js_of_ocaml.Js.t
+      type elt =
+          Js_of_ocaml__.Js_of_ocaml.Dom.node Js_of_ocaml__.Js_of_ocaml.Js.t
       type ename = string
       val empty : unit -> elt
       val comment : string -> elt
@@ -120,6 +132,7 @@
           type event_handler = Xml.event_handler
           type mouse_event_handler = Xml.mouse_event_handler
           type keyboard_event_handler = Xml.keyboard_event_handler
+          type touch_event_handler = Xml.touch_event_handler
           type attrib = Xml.attrib
           val float_attrib : aname -> float wrap -> attrib
           val int_attrib : aname -> int wrap -> attrib
@@ -131,6 +144,8 @@
             aname -> mouse_event_handler -> attrib
           val keyboard_event_handler_attrib :
             aname -> keyboard_event_handler -> attrib
+          val touch_event_handler_attrib :
+            aname -> touch_event_handler -> attrib
           val uri_attrib : aname -> uri wrap -> attrib
           val uris_attrib : aname -> uri list wrap -> attrib
           type elt = Xml.elt
@@ -532,7 +547,13 @@
       val a_onmouseover : Xml.mouse_event_handler -> [> `OnMouseOver ] attrib
       val a_onmouseout : Xml.mouse_event_handler -> [> `OnMouseOut ] attrib
       val a_onmousemove : Xml.mouse_event_handler -> [> `OnMouseMove ] attrib
-      val pcdata : string wrap -> [> `PCDATA ] elt
+      val a_ontouchstart :
+        Xml.touch_event_handler -> [> `OnTouchStart ] attrib
+      val a_ontouchend : Xml.touch_event_handler -> [> `OnTouchEnd ] attrib
+      val a_ontouchmove : Xml.touch_event_handler -> [> `OnTouchMove ] attrib
+      val a_ontouchcancel :
+        Xml.touch_event_handler -> [> `OnTouchCancel ] attrib
+      val txt : string wrap -> [> Svg_types.txt ] elt
       val svg :
         ([< Svg_types.svg_attr ], [< Svg_types.svg_content ],
          [> Svg_types.svg ])
@@ -843,6 +864,8 @@
       val foreignObject :
         ?a:Svg_types.foreignobject_attr attrib list ->
         Xml.elt list_wrap -> [> Svg_types.foreignobject ] elt
+      val pcdata : string wrap -> [> Svg_types.txt ] elt
+      val of_seq : Xml_stream.signal Seq.t -> 'a elt list_wrap
       val tot : Xml.elt -> 'a elt
       val totl : Xml.elt list_wrap -> 'a elt list_wrap
       val toelt : 'a elt -> Xml.elt
@@ -894,6 +917,7 @@
           type event_handler = Xml.event_handler
           type mouse_event_handler = Xml.mouse_event_handler
           type keyboard_event_handler = Xml.keyboard_event_handler
+          type touch_event_handler = Xml.touch_event_handler
           type attrib = Xml.attrib
           val float_attrib : aname -> float wrap -> attrib
           val int_attrib : aname -> int wrap -> attrib
@@ -905,6 +929,8 @@
             aname -> mouse_event_handler -> attrib
           val keyboard_event_handler_attrib :
             aname -> keyboard_event_handler -> attrib
+          val touch_event_handler_attrib :
+            aname -> touch_event_handler -> attrib
           val uri_attrib : aname -> uri wrap -> attrib
           val uris_attrib : aname -> uri list wrap -> attrib
           type elt = Xml.elt
@@ -1008,6 +1034,12 @@
       val a_onmouseover : Xml.mouse_event_handler -> [> `OnMouseOver ] attrib
       val a_onmousemove : Xml.mouse_event_handler -> [> `OnMouseMove ] attrib
       val a_onmouseout : Xml.mouse_event_handler -> [> `OnMouseOut ] attrib
+      val a_ontouchstart :
+        Xml.touch_event_handler -> [> `OnTouchStart ] attrib
+      val a_ontouchend : Xml.touch_event_handler -> [> `OnTouchEnd ] attrib
+      val a_ontouchmove : Xml.touch_event_handler -> [> `OnTouchMove ] attrib
+      val a_ontouchcancel :
+        Xml.touch_event_handler -> [> `OnTouchCancel ] attrib
       val a_onkeypress :
         Xml.keyboard_event_handler -> [> `OnKeyPress ] attrib
       val a_onkeydown : Xml.keyboard_event_handler -> [> `OnKeyDown ] attrib
@@ -1203,7 +1235,7 @@
       val a_property : string wrap -> [> `Property ] attrib
       val a_role : string list wrap -> [> `Role ] attrib
       val a_aria : string -> string list wrap -> [> `Aria ] attrib
-      val pcdata : string wrap -> [> Html_types.pcdata ] elt
+      val txt : string wrap -> [> Html_types.txt ] elt
       val html :
         ?a:Html_types.html_attrib attrib list ->
         [< Html_types.head ] elt wrap ->
@@ -1518,6 +1550,10 @@
           | `OnSubmit
           | `OnSuspend
           | `OnTimeUpdate
+          | `OnTouchCancel
+          | `OnTouchEnd
+          | `OnTouchMove
+          | `OnTouchStart
           | `OnVolumeChange
           | `OnWaiting
           | `Rel
@@ -1641,11 +1677,11 @@
         ([< Html_types.output_elt_attrib ],
          [< Html_types.output_elt_content_fun ], [> Html_types.output_elt ])
         star
-      val entity : string -> [> Html_types.pcdata ] elt
-      val space : unit -> [> Html_types.pcdata ] elt
-      val cdata : string -> [> Html_types.pcdata ] elt
-      val cdata_script : string -> [> Html_types.pcdata ] elt
-      val cdata_style : string -> [> Html_types.pcdata ] elt
+      val entity : string -> [> Html_types.txt ] elt
+      val space : unit -> [> Html_types.txt ] elt
+      val cdata : string -> [> Html_types.txt ] elt
+      val cdata_script : string -> [> Html_types.txt ] elt
+      val cdata_style : string -> [> Html_types.txt ] elt
       val details :
         [< Html_types.summary ] elt wrap ->
         ([< Html_types.details_attrib ], [< Html_types.details_content_fun ],
@@ -1691,6 +1727,8 @@
         ([< Html_types.ruby_attrib ], [< Html_types.ruby_content_fun ],
          [> Html_types.ruby ])
         star
+      val pcdata : string wrap -> [> Html_types.pcdata ] elt
+      val of_seq : Xml_stream.signal Seq.t -> 'a elt list_wrap
       val tot : Xml.elt -> 'a elt
       val totl : Xml.elt list_wrap -> 'a elt list_wrap
       val toelt : 'a elt -> Xml.elt
@@ -1742,6 +1780,7 @@
           type event_handler = Xml.event_handler
           type mouse_event_handler = Xml.mouse_event_handler
           type keyboard_event_handler = Xml.keyboard_event_handler
+          type touch_event_handler = Xml.touch_event_handler
           type attrib = Xml.attrib
           val float_attrib : aname -> float wrap -> attrib
           val int_attrib : aname -> int wrap -> attrib
@@ -1753,6 +1792,8 @@
             aname -> mouse_event_handler -> attrib
           val keyboard_event_handler_attrib :
             aname -> keyboard_event_handler -> attrib
+          val touch_event_handler_attrib :
+            aname -> touch_event_handler -> attrib
           val uri_attrib : aname -> uri wrap -> attrib
           val uris_attrib : aname -> uri list wrap -> attrib
           type elt = Xml.elt
@@ -1856,6 +1897,12 @@
       val a_onmouseover : Xml.mouse_event_handler -> [> `OnMouseOver ] attrib
       val a_onmousemove : Xml.mouse_event_handler -> [> `OnMouseMove ] attrib
       val a_onmouseout : Xml.mouse_event_handler -> [> `OnMouseOut ] attrib
+      val a_ontouchstart :
+        Xml.touch_event_handler -> [> `OnTouchStart ] attrib
+      val a_ontouchend : Xml.touch_event_handler -> [> `OnTouchEnd ] attrib
+      val a_ontouchmove : Xml.touch_event_handler -> [> `OnTouchMove ] attrib
+      val a_ontouchcancel :
+        Xml.touch_event_handler -> [> `OnTouchCancel ] attrib
       val a_onkeypress :
         Xml.keyboard_event_handler -> [> `OnKeyPress ] attrib
       val a_onkeydown : Xml.keyboard_event_handler -> [> `OnKeyDown ] attrib
@@ -2051,7 +2098,7 @@
       val a_property : string wrap -> [> `Property ] attrib
       val a_role : string list wrap -> [> `Role ] attrib
       val a_aria : string -> string list wrap -> [> `Aria ] attrib
-      val pcdata : string wrap -> [> Html_types.pcdata ] elt
+      val txt : string wrap -> [> Html_types.txt ] elt
       val html :
         ?a:Html_types.html_attrib attrib list ->
         [< Html_types.head ] elt wrap ->
@@ -2366,6 +2413,10 @@
           | `OnSubmit
           | `OnSuspend
           | `OnTimeUpdate
+          | `OnTouchCancel
+          | `OnTouchEnd
+          | `OnTouchMove
+          | `OnTouchStart
           | `OnVolumeChange
           | `OnWaiting
           | `Rel
@@ -2489,11 +2540,11 @@
         ([< Html_types.output_elt_attrib ],
          [< Html_types.output_elt_content_fun ], [> Html_types.output_elt ])
         star
-      val entity : string -> [> Html_types.pcdata ] elt
-      val space : unit -> [> Html_types.pcdata ] elt
-      val cdata : string -> [> Html_types.pcdata ] elt
-      val cdata_script : string -> [> Html_types.pcdata ] elt
-      val cdata_style : string -> [> Html_types.pcdata ] elt
+      val entity : string -> [> Html_types.txt ] elt
+      val space : unit -> [> Html_types.txt ] elt
+      val cdata : string -> [> Html_types.txt ] elt
+      val cdata_script : string -> [> Html_types.txt ] elt
+      val cdata_style : string -> [> Html_types.txt ] elt
       val details :
         [< Html_types.summary ] elt wrap ->
         ([< Html_types.details_attrib ], [< Html_types.details_content_fun ],
@@ -2539,6 +2590,8 @@
         ([< Html_types.ruby_attrib ], [< Html_types.ruby_content_fun ],
          [> Html_types.ruby ])
         star
+      val pcdata : string wrap -> [> Html_types.pcdata ] elt
+      val of_seq : Xml_stream.signal Seq.t -> 'a elt list_wrap
       val tot : Xml.elt -> 'a elt
       val totl : Xml.elt list_wrap -> 'a elt list_wrap
       val toelt : 'a elt -> Xml.elt
@@ -2590,8 +2643,9 @@
   module Util :
     sig
       val update_children :
-        Js_of_ocaml.Dom.node Js_of_ocaml.Js.t ->
-        Js_of_ocaml.Dom.node Js_of_ocaml.Js.t ReactiveData.RList.t -> unit
+        Js_of_ocaml__.Js_of_ocaml.Dom.node Js_of_ocaml__.Js_of_ocaml.Js.t ->
+        Js_of_ocaml__.Js_of_ocaml.Dom.node Js_of_ocaml__.Js_of_ocaml.Js.t
+        ReactiveData.RList.t -> unit
     end
   module R :
     sig
@@ -2617,11 +2671,15 @@
           val uri_of_string : (string, uri) W.ft
           type aname = string
           type event_handler =
-              Js_of_ocaml.Dom_html.event Js_of_ocaml.Js.t -> bool
+              Js_of_ocaml__.Js_of_ocaml.Dom_html.event
+              Js_of_ocaml__.Js_of_ocaml.Js.t -> bool
           type mouse_event_handler =
-              Js_of_ocaml.Dom_html.mouseEvent Js_of_ocaml.Js.t -> bool
+              Js_of_ocaml__.Js_of_ocaml.Dom_html.mouseEvent
+              Js_of_ocaml__.Js_of_ocaml.Js.t -> bool
           type keyboard_event_handler =
-              Js_of_ocaml.Dom_html.keyboardEvent Js_of_ocaml.Js.t -> bool
+              Js_of_ocaml__.Js_of_ocaml.Dom_html.keyboardEvent
+              Js_of_ocaml__.Js_of_ocaml.Js.t -> bool
+          type touch_event_handler
           type attrib
           val float_attrib : aname -> float wrap -> attrib
           val int_attrib : aname -> int wrap -> attrib
@@ -2633,9 +2691,13 @@
             aname -> mouse_event_handler -> attrib
           val keyboard_event_handler_attrib :
             aname -> keyboard_event_handler -> attrib
+          val touch_event_handler_attrib :
+            aname -> touch_event_handler -> attrib
           val uri_attrib : aname -> uri wrap -> attrib
           val uris_attrib : aname -> uri list wrap -> attrib
-          type elt = Js_of_ocaml.Dom.node Js_of_ocaml.Js.t
+          type elt =
+              Js_of_ocaml__.Js_of_ocaml.Dom.node
+              Js_of_ocaml__.Js_of_ocaml.Js.t
           type ename = string
           val empty : unit -> elt
           val comment : string -> elt
@@ -2677,6 +2739,7 @@
               type event_handler = Xml.event_handler
               type mouse_event_handler = Xml.mouse_event_handler
               type keyboard_event_handler = Xml.keyboard_event_handler
+              type touch_event_handler = Xml.touch_event_handler
               type attrib = Xml.attrib
               val float_attrib : aname -> float wrap -> attrib
               val int_attrib : aname -> int wrap -> attrib
@@ -2688,6 +2751,8 @@
                 aname -> mouse_event_handler -> attrib
               val keyboard_event_handler_attrib :
                 aname -> keyboard_event_handler -> attrib
+              val touch_event_handler_attrib :
+                aname -> touch_event_handler -> attrib
               val uri_attrib : aname -> uri wrap -> attrib
               val uris_attrib : aname -> uri list wrap -> attrib
               type elt = Xml.elt
@@ -3127,7 +3192,15 @@
             Xml.mouse_event_handler -> [> `OnMouseOut ] attrib
           val a_onmousemove :
             Xml.mouse_event_handler -> [> `OnMouseMove ] attrib
-          val pcdata : string wrap -> [> `PCDATA ] elt
+          val a_ontouchstart :
+            Xml.touch_event_handler -> [> `OnTouchStart ] attrib
+          val a_ontouchend :
+            Xml.touch_event_handler -> [> `OnTouchEnd ] attrib
+          val a_ontouchmove :
+            Xml.touch_event_handler -> [> `OnTouchMove ] attrib
+          val a_ontouchcancel :
+            Xml.touch_event_handler -> [> `OnTouchCancel ] attrib
+          val txt : string wrap -> [> Svg_types.txt ] elt
           val svg :
             ([< Svg_types.svg_attr ], [< Svg_types.svg_content ],
              [> Svg_types.svg ])
@@ -3454,6 +3527,8 @@
           val foreignObject :
             ?a:Svg_types.foreignobject_attr attrib list ->
             Xml.elt list_wrap -> [> Svg_types.foreignobject ] elt
+          val pcdata : string wrap -> [> Svg_types.txt ] elt
+          val of_seq : Xml_stream.signal Seq.t -> 'a elt list_wrap
           val tot : Xml.elt -> 'a elt
           val totl : Xml.elt list_wrap -> 'a elt list_wrap
           val toelt : 'a elt -> Xml.elt
@@ -3505,6 +3580,7 @@
               type event_handler = Xml.event_handler
               type mouse_event_handler = Xml.mouse_event_handler
               type keyboard_event_handler = Xml.keyboard_event_handler
+              type touch_event_handler = Xml.touch_event_handler
               type attrib = Xml.attrib
               val float_attrib : aname -> float wrap -> attrib
               val int_attrib : aname -> int wrap -> attrib
@@ -3516,6 +3592,8 @@
                 aname -> mouse_event_handler -> attrib
               val keyboard_event_handler_attrib :
                 aname -> keyboard_event_handler -> attrib
+              val touch_event_handler_attrib :
+                aname -> touch_event_handler -> attrib
               val uri_attrib : aname -> uri wrap -> attrib
               val uris_attrib : aname -> uri list wrap -> attrib
               type elt = Xml.elt
@@ -3634,6 +3712,14 @@
             Xml.mouse_event_handler -> [> `OnMouseMove ] attrib
           val a_onmouseout :
             Xml.mouse_event_handler -> [> `OnMouseOut ] attrib
+          val a_ontouchstart :
+            Xml.touch_event_handler -> [> `OnTouchStart ] attrib
+          val a_ontouchend :
+            Xml.touch_event_handler -> [> `OnTouchEnd ] attrib
+          val a_ontouchmove :
+            Xml.touch_event_handler -> [> `OnTouchMove ] attrib
+          val a_ontouchcancel :
+            Xml.touch_event_handler -> [> `OnTouchCancel ] attrib
           val a_onkeypress :
             Xml.keyboard_event_handler -> [> `OnKeyPress ] attrib
           val a_onkeydown :
@@ -3845,7 +3931,7 @@
           val a_property : string wrap -> [> `Property ] attrib
           val a_role : string list wrap -> [> `Role ] attrib
           val a_aria : string -> string list wrap -> [> `Aria ] attrib
-          val pcdata : string wrap -> [> Html_types.pcdata ] elt
+          val txt : string wrap -> [> Html_types.txt ] elt
           val html :
             ?a:Html_types.html_attrib attrib list ->
             [< Html_types.head ] elt wrap ->
@@ -4167,6 +4253,10 @@
               | `OnSubmit
               | `OnSuspend
               | `OnTimeUpdate
+              | `OnTouchCancel
+              | `OnTouchEnd
+              | `OnTouchMove
+              | `OnTouchStart
               | `OnVolumeChange
               | `OnWaiting
               | `Rel
@@ -4295,11 +4385,11 @@
              [< Html_types.output_elt_content_fun ],
              [> Html_types.output_elt ])
             star
-          val entity : string -> [> Html_types.pcdata ] elt
-          val space : unit -> [> Html_types.pcdata ] elt
-          val cdata : string -> [> Html_types.pcdata ] elt
-          val cdata_script : string -> [> Html_types.pcdata ] elt
-          val cdata_style : string -> [> Html_types.pcdata ] elt
+          val entity : string -> [> Html_types.txt ] elt
+          val space : unit -> [> Html_types.txt ] elt
+          val cdata : string -> [> Html_types.txt ] elt
+          val cdata_script : string -> [> Html_types.txt ] elt
+          val cdata_style : string -> [> Html_types.txt ] elt
           val details :
             [< Html_types.summary ] elt wrap ->
             ([< Html_types.details_attrib ],
@@ -4347,6 +4437,8 @@
             ([< Html_types.ruby_attrib ], [< Html_types.ruby_content_fun ],
              [> Html_types.ruby ])
             star
+          val pcdata : string wrap -> [> Html_types.pcdata ] elt
+          val of_seq : Xml_stream.signal Seq.t -> 'a elt list_wrap
           val tot : Xml.elt -> 'a elt
           val totl : Xml.elt list_wrap -> 'a elt list_wrap
           val toelt : 'a elt -> Xml.elt
@@ -4401,6 +4493,7 @@
               type event_handler = Xml.event_handler
               type mouse_event_handler = Xml.mouse_event_handler
               type keyboard_event_handler = Xml.keyboard_event_handler
+              type touch_event_handler = Xml.touch_event_handler
               type attrib = Xml.attrib
               val float_attrib : aname -> float wrap -> attrib
               val int_attrib : aname -> int wrap -> attrib
@@ -4412,6 +4505,8 @@
                 aname -> mouse_event_handler -> attrib
               val keyboard_event_handler_attrib :
                 aname -> keyboard_event_handler -> attrib
+              val touch_event_handler_attrib :
+                aname -> touch_event_handler -> attrib
               val uri_attrib : aname -> uri wrap -> attrib
               val uris_attrib : aname -> uri list wrap -> attrib
               type elt = Xml.elt
@@ -4530,6 +4625,14 @@
             Xml.mouse_event_handler -> [> `OnMouseMove ] attrib
           val a_onmouseout :
             Xml.mouse_event_handler -> [> `OnMouseOut ] attrib
+          val a_ontouchstart :
+            Xml.touch_event_handler -> [> `OnTouchStart ] attrib
+          val a_ontouchend :
+            Xml.touch_event_handler -> [> `OnTouchEnd ] attrib
+          val a_ontouchmove :
+            Xml.touch_event_handler -> [> `OnTouchMove ] attrib
+          val a_ontouchcancel :
+            Xml.touch_event_handler -> [> `OnTouchCancel ] attrib
           val a_onkeypress :
             Xml.keyboard_event_handler -> [> `OnKeyPress ] attrib
           val a_onkeydown :
@@ -4741,7 +4844,7 @@
           val a_property : string wrap -> [> `Property ] attrib
           val a_role : string list wrap -> [> `Role ] attrib
           val a_aria : string -> string list wrap -> [> `Aria ] attrib
-          val pcdata : string wrap -> [> Html_types.pcdata ] elt
+          val txt : string wrap -> [> Html_types.txt ] elt
           val html :
             ?a:Html_types.html_attrib attrib list ->
             [< Html_types.head ] elt wrap ->
@@ -5063,6 +5166,10 @@
               | `OnSubmit
               | `OnSuspend
               | `OnTimeUpdate
+              | `OnTouchCancel
+              | `OnTouchEnd
+              | `OnTouchMove
+              | `OnTouchStart
               | `OnVolumeChange
               | `OnWaiting
               | `Rel
@@ -5191,11 +5298,11 @@
              [< Html_types.output_elt_content_fun ],
              [> Html_types.output_elt ])
             star
-          val entity : string -> [> Html_types.pcdata ] elt
-          val space : unit -> [> Html_types.pcdata ] elt
-          val cdata : string -> [> Html_types.pcdata ] elt
-          val cdata_script : string -> [> Html_types.pcdata ] elt
-          val cdata_style : string -> [> Html_types.pcdata ] elt
+          val entity : string -> [> Html_types.txt ] elt
+          val space : unit -> [> Html_types.txt ] elt
+          val cdata : string -> [> Html_types.txt ] elt
+          val cdata_script : string -> [> Html_types.txt ] elt
+          val cdata_style : string -> [> Html_types.txt ] elt
           val details :
             [< Html_types.summary ] elt wrap ->
             ([< Html_types.details_attrib ],
@@ -5243,6 +5350,8 @@
             ([< Html_types.ruby_attrib ], [< Html_types.ruby_content_fun ],
              [> Html_types.ruby ])
             star
+          val pcdata : string wrap -> [> Html_types.pcdata ] elt
+          val of_seq : Xml_stream.signal Seq.t -> 'a elt list_wrap
           val tot : Xml.elt -> 'a elt
           val totl : Xml.elt list_wrap -> 'a elt list_wrap
           val toelt : 'a elt -> Xml.elt

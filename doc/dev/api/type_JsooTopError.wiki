@@ -1,4 +1,1 @@
-<<code language="ocaml" | sig
-  exception Camlp4 of (Location.t * exn)
-  val loc : exn -> Location.t option
-end >>
+<<code language="ocaml" | sig val loc : exn -> Location.t option end >>

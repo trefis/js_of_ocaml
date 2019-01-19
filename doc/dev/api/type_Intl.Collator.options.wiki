@@ -1,0 +1,12 @@
+<<code language="ocaml" | object
+  method caseFirst :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method ignorePunctuation : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method localeMatcher :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method numeric : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method sensitivity :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method usage :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+end >>

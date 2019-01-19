@@ -11,8 +11,9 @@
    ~Initialize the js~_of~_ocaml ocamlbuild plugin with the following
    code in //myocamlbuild~.ml//~:
    
-<<code language='ocaml'|     let _ = Ocamlbuild_plugin.dispatch Ocamlbuild_js_of_ocaml.dispatcher
-   >>
+{{{
+     let _ = Ocamlbuild_plugin.dispatch Ocamlbuild_js_of_ocaml.dispatcher
+   }}}
 
    **~Side note**~: <<span class="odocwiki_inlinecode"|~Ocamlbuild~_plugin~.dispatch>> should be used only
    once~. ~The last call will override previous ones~.
@@ -25,7 +26,8 @@
 
    ~If you use oasis~, **myocamlbuild~.ml** should look like~:
    
-<<code language='ocaml'|     let _ =
+{{{
+     let _ =
        Ocamlbuild_plugin.dispatch
          (fun hook ->
             dispatch_default hook;
@@ -33,7 +35,7 @@
               ~oasis_executables:["src/yourprogram.byte"]
               hook;
          )
-   >>
+   }}}
 
 
 
@@ -44,8 +46,9 @@
 
    ~Build a ~Java~Script program **myprog~.js** by calling the command~:
    
-<<code language='ocaml'|     ocamlbuild -use-ocamlfind -plugin-tag "package(js_of_ocaml.ocamlbuild)" myprog.js
-   >>
+{{{
+     ocamlbuild -use-ocamlfind -plugin-tag "package(js_of_ocaml.ocamlbuild)" myprog.js
+   }}}
 
    ~It will first build the bytecode **myprog~.byte** and finally produce **myprog~.js** ~(in **~_build**~)~.
 
@@ -75,8 +78,9 @@
 
    ~In the **~_tags** file~:
    
-<<code language='ocaml'|     <myprog.js>:pretty, opt(3)
-   >>
+{{{
+     <myprog.js>:pretty, opt(3)
+   }}}
 
 
 

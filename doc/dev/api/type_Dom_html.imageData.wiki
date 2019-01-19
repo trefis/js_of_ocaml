@@ -1,5 +1,7 @@
 <<code language="ocaml" | object
-  method data : Dom_html.canvasPixelArray Js.t Js.readonly_prop
-  method height : int Js.readonly_prop
-  method width : int Js.readonly_prop
+  method data :
+    Dom_html.canvasPixelArray Js_of_ocaml__.Js.t
+    Js_of_ocaml__.Js.readonly_prop
+  method height : int Js_of_ocaml__.Js.readonly_prop
+  method width : int Js_of_ocaml__.Js.readonly_prop
 end >>

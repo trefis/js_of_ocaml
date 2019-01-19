@@ -162,11 +162,12 @@
         | HSLA of (int * int * int * float)
       val rgb : ?a:float -> int -> int -> int -> CSS.Color.t
       val hsl : ?a:float -> int -> int -> int -> CSS.Color.t
-      type js_t = private Js.js_string Js.t
+      type js_t = private Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
       val string_of_t : CSS.Color.t -> string
       val js : CSS.Color.t -> CSS.Color.js_t
       val ml : CSS.Color.js_t -> CSS.Color.t
-      val js_t_of_js_string : Js.js_string Js.t -> CSS.Color.js_t
+      val js_t_of_js_string :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t -> CSS.Color.js_t
     end
   module Length :
     sig
@@ -186,7 +187,7 @@
         | In of float
         | Pt of float
         | Pc of float
-      type js_t = private Js.js_string Js.t
+      type js_t = private Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
       val string_of_t : CSS.Length.t -> string
       val js : CSS.Length.t -> CSS.Length.js_t
       val ml : CSS.Length.js_t -> CSS.Length.t
@@ -194,7 +195,7 @@
   module Angle :
     sig
       type t = Deg of float | Grad of float | Rad of float | Turns of float
-      type js_t = private Js.js_string Js.t
+      type js_t = private Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
       val string_of_t : CSS.Angle.t -> string
       val js : CSS.Angle.t -> CSS.Angle.js_t
       val ml : CSS.Angle.js_t -> CSS.Angle.t

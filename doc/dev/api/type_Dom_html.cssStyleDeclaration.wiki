@@ -1,113 +1,225 @@
 <<code language="ocaml" | object
-  method animation : Js.js_string Js.t Js.prop
-  method animationDelay : Js.js_string Js.t Js.prop
-  method animationDirection : Js.js_string Js.t Js.prop
-  method animationDuration : Js.js_string Js.t Js.prop
-  method animationFillMode : Js.js_string Js.t Js.prop
-  method animationIterationCount : Js.js_string Js.t Js.prop
-  method animationName : Js.js_string Js.t Js.prop
-  method animationPlayState : Js.js_string Js.t Js.prop
-  method animationTimingFunction : Js.js_string Js.t Js.prop
-  method background : Js.js_string Js.t Js.prop
-  method backgroundAttachment : Js.js_string Js.t Js.prop
-  method backgroundColor : Js.js_string Js.t Js.prop
-  method backgroundImage : Js.js_string Js.t Js.prop
-  method backgroundPosition : Js.js_string Js.t Js.prop
-  method backgroundRepeat : Js.js_string Js.t Js.prop
-  method border : Js.js_string Js.t Js.prop
-  method borderBottom : Js.js_string Js.t Js.prop
-  method borderBottomColor : Js.js_string Js.t Js.prop
-  method borderBottomStyle : Js.js_string Js.t Js.prop
-  method borderBottomWidth : Js.js_string Js.t Js.prop
-  method borderCollapse : Js.js_string Js.t Js.prop
-  method borderColor : Js.js_string Js.t Js.prop
-  method borderLeft : Js.js_string Js.t Js.prop
-  method borderLeftColor : Js.js_string Js.t Js.prop
-  method borderLeftStyle : Js.js_string Js.t Js.prop
-  method borderLeftWidth : Js.js_string Js.t Js.prop
-  method borderRadius : Js.js_string Js.t Js.prop
-  method borderRight : Js.js_string Js.t Js.prop
-  method borderRightColor : Js.js_string Js.t Js.prop
-  method borderRightStyle : Js.js_string Js.t Js.prop
-  method borderRightWidth : Js.js_string Js.t Js.prop
-  method borderSpacing : Js.js_string Js.t Js.prop
-  method borderStyle : Js.js_string Js.t Js.prop
-  method borderTop : Js.js_string Js.t Js.prop
-  method borderTopColor : Js.js_string Js.t Js.prop
-  method borderTopStyle : Js.js_string Js.t Js.prop
-  method borderTopWidth : Js.js_string Js.t Js.prop
-  method borderWidth : Js.js_string Js.t Js.prop
-  method bottom : Js.js_string Js.t Js.prop
-  method captionSide : Js.js_string Js.t Js.prop
-  method clear : Js.js_string Js.t Js.prop
-  method clip : Js.js_string Js.t Js.prop
-  method color : Js.js_string Js.t Js.prop
-  method content : Js.js_string Js.t Js.prop
-  method counterIncrement : Js.js_string Js.t Js.prop
-  method counterReset : Js.js_string Js.t Js.prop
-  method cssFloat : Js.js_string Js.t Js.prop
-  method cssText : Js.js_string Js.t Js.prop
-  method cursor : Js.js_string Js.t Js.prop
-  method direction : Js.js_string Js.t Js.prop
-  method display : Js.js_string Js.t Js.prop
-  method emptyCells : Js.js_string Js.t Js.prop
-  method fill : Js.js_string Js.t Js.prop
-  method font : Js.js_string Js.t Js.prop
-  method fontFamily : Js.js_string Js.t Js.prop
-  method fontSize : Js.js_string Js.t Js.prop
-  method fontStyle : Js.js_string Js.t Js.prop
-  method fontVariant : Js.js_string Js.t Js.prop
-  method fontWeight : Js.js_string Js.t Js.prop
-  method height : Js.js_string Js.t Js.prop
-  method left : Js.js_string Js.t Js.prop
-  method letterSpacing : Js.js_string Js.t Js.prop
-  method lineHeight : Js.js_string Js.t Js.prop
-  method listStyle : Js.js_string Js.t Js.prop
-  method listStyleImage : Js.js_string Js.t Js.prop
-  method listStylePosition : Js.js_string Js.t Js.prop
-  method listStyleType : Js.js_string Js.t Js.prop
-  method margin : Js.js_string Js.t Js.prop
-  method marginBottom : Js.js_string Js.t Js.prop
-  method marginLeft : Js.js_string Js.t Js.prop
-  method marginRight : Js.js_string Js.t Js.prop
-  method marginTop : Js.js_string Js.t Js.prop
-  method maxHeight : Js.js_string Js.t Js.prop
-  method maxWidth : Js.js_string Js.t Js.prop
-  method minHeight : Js.js_string Js.t Js.prop
-  method minWidth : Js.js_string Js.t Js.prop
-  method opacity : Js.js_string Js.t Js.optdef Js.prop
-  method outline : Js.js_string Js.t Js.prop
-  method outlineColor : Js.js_string Js.t Js.prop
-  method outlineOffset : Js.js_string Js.t Js.prop
-  method outlineStyle : Js.js_string Js.t Js.prop
-  method outlineWidth : Js.js_string Js.t Js.prop
-  method overflow : Js.js_string Js.t Js.prop
-  method overflowX : Js.js_string Js.t Js.prop
-  method overflowY : Js.js_string Js.t Js.prop
-  method padding : Js.js_string Js.t Js.prop
-  method paddingBottom : Js.js_string Js.t Js.prop
-  method paddingLeft : Js.js_string Js.t Js.prop
-  method paddingRight : Js.js_string Js.t Js.prop
-  method paddingTop : Js.js_string Js.t Js.prop
-  method pageBreakAfter : Js.js_string Js.t Js.prop
-  method pageBreakBefore : Js.js_string Js.t Js.prop
-  method pointerEvents : Js.js_string Js.t Js.prop
-  method position : Js.js_string Js.t Js.prop
-  method right : Js.js_string Js.t Js.prop
-  method stroke : Js.js_string Js.t Js.prop
-  method strokeWidth : Js.js_string Js.t Js.prop
-  method tableLayout : Js.js_string Js.t Js.prop
-  method textAlign : Js.js_string Js.t Js.prop
-  method textAnchor : Js.js_string Js.t Js.prop
-  method textDecoration : Js.js_string Js.t Js.prop
-  method textIndent : Js.js_string Js.t Js.prop
-  method textTransform : Js.js_string Js.t Js.prop
-  method top : Js.js_string Js.t Js.prop
-  method transform : Js.js_string Js.t Js.prop
-  method verticalAlign : Js.js_string Js.t Js.prop
-  method visibility : Js.js_string Js.t Js.prop
-  method whiteSpace : Js.js_string Js.t Js.prop
-  method width : Js.js_string Js.t Js.prop
-  method wordSpacing : Js.js_string Js.t Js.prop
-  method zIndex : Js.js_string Js.t Js.prop
+  method animation :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method animationDelay :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method animationDirection :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method animationDuration :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method animationFillMode :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method animationIterationCount :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method animationName :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method animationPlayState :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method animationTimingFunction :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method background :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method backgroundAttachment :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method backgroundColor :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method backgroundImage :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method backgroundPosition :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method backgroundRepeat :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method border :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderBottom :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderBottomColor :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderBottomStyle :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderBottomWidth :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderCollapse :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderColor :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderLeft :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderLeftColor :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderLeftStyle :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderLeftWidth :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderRadius :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderRight :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderRightColor :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderRightStyle :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderRightWidth :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderSpacing :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderStyle :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderTop :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderTopColor :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderTopStyle :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderTopWidth :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method borderWidth :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method bottom :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method captionSide :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method clear :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method clip :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method color :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method content :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method counterIncrement :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method counterReset :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method cssFloat :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method cssText :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method cursor :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method direction :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method display :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method emptyCells :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method fill :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method font :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method fontFamily :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method fontSize :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method fontStyle :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method fontVariant :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method fontWeight :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method height :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method left :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method letterSpacing :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method lineHeight :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method listStyle :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method listStyleImage :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method listStylePosition :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method listStyleType :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method margin :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method marginBottom :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method marginLeft :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method marginRight :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method marginTop :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method maxHeight :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method maxWidth :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method minHeight :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method minWidth :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method opacity :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+    Js_of_ocaml__.Js.prop
+  method outline :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method outlineColor :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method outlineOffset :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method outlineStyle :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method outlineWidth :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method overflow :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method overflowX :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method overflowY :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method padding :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method paddingBottom :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method paddingLeft :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method paddingRight :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method paddingTop :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method pageBreakAfter :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method pageBreakBefore :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method pointerEvents :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method position :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method right :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method stroke :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method strokeWidth :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method tableLayout :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method textAlign :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method textAnchor :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method textDecoration :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method textIndent :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method textTransform :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method top :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method transform :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method verticalAlign :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method visibility :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method whiteSpace :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method width :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method wordSpacing :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method zIndex :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
 end >>

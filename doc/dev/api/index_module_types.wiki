@@ -13,6 +13,8 @@
     optional values~.
 >>
 |
+|@@ @style="tet-align: left;"@@\\S|
+|@@class="odocwiki_index"@ @@<<a_api text="Shared"| module type Intl.Shared >> ~[<<a_api | module Intl >>~]||
 |@@ @style="tet-align: left;"@@\\T|
 |@@class="odocwiki_index"@ @@<<a_api text="TO"| module type Tyxml_cast_sigs.TO >> ~[<<a_api | module Tyxml_cast_sigs >>~]||
 |@@ @style="tet-align: left;"@@\\X|

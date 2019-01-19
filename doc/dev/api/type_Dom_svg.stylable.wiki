@@ -1,4 +1,7 @@
 <<code language="ocaml" | object
-  method className : Dom_svg.animatedString Js.t Js.readonly_prop
-  method style : Dom_html.cssStyleDeclaration Js.t Js.readonly_prop
+  method className :
+    Dom_svg.animatedString Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
+  method style :
+    Js_of_ocaml__.Dom_html.cssStyleDeclaration Js_of_ocaml__.Js.t
+    Js_of_ocaml__.Js.readonly_prop
 end >>

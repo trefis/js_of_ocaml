@@ -1,23 +1,36 @@
 <<code language="ocaml" | object
-  method addRange : Dom_html.range Js.t -> unit Js.meth
-  method anchorNode : Dom.node Js.t Js.readonly_prop
-  method anchorOffset : int Js.readonly_prop
-  method collapse : bool Js.t -> unit Js.meth
-  method collapseToEnd : unit Js.meth
-  method collapseToStart : unit Js.meth
-  method containsNode : Dom.node Js.t -> bool Js.t -> bool Js.t Js.meth
-  method deleteFromDocument : unit Js.meth
-  method extend : Dom.node Js.t -> int -> unit Js.meth
-  method focusNode : Dom.node Js.t Js.readonly_prop
-  method focusOffset : int Js.readonly_prop
-  method getRangeAt : int -> Dom_html.range Js.t Js.meth
-  method isCollapsed : bool Js.t Js.readonly_prop
+  method addRange :
+    Dom_html.range Js_of_ocaml__.Js.t -> unit Js_of_ocaml__.Js.meth
+  method anchorNode :
+    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
+  method anchorOffset : int Js_of_ocaml__.Js.readonly_prop
+  method collapse : bool Js_of_ocaml__.Js.t -> unit Js_of_ocaml__.Js.meth
+  method collapseToEnd : unit Js_of_ocaml__.Js.meth
+  method collapseToStart : unit Js_of_ocaml__.Js.meth
+  method containsNode :
+    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t ->
+    bool Js_of_ocaml__.Js.t -> bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+  method deleteFromDocument : unit Js_of_ocaml__.Js.meth
+  method extend :
+    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t ->
+    int -> unit Js_of_ocaml__.Js.meth
+  method focusNode :
+    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
+  method focusOffset : int Js_of_ocaml__.Js.readonly_prop
+  method getRangeAt :
+    int -> Dom_html.range Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+  method isCollapsed : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
   method modify :
-    Js.js_string Js.t ->
-    Js.js_string Js.t -> Js.js_string Js.t -> unit Js.meth
-  method rangeCount : int Js.readonly_prop
-  method removeAllRanges : unit Js.meth
-  method removeRange : Dom_html.range Js.t -> unit Js.meth
-  method selectAllChildren : Dom.node Js.t -> unit Js.meth
-  method toString : Js.js_string Js.t Js.meth
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
+    unit Js_of_ocaml__.Js.meth
+  method rangeCount : int Js_of_ocaml__.Js.readonly_prop
+  method removeAllRanges : unit Js_of_ocaml__.Js.meth
+  method removeRange :
+    Dom_html.range Js_of_ocaml__.Js.t -> unit Js_of_ocaml__.Js.meth
+  method selectAllChildren :
+    Js_of_ocaml__.Dom.node Js_of_ocaml__.Js.t -> unit Js_of_ocaml__.Js.meth
+  method toString :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
 end >>

@@ -1,0 +1,64 @@
+<<code language="ocaml" | sig
+  class type object_options =
+    object
+      method localeMatcher :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+    end
+  val object_options : unit -> object_options Js_of_ocaml__.Js.t
+  class type _object =
+    object
+      method supportedLocalesOf :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t ->
+        object_options Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef ->
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+    end
+  class type resolved_options =
+    object
+      method caseFirst :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.readonly_prop
+      method collation :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.readonly_prop
+      method ignorePunctuation :
+        bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
+      method locale :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.readonly_prop
+      method numeric : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
+      method sensitivity :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.readonly_prop
+      method usage :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.readonly_prop
+    end
+  class type options =
+    object
+      method caseFirst :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+      method ignorePunctuation :
+        bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+      method localeMatcher :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+      method numeric : bool Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+      method sensitivity :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+      method usage :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+    end
+  val options : unit -> Intl.Collator.options Js_of_ocaml__.Js.t
+  class type t =
+    object
+      method compare :
+        (Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t ->
+         Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t -> int)
+        Js_of_ocaml__.Js.readonly_prop
+      method resolvedOptions :
+        unit ->
+        Intl.Collator.resolved_options Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.meth
+    end
+end >>

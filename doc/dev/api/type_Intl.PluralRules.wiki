@@ -1,0 +1,53 @@
+<<code language="ocaml" | sig
+  class type object_options =
+    object
+      method localeMatcher :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+    end
+  val object_options : unit -> object_options Js_of_ocaml__.Js.t
+  class type _object =
+    object
+      method supportedLocalesOf :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t ->
+        object_options Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef ->
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+    end
+  class type resolved_options =
+    object
+      method _type :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.readonly_prop
+      method locale :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.readonly_prop
+      method maximumFractionDigits : int Js_of_ocaml__.Js.optdef_prop
+      method maximumSignificantDigits : int Js_of_ocaml__.Js.optdef_prop
+      method minimumFractionDigits : int Js_of_ocaml__.Js.optdef_prop
+      method minimumIntegerDigits : int Js_of_ocaml__.Js.optdef_prop
+      method minimumSignificantDigits : int Js_of_ocaml__.Js.optdef_prop
+      method pluralCategories :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.js_array Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.readonly_prop
+    end
+  class type options =
+    object
+      method _type :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+      method localeMatcher :
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+    end
+  val options : unit -> Intl.PluralRules.options Js_of_ocaml__.Js.t
+  class type t =
+    object
+      method resolvedOptions :
+        unit ->
+        Intl.PluralRules.resolved_options Js_of_ocaml__.Js.t
+        Js_of_ocaml__.Js.meth
+      method select :
+        Js_of_ocaml__.Js.number Js_of_ocaml__.Js.t ->
+        Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+    end
+end >>

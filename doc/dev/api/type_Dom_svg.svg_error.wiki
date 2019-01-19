@@ -1,7 +1,13 @@
 <<code language="ocaml" | object
-  method code : Dom_svg.error_code Js.t Js.readonly_prop
-  method message : Js.js_string Js.t Js.prop
-  method name : Js.js_string Js.t Js.prop
-  method stack : Js.js_string Js.t Js.optdef Js.prop
-  method toString : Js.js_string Js.t Js.meth
+  method code :
+    Dom_svg.error_code Js_of_ocaml__.Js.t Js_of_ocaml__.Js.readonly_prop
+  method message :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method name :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.prop
+  method stack :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.optdef
+    Js_of_ocaml__.Js.prop
+  method toString :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
 end >>

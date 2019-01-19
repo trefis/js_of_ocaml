@@ -1,5 +1,6 @@
 <<code language="ocaml" | sig
-  type any
+  type top
+  type any = Js.Unsafe.top Js.t
   type any_js_array = Js.Unsafe.any
   external inject : 'a -> Js.Unsafe.any = "%identity"
   external coerce : 'a Js.t -> 'b Js.t = "%identity"

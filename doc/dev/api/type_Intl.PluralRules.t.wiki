@@ -1,0 +1,9 @@
+<<code language="ocaml" | object
+  method resolvedOptions :
+    unit ->
+    Intl.PluralRules.resolved_options Js_of_ocaml__.Js.t
+    Js_of_ocaml__.Js.meth
+  method select :
+    Js_of_ocaml__.Js.number Js_of_ocaml__.Js.t ->
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t Js_of_ocaml__.Js.meth
+end >>

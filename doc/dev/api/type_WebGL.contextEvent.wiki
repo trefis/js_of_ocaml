@@ -1,7 +1,17 @@
 <<code language="ocaml" | object
-  method _type : Js.js_string Js.t Js.readonly_prop
-  method currentTarget : Dom_html.element Js.t Js.opt Js.readonly_prop
-  method srcElement : Dom_html.element Js.t Js.opt Js.readonly_prop
-  method statusMessage : Js.js_string Js.t Js.readonly_prop
-  method target : Dom_html.element Js.t Js.opt Js.readonly_prop
+  method _type :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+    Js_of_ocaml__.Js.readonly_prop
+  method currentTarget :
+    Js_of_ocaml__.Dom_html.element Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
+    Js_of_ocaml__.Js.readonly_prop
+  method srcElement :
+    Js_of_ocaml__.Dom_html.element Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
+    Js_of_ocaml__.Js.readonly_prop
+  method statusMessage :
+    Js_of_ocaml__.Js.js_string Js_of_ocaml__.Js.t
+    Js_of_ocaml__.Js.readonly_prop
+  method target :
+    Js_of_ocaml__.Dom_html.element Js_of_ocaml__.Js.t Js_of_ocaml__.Js.opt
+    Js_of_ocaml__.Js.readonly_prop
 end >>
