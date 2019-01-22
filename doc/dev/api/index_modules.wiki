@@ -138,7 +138,7 @@
         in
         let mapper = Converter.copy_mapper Ppx_js.mapper in
         Compiler_libs.Ast_mapper.register "js_of_ocaml" (fun _ -> mapper)
-    }}}
+}}}
 
 >>
 |

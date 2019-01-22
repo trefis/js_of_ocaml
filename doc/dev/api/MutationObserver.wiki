@@ -19,7 +19,7 @@
       MutationObserver.observe ~node ~f
         ~attributes:true ~child_list:true ~character_data:true
         ()
-  }}}
+}}}
 
 **See also**
 * [[https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver|for ~A~P~I documentation~.]]

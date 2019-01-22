@@ -13,7 +13,7 @@
    
 {{{
      let _ = Ocamlbuild_plugin.dispatch Ocamlbuild_js_of_ocaml.dispatcher
-   }}}
+}}}
 
    **~Side note**~: <<span class="odocwiki_inlinecode"|~Ocamlbuild~_plugin~.dispatch>> should be used only
    once~. ~The last call will override previous ones~.
@@ -35,7 +35,7 @@
               ~oasis_executables:["src/yourprogram.byte"]
               hook;
          )
-   }}}
+}}}
 
 
 
@@ -48,7 +48,7 @@
    
 {{{
      ocamlbuild -use-ocamlfind -plugin-tag "package(js_of_ocaml.ocamlbuild)" myprog.js
-   }}}
+}}}
 
    ~It will first build the bytecode **myprog~.byte** and finally produce **myprog~.js** ~(in **~_build**~)~.
 
@@ -80,7 +80,7 @@
    
 {{{
      <myprog.js>:pretty, opt(3)
-   }}}
+}}}
 
 
 

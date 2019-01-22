@@ -399,7 +399,7 @@ if (Intl.is_supported()) then (
   Firebug.console##debug (string "Intl is not supported!") ;
 )
 
-    }}}
+}}}
 
 **See also**
 * [[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl|for ~A~P~I documentation~.]]

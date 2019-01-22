@@ -58,7 +58,7 @@
       match Dom_html.getElementById_coerce "myinput" Dom_html.CoerceTo.input with
       | None -> ..
       | Some input -> ..
-    }}}
+}}}
 
 >>
 <<pre id="VALgetElementById" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|get~Element~By~Id>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|string <<span class="ocsforge_color_delimiter"| -> >> <<a_api text="element" | class type Dom_html.element >> <<a_api text="Js.t" | type Js.t >>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~Element~By~Id id>> returns the element with the id <<span class="odocwiki_inlinecode"|id>> in the

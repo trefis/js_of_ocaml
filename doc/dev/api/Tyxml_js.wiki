@@ -15,7 +15,7 @@
          ]
        ]
      )
-   }}}
+}}}
 
 **See also**
 * [[https://ocsigen.org/tyxml/|the ~Tyxml project website~.]]

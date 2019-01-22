@@ -20,7 +20,7 @@
       if code = err##._TIMEOUT then Firebug.console##debug(msg)
     in
     geo##getCurrentPosition (Js.wrap_callback f_success) (Js.wrap_callback f_error) options
-  }}}
+}}}
 
 **See also**
 * [[https://developer.mozilla.org/en-US/docs/Web/API/Geolocation|for ~A~P~I documentation~.]]
