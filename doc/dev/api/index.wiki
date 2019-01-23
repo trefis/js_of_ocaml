@@ -1,89 +1,23 @@
 ==
 
-=@@id="1_JsofocamlAPIReference"@@~Js~_of~_ocaml – ~A~P~I ~Reference=
+=@@id="1_APIReference"@@~A~P~I ~Reference=
 
 
 
 
 |<<a_api | module Js_of_ocaml >>||
-
-
-
-
-
-=@@id="1_JsofocamllwtAPIReference"@@~Js~_of~_ocaml~_lwt – ~A~P~I ~Reference=
-
-
-
-
 |<<a_api | module Js_of_ocaml_lwt >>||
-
-
-
-
-
-==@@id="2_GraphicsAPIReference"@@~Graphics ~- ~A~P~I ~Reference==
-
-
-
-
 |<<a_api | module Graphics_js >>|<<div class="odocwiki_info"|~Javascript binding for ~Graphics lib
 >>
 |
-
-
-
-
-
-=@@id="1_DerivingAPIReference"@@~Deriving ~- ~A~P~I ~Reference=
-
-
-
-
 |<<a_api | module Deriving_Json >>|<<div class="odocwiki_info"|~Typesafe ~I~O ~(based on the //deriving// library~)~.
 >>
 |
-
-
-
-
-
-=@@id="1_TyxmlAPIReference"@@~Tyxml ~- ~A~P~I ~Reference=
-
-
-
-
 |<<a_api | module Js_of_ocaml_tyxml >>||
-
-
-
-
-
-=@@id="1_ToplevelAPIReference"@@~Toplevel ~- ~A~P~I ~Reference=
-
-
-
-
 |<<a_api | module Js_of_ocaml_toplevel >>||
+|{1||
+|Indexes||
 
-
-
-
-
-=@@id="1_TheocamlbuildpluginAPIReference"@@~The ocamlbuild plugin ~- ~A~P~I ~Reference=
-
-
-
-
-|<<a_api | module Ocamlbuild_js_of_ocaml >>|<<div class="odocwiki_info"|~Ocamlbuild plugin to build with js~_of~_ocaml
->>
-|
-
-
-
-
-
-=@@id="1_Indexes"@@~Indexes=
 
 
 
