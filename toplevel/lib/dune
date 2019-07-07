@@ -3,7 +3,7 @@
   (public_name js_of_ocaml-toplevel)
   (synopsis "Js_of_ocaml toplevel library")
   (wrapped (transition "Will be removed past 2019-04-01"))
-  (libraries
+  (libraries lwt
     js_of_ocaml-compiler js_of_ocaml bytes
     compiler-libs.bytecomp compiler-libs.toplevel)
   (preprocess (pps js_of_ocaml-ppx)))
