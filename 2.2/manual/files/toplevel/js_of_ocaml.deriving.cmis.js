@@ -1,5 +1,5 @@
 <!DOCTYPE html>
 <html>
-    <head><meta http-equiv="refresh" content="0; URL=../../2.4.1/./manual/files/toplevel/js_of_ocaml.deriving.cmis.js" /></head>
+    <head><meta http-equiv="refresh" content="0; URL=../../2.4.1/manual/files/toplevel/js_of_ocaml.deriving.cmis.js" /></head>
     <body></body>
 </html>
