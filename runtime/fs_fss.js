@@ -19,113 +19,113 @@
 
 // Provides: fs_fss_supported
 function fs_fss_supported () {
-    return (typeof joo_global_object.webkitRequestFileSystemSync !== 'undefined'
-            || typeof joo_global_object.requestFileSystemSync !== 'undefined')
+  return (typeof joo_global_object.webkitRequestFileSystemSync !== 'undefined'
+          || typeof joo_global_object.requestFileSystemSync !== 'undefined')
 }
 
-// Provides: MlFssDevice
-// Requires: MlFssFile
+//Provides: MlFssDevice
+//Requires: MlFssFile
+//Requires: MlFssFile, caml_new_string, caml_create_bytes, caml_string_of_array, caml_raise_no_such_file
 var MlFssDevice = function (root) {
-    var device = this ;
-    this.root = root ;
-    this.fs =
-        (joo_global_object.webkitRequestFileSystemSync
-         || joo_global_object.requestFileSystemSync) (joo_global_object.TEMPORARY, 0) ;
+  var device = this ;
+  this.root = root ;
+  this.fs =
+    (joo_global_object.webkitRequestFileSystemSync
+     || joo_global_object.requestFileSystemSync) (joo_global_object.TEMPORARY, 0) ;
 }
 
 MlFssDevice.prototype.nm = function (name) {
-    return (this.root + name) ;
+  return (this.root + name) ;
 }
 
 MlFssDevice.prototype.exists = function (name) {
-    try {
-        var path = this.nm (name) ;
-        this.fs.root.getFile(path, {create: false}) ;
-        return 1 ;
-    } catch (e) {
-        return 0 ;
-    }
+  try {
+    var path = this.nm (name) ;
+    this.fs.root.getFile(path, {create: false}) ;
+    return 1 ;
+  } catch (e) {
+    return 0 ;
+  }
 }
 
 MlFssDevice.prototype.is_dir = function (name) {
-    try {
-        var path = this.nm (name) ;
-        this.fs.root.getDirectory(path, {create: false}) ;
-        return 1 ;
-    } catch (e) {
-        return 0 ;
-    }
+  try {
+    var path = this.nm (name) ;
+    this.fs.root.getDirectory(path, {create: false}) ;
+    return 1 ;
+  } catch (e) {
+    return 0 ;
+  }
 }
 
 MlFssDevice.prototype.unlink = function (name) {
-    try {
-        var path = this.nm (name) ;
-        (this.fs.root.getFile(path, {create: false})).remove () ;
-        return true ;
-    } catch (e) {
-        return false ;
-    }
+  try {
+    var path = this.nm (name) ;
+    (this.fs.root.getFile(path, {create: false})).remove () ;
+    return true ;
+  } catch (e) {
+    return false ;
+  }
 }
 
-//Requires: MlFssFile, caml_new_string, caml_string_of_array
 MlFssDevice.prototype.open = function(name, flags) {
-    var path = this.nm (name) ;
-    try {
-        var file = this.fs.root.getFile(path, { create:flags.create, exclusive:flags.excl }) ;
-        var contents ;
-        if (flags.truncate) {
-            contents = caml_create_bytes(0) ;
-        } else {
-            var f = file.file () ;
-            var reader = new joo_global_object.FileReaderSync () ;
-            // FIXME: Use reasAsArrayBuffer?
-            contents = caml_new_string(reader.readAsBinaryString(f)) ;
-        }
-        return new MlFssFile (file, contents) ;
-    } catch (e) {
-        caml_raise_no_such_file (path) ;
+  var path = this.nm (name) ;
+  try {
+    var file = this.fs.root.getFile(path, { create:flags.create, exclusive:flags.excl }) ;
+    var contents ;
+    if (flags.truncate) {
+      contents = caml_create_bytes(0) ;
+    } else {
+      var f = file.file () ;
+      var reader = new joo_global_object.FileReaderSync () ;
+      // FIXME: Use reasAsArrayBuffer?
+      contents = caml_new_string(reader.readAsBinaryString(f)) ;
     }
+    return new MlFssFile (file, contents) ;
+  } catch (e) {
+    caml_raise_no_such_file (path) ;
+  }
 }
 
 MlFssDevice.prototype.constructor = MlFssDevice
 
 //Provides: MlFssFile
 //Requires: MlFile, MlFakeFile, MlBytes
+//Requires: caml_jsbytes_of_string
 function MlFssFile(fileEntry, content) {
-    this.needSync = false ;
-    this.fake = new MlFakeFile(content) ;
-    this.fileEntry = fileEntry ;
+  this.needSync = false ;
+  this.fake = new MlFakeFile(content) ;
+  this.fileEntry = fileEntry ;
 }
 MlFssFile.prototype.truncate = function(len) {
-    this.needSync = true ;
-    return this.fake.truncate(len) ;
+  this.needSync = true ;
+  return this.fake.truncate(len) ;
 }
 MlFssFile.prototype.length = function () {
   return this.fake.length() ;
 }
 MlFssFile.prototype.read = function (offset, buf, pos, len) {
-    this.fake.read (offset, buf, pos, len) ;
+  this.fake.read (offset, buf, pos, len) ;
 }
 MlFssFile.prototype.read_one = function (offset) {
-    this.fake.read_one (offset) ;
+  this.fake.read_one (offset) ;
 }
-//Requires: caml_jsbytes_of_string
 MlFssFile.prototype.close = function () {
-    if (this.needSync) {
-        // FIXME: marshalled data are corrupted (probably here but it could be on open() )
-        var bstr = caml_jsbytes_of_string(this.fake.data) ;
-        var len = bstr.length ;
-        var u8 = new joo_global_object.Uint8Array (len) ;
-        for (var i = 0; i < len; i++) { u8[i] = bstr.charCodeAt (i) }
-        var blob = new joo_global_object.Blob ([u8], {type:'application/octet-stream'}) ;
-        (this.fileEntry.createWriter ()).write (blob) ;
-    }
-    return (this.fake.close ()) ;
+  if (this.needSync) {
+    // FIXME: marshalled data are corrupted (probably here but it could be on open() )
+    var bstr = caml_jsbytes_of_string(this.fake.data) ;
+    var len = bstr.length ;
+    var u8 = new joo_global_object.Uint8Array (len) ;
+    for (var i = 0; i < len; i++) { u8[i] = bstr.charCodeAt (i) }
+    var blob = new joo_global_object.Blob ([u8], {type:'application/octet-stream'}) ;
+    (this.fileEntry.createWriter ()).write (blob) ;
+  }
+  return (this.fake.close ()) ;
 }
 MlFssFile.prototype.write = function(offset, buf, pos, len) {
-    var res = this.fake.write (offset, buf, pos, len) ;
-    this.needSync = true ;
-    return res ;
+  var res = this.fake.write (offset, buf, pos, len) ;
+  this.needSync = true ;
+  return res ;
 }
 
 MlFssFile.prototype.constructor = MlFssFile
