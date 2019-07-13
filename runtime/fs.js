@@ -67,7 +67,7 @@ if (fs_node_supported()) {
 } else {
   jsoo_mount_point.push({path:caml_root,device:new MlFakeDevice(caml_root)});
 }
-// jsoo_mount_point.push({path:caml_root+"static/", device:new MlFakeDevice(caml_root+"static/")});
+jsoo_mount_point.push({path:caml_root+"static/", device:new MlFakeDevice(caml_root+"static/")});
 
 //Provides:caml_list_mount_point
 //Requires: jsoo_mount_point, caml_new_string
