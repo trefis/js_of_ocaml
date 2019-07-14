@@ -18,3 +18,5 @@
  *)
 
 module JsooTop = JsooTop
+module JsooTopWrapped = JsooTopWrapped
+module JsooTopIntf = JsooTopIntf

@@ -18,6 +18,7 @@
  *)
 
 open Js_of_ocaml
+open! Js_of_ocaml_toplevel
 open JsooTopWorkerIntf
 
 type 'a return =

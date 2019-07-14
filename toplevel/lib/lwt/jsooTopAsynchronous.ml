@@ -17,6 +17,7 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
  *)
 open Js_of_ocaml
+open! Js_of_ocaml_toplevel
 open JsooTopWorkerIntf
 
 type 'a result = 'a JsooTopWrapped.result Lwt.t
