@@ -266,6 +266,22 @@ val poly2_json : poly2 Deriving_Json.t = <abstr>
 
 let () = test' tuple1_json "tuple1" (42, "42")
 
+type poly3 =
+  [ poly1
+  | `C of [`p1 of poly1 | `p2 of poly2 | `p3 of poly3] ]
+[@@deriving json]
+
+[%%expect
+{|
+Line _:
+Error: This expression has type poly3 but an expression was expected of type
+         [ `p1 of poly1 | `p2 of poly2 | `p3 of poly3 ]
+       These two variant types have no intersection
+|}]
+
+let () = test' poly3_json "tuple1" (42, "42")
+
+
 [%%expect {|
 tuple1 = [0,42,"42"]
 |}]
