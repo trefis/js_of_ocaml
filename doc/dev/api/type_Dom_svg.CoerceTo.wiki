@@ -43,7 +43,7 @@
     #Dom_svg.element Js.t -> Dom_svg.glyphElement Js.t Js.opt
   val mPath : #Dom_svg.element Js.t -> Dom_svg.mPathElement Js.t Js.opt
   val path : #Dom_svg.element Js.t -> Dom_svg.pathElement Js.t Js.opt
-  val parttern : #Dom_svg.element Js.t -> Dom_svg.patternElement Js.t Js.opt
+  val pattern : #Dom_svg.element Js.t -> Dom_svg.patternElement Js.t Js.opt
   val polygon : #Dom_svg.element Js.t -> Dom_svg.polygonElement Js.t Js.opt
   val polyline : #Dom_svg.element Js.t -> Dom_svg.polyLineElement Js.t Js.opt
   val radialgradient :

@@ -6910,6 +6910,13 @@
       val make : string -> 'a Dom_html.Event.typ
     end
   type event_listener_id = Dom.event_listener_id
+  val addEventListenerWithOptions :
+    (#Dom_html.eventTarget as 'a) Js.t ->
+    'b Dom_html.Event.typ ->
+    ?capture:bool Js.t ->
+    ?once:bool Js.t ->
+    ?passive:bool Js.t ->
+    ('a Js.t, 'b) Dom_html.event_listener -> Dom_html.event_listener_id
   val addEventListener :
     (#Dom_html.eventTarget as 'a) Js.t ->
     'b Dom_html.Event.typ ->

@@ -97,10 +97,10 @@
 >>
 <<pre id="VALbuffered_loop" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|buffered~_loop>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_delimiter"| ( >><<span class="ocsforge_color_label"| ?use_capture: >>bool <<span class="ocsforge_color_delimiter"| -> >> 'target <<span class="ocsforge_color_delimiter"| -> >> 'event <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?cancel_handler: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?cancel_queue: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?use_capture: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  'target <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>'event <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|buffered~_loop>> is similar to <<span class="odocwiki_inlinecode"|seq~_loop>>~, but any event that
     occurs during an execution of the handler is queued instead of
-    being ingnored~.
+    being ignored~.
 
 
-    ~No event is thus missed~, but there can be a non predictible delay
+    ~No event is thus missed~, but there can be a non predictable delay
     between its trigger and its treatment~. ~It is thus a good idea to
     use this loop with handlers whose running time is short~, so the
     memorized event still makes sense when the handler is eventually
@@ -117,16 +117,16 @@
     ~It is implemented by calling yield~, then ~Lwt~.async~.
     ~This is useful if you want to create a new event listener
     when you are inside an event handler~.
-    ~This avoids the current event to be catched by the new event handler
+    ~This avoids the current event to be caught by the new event handler
     ~(if it propagates~)~.
 >>
 <<pre id="VALfunc_limited_loop" class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|val>> <<span class="odocwiki_name"|func~_limited~_loop>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|\\  <<span class="ocsforge_color_delimiter"| ( >><<span class="ocsforge_color_label"| ?use_capture: >>bool <<span class="ocsforge_color_delimiter"| -> >> 'a <<span class="ocsforge_color_delimiter"| -> >> 'b <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_delimiter"| ( >>unit <<span class="ocsforge_color_delimiter"| -> >> 'a <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >>\\  <<span class="ocsforge_color_label"| ?use_capture: >>bool <<span class="ocsforge_color_delimiter"| -> >>\\  'a <<span class="ocsforge_color_delimiter"| -> >> <<span class="ocsforge_color_delimiter"| ( >>'b <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>><<span class="ocsforge_color_delimiter"| ) >> <<span class="ocsforge_color_delimiter"| -> >> unit <<span class="ocsforge_color_uid"|Lwt>><<span class="ocsforge_color_delimiter"| . >><<span class="ocsforge_color_lid"|t>>>>>><<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|func~_limited~_loop event delay~_fun target handler>> will behave like
     <<span class="odocwiki_inlinecode"|~Lwt~_js~_events~.async~_loop event target handler>> but it will run <<span class="odocwiki_inlinecode"|delay~_fun>>
-    first~, and execut <<span class="odocwiki_inlinecode"|handler>> only when <<span class="odocwiki_inlinecode"|delay~_fun>> is finished and
+    first~, and execute <<span class="odocwiki_inlinecode"|handler>> only when <<span class="odocwiki_inlinecode"|delay~_fun>> is finished and
     no other event occurred in the meantime~.
 
 
-    ~This allows to limit the number of events catched~.
+    ~This allows to limit the number of events caught~.
 
 
     ~Be careful~, it is an asynchrone loop~, so if you give too little time~,

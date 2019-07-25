@@ -15,9 +15,12 @@
 |
 |<<a_api | module Js_of_ocaml_tyxml >>||
 |<<a_api | module Js_of_ocaml_toplevel >>||
-|{1||
-|Indexes||
 
+
+
+
+
+=@@id="1_Index"@@~Index=
 
 
 

@@ -1,1 +1,1 @@
-<<code language="ocaml" | (module Tyxml_cast_sigs) >>
+<<code language="ocaml" | (module Js_of_ocaml_tyxml__.Tyxml_cast_sigs) >>

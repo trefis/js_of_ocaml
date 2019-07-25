@@ -223,8 +223,8 @@
         [< `End | `Inherit | `Middle | `Start ] wrap ->
         [> `Text_Anchor ] attrib
       val a_text_decoration :
-        [< `Blink | `Inherit | `Line_through | `None | `Overline | `Underline ]
-        wrap -> [> `Text_Decoration ] attrib
+        [< `Blink | `Inherit | `Line_through | `None | `Overline | `Underline
+        ] wrap -> [> `Text_Decoration ] attrib
       val a_text_rendering :
         [< `Auto
          | `GeometricPrecision
@@ -266,8 +266,8 @@
       val a_fx : Svg_types.coord wrap -> [> `Fx ] attrib
       val a_fy : Svg_types.coord wrap -> [> `Fy ] attrib
       val a_offset :
-        [< `Number of Svg_types.number | `Percentage of Svg_types.percentage ]
-        wrap -> [> `Offset ] attrib
+        [< `Number of Svg_types.number | `Percentage of Svg_types.percentage
+        ] wrap -> [> `Offset ] attrib
       val a_patternUnits :
         [< `ObjectBoundingBox | `UserSpaceOnUse ] wrap ->
         [> `PatternUnits ] attrib
@@ -1688,7 +1688,8 @@
         ([< Html_types.command_attrib ], [> Html_types.command ]) nullary
       val menu :
         ?children:[< `Flows of [< Html_types.flow5 ] elt list_wrap
-                   | `Lis of [< `Li of [< Html_types.common ] ] elt list_wrap ] ->
+                   | `Lis of [< `Li of [< Html_types.common ] ] elt list_wrap
+                  ] ->
         ([< Html_types.menu_attrib ], [> Html_types.menu ]) nullary
       val script :
         ([< Html_types.script_attrib ], [< Html_types.script_content_fun ],
@@ -2551,7 +2552,8 @@
         ([< Html_types.command_attrib ], [> Html_types.command ]) nullary
       val menu :
         ?children:[< `Flows of [< Html_types.flow5 ] elt list_wrap
-                   | `Lis of [< `Li of [< Html_types.common ] ] elt list_wrap ] ->
+                   | `Lis of [< `Li of [< Html_types.common ] ] elt list_wrap
+                  ] ->
         ([< Html_types.menu_attrib ], [> Html_types.menu ]) nullary
       val script :
         ([< Html_types.script_attrib ], [< Html_types.script_content_fun ],

@@ -11,10 +11,10 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module File.CoerceTo >> ~[<<a_api | module File >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom_html.CoerceTo >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom_svg.CoerceTo >> ~[<<a_api | module Dom_svg >>~]|<<div class="odocwiki_info"|~Coercion functions
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom_html.CoerceTo >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="CoerceTo"| module Dom.CoerceTo >> ~[<<a_api | module Dom >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Collator"| module Intl.Collator >> ~[<<a_api | module Intl >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Color"| module CSS.Color >> ~[<<a_api | module CSS >>~]||
@@ -49,12 +49,12 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\E|
-|@@class="odocwiki_index"@ @@<<a_api text="Event"| module XmlHttpRequest.Event >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Event"| module WebGL.Event >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Event"| module Dom_html.Event >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Event types~: <<span class="odocwiki_inlinecode"|mousedown>>~, <<span class="odocwiki_inlinecode"|keypress>>~, ~.~.~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Event"| module Dom.Event >> ~[<<a_api | module Dom >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="Event"| module XmlHttpRequest.Event >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="EventSource"| module Js_of_ocaml.EventSource >> ~[<<a_api | module Js_of_ocaml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="EventSource"| module EventSource >> |<<div class="odocwiki_info"|~Event~Source binding
 >>
@@ -70,9 +70,7 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="Form"| module Js_of_ocaml.Form >> ~[<<a_api | module Js_of_ocaml >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="Form"| module Form >> |<<div class="odocwiki_info"|~This module provides functions to manipulate forms~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api text="Form"| module Form >> ||
 |@@ @style="tet-align: left;"@@\\G|
 |@@class="odocwiki_index"@ @@<<a_api text="Geolocation"| module Js_of_ocaml.Geolocation >> ~[<<a_api | module Js_of_ocaml >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Geolocation"| module Geolocation >> |<<div class="odocwiki_info"|~Geolocation ~A~P~I
@@ -121,9 +119,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="Json_unit"| module Deriving_Json.Json_unit >> ~[<<a_api | module Deriving_Json >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="Jsonp"| module Js_of_ocaml_lwt.Jsonp >> ~[<<a_api | module Js_of_ocaml_lwt >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="JsooTop"| module Js_of_ocaml_toplevel.JsooTop >> ~[<<a_api | module Js_of_ocaml_toplevel >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="JsooTop"| module JsooTop >> |<<div class="odocwiki_info"|~Helper for ~Js~_of~_ocaml ~Toplevel~.
->>
-|
+|@@class="odocwiki_index"@ @@<<a_api text="JsooTop"| module JsooTop >> ||
 |@@class="odocwiki_index"@ @@<<a_api text="JsooTopError"| module JsooTopError >> ||
 |@@class="odocwiki_index"@ @@<<a_api text="JsooTopPpx"| module JsooTopPpx >> |<<div class="odocwiki_info"|~One can add a ppx rewriter to a toplevel by registering it
     

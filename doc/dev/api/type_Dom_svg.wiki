@@ -4601,7 +4601,7 @@
   val createMissingGlyph : Dom_svg.document Js.t -> Dom_svg.glyphElement Js.t
   val createMPath : Dom_svg.document Js.t -> Dom_svg.mPathElement Js.t
   val createPath : Dom_svg.document Js.t -> Dom_svg.pathElement Js.t
-  val createParttern : Dom_svg.document Js.t -> Dom_svg.patternElement Js.t
+  val createPattern : Dom_svg.document Js.t -> Dom_svg.patternElement Js.t
   val createPolygon : Dom_svg.document Js.t -> Dom_svg.polygonElement Js.t
   val createPolyline : Dom_svg.document Js.t -> Dom_svg.polyLineElement Js.t
   val createRadialgradient :
@@ -4681,7 +4681,7 @@
         #Dom_svg.element Js.t -> Dom_svg.glyphElement Js.t Js.opt
       val mPath : #Dom_svg.element Js.t -> Dom_svg.mPathElement Js.t Js.opt
       val path : #Dom_svg.element Js.t -> Dom_svg.pathElement Js.t Js.opt
-      val parttern :
+      val pattern :
         #Dom_svg.element Js.t -> Dom_svg.patternElement Js.t Js.opt
       val polygon :
         #Dom_svg.element Js.t -> Dom_svg.polygonElement Js.t Js.opt

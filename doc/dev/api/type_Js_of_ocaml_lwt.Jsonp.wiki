@@ -1,1 +1,1 @@
-<<code language="ocaml" | (module Lwt_jsonp) >>
+<<code language="ocaml" | (module Js_of_ocaml_lwt__.Lwt_jsonp) >>

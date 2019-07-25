@@ -92,7 +92,7 @@
   val create : unit -> xmlHttpRequest Js.t
   module Event = XmlHttpRequest.Event
   type 'response generic_http_frame =
-    'response Lwt_xmlHttpRequest.generic_http_frame = {
+    'response Js_of_ocaml_lwt__Lwt_xmlHttpRequest.generic_http_frame = {
     url : string;
     code : int;
     headers : string -> string option;

@@ -5,8 +5,7 @@
 ==[[Deriving_Json|Deriving_Json]]
 ==[[Js_of_ocaml_tyxml|Js_of_ocaml_tyxml]]
 ==[[Js_of_ocaml_toplevel|Js_of_ocaml_toplevel]]
-==[[{1|{1]]
-==[[Indexes|Indexes]]
+=~Index
 == <<a_api text="Index of types" | index types >>
 == <<a_api text="Index of exceptions" | index exceptions >>
 == <<a_api text="Index of values" | index values >>

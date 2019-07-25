@@ -17,7 +17,7 @@
 >>
 >><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_field"|<<span class="odocwiki_field_descr"|  <<span class="ocsforge_color_label"|hu_port:>> <<span class="odocwiki_type"|int>><<span class="ocsforge_color_delimiter"|~;>> >><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|~The port for the connection if any~.
 >>
->><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_field"|<<span class="odocwiki_field_descr"|  <<span class="ocsforge_color_label"|hu_path:>> <<span class="odocwiki_type"|string list>><<span class="ocsforge_color_delimiter"|~;>> >><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|~The path splitted on <<span class="odocwiki_inlinecode"|~'~/~'>> characters~.
+>><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_field"|<<span class="odocwiki_field_descr"|  <<span class="ocsforge_color_label"|hu_path:>> <<span class="odocwiki_type"|string list>><<span class="ocsforge_color_delimiter"|~;>> >><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|~The path split on <<span class="odocwiki_inlinecode"|~'~/~'>> characters~.
 >>
 >><<span class="odocwiki_comments_close"| ~*)>>>>>><<span class="odocwiki_field"|<<span class="odocwiki_field_descr"|  <<span class="ocsforge_color_label"|hu_path_string:>> <<span class="odocwiki_type"|string>><<span class="ocsforge_color_delimiter"|~;>> >><<span class="odocwiki_comments"|<<span class="odocwiki_comments_open"|(*>> <<span|<<div class="odocwiki_info"|~The original entire path~.
 >>

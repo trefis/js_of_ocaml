@@ -1,1 +1,1 @@
-<<code language="ocaml" | (module JsooTop) >>
+<<code language="ocaml" | (module Js_of_ocaml_toplevel__.JsooTop) >>

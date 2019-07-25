@@ -20,25 +20,31 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\A|
-|@@class="odocwiki_index"@ @@<<a_api text="a"| value Dom_svg.CoerceTo.a >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="a"| value Dom_html.CoerceTo.a >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="a"| value Dom_svg.CoerceTo.a >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="abort"| value Lwt_js_events.abort >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="abort"| value File.ReaderEvent.abort >> ~[<<a_api | module File.ReaderEvent >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="abort"| value XmlHttpRequest.Event.abort >> ~[<<a_api | module XmlHttpRequest.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="abort"| value Dom_html.Event.abort >> ~[<<a_api | module Dom_html.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="abort"| value XmlHttpRequest.Event.abort >> ~[<<a_api | module XmlHttpRequest.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="aborts"| value Lwt_js_events.aborts >> ~[<<a_api | module Lwt_js_events >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="add"| value Dom.DocumentPosition.add >> ~[<<a_api | module Dom.DocumentPosition >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="add"| value Jstable.add >> ~[<<a_api | module Jstable >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="add"| value Dom.DocumentPosition.add >> ~[<<a_api | module Dom.DocumentPosition >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="addEventListener"| value EventSource.addEventListener >> ~[<<a_api | module EventSource >>~]|<<div class="odocwiki_info"|~Add an event listener~.
+>>
+|
 |@@class="odocwiki_index"@ @@<<a_api text="addEventListener"| value File.addEventListener >> ~[<<a_api | module File >>~]|<<div class="odocwiki_info"|~Add an event listener~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="addEventListener"| value Dom_html.addEventListener >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Add an event listener~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="addEventListener"| value EventSource.addEventListener >> ~[<<a_api | module EventSource >>~]|<<div class="odocwiki_info"|~Add an event listener~.
+|@@class="odocwiki_index"@ @@<<a_api text="addEventListener"| value Dom.addEventListener >> ~[<<a_api | module Dom >>~]|<<div class="odocwiki_info"|~Add an event listener~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="addEventListener"| value Dom.addEventListener >> ~[<<a_api | module Dom >>~]|<<div class="odocwiki_info"|~Add an event listener~.
+|@@class="odocwiki_index"@ @@<<a_api text="addEventListenerWithOptions"| value Dom_html.addEventListenerWithOptions >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Add an event listener~.
+>>
+|
+|@@class="odocwiki_index"@ @@<<a_api text="addEventListenerWithOptions"| value Dom.addEventListenerWithOptions >> ~[<<a_api | module Dom >>~]|<<div class="odocwiki_info"|~Add an event listener~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="addMousewheelEventListener"| value Dom_html.addMousewheelEventListener >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Add a mousewheel event listener~.
@@ -130,7 +136,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="br"| value Dom_html.CoerceTo.br >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="buffered_loop"| value Lwt_js_events.buffered_loop >> ~[<<a_api | module Lwt_js_events >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|buffered~_loop>> is similar to <<span class="odocwiki_inlinecode"|seq~_loop>>~, but any event that
     occurs during an execution of the handler is queued instead of
-    being ingnored~.
+    being ignored~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="button"| value Dom_html.CoerceTo.button >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
@@ -197,11 +203,11 @@
 |@@class="odocwiki_index"@ @@<<a_api text="console"| value Firebug.console >> ~[<<a_api | module Firebug >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="contained_by"| value Dom.DocumentPosition.contained_by >> ~[<<a_api | module Dom.DocumentPosition >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="contains"| value Dom.DocumentPosition.contains >> ~[<<a_api | module Dom.DocumentPosition >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="create"| value XmlHttpRequest.create >> ~[<<a_api | module XmlHttpRequest >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="create"| value Worker.create >> ~[<<a_api | module Worker >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="create"| value Jstable.create >> ~[<<a_api | module Jstable >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="createA"| value Dom_svg.createA >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="create"| value Worker.create >> ~[<<a_api | module Worker >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="create"| value XmlHttpRequest.create >> ~[<<a_api | module XmlHttpRequest >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createA"| value Dom_html.createA >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="createA"| value Dom_svg.createA >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createAbbr"| value Dom_html.createAbbr >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createAddress"| value Dom_html.createAddress >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createAltGlyph"| value Dom_svg.createAltGlyph >> ~[<<a_api | module Dom_svg >>~]||
@@ -292,8 +298,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="createOption"| value Dom_html.createOption >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createP"| value Dom_html.createP >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createParam"| value Dom_html.createParam >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="createParttern"| value Dom_svg.createParttern >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createPath"| value Dom_svg.createPath >> ~[<<a_api | module Dom_svg >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="createPattern"| value Dom_svg.createPattern >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createPolygon"| value Dom_svg.createPolygon >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createPolyline"| value Dom_svg.createPolyline >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createPre"| value Dom_html.createPre >> ~[<<a_api | module Dom_html >>~]||
@@ -301,16 +307,16 @@
 |@@class="odocwiki_index"@ @@<<a_api text="createRadialgradient"| value Dom_svg.createRadialgradient >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createRect"| value Dom_svg.createRect >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createSamp"| value Dom_html.createSamp >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="createScript"| value Dom_svg.createScript >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createScript"| value Dom_html.createScript >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="createScript"| value Dom_svg.createScript >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createSelect"| value Dom_html.createSelect >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createSet"| value Dom_svg.createSet >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createSmall"| value Dom_html.createSmall >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createSpan"| value Dom_html.createSpan >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createStop"| value Dom_svg.createStop >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createStrong"| value Dom_html.createStrong >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="createStyle"| value Dom_svg.createStyle >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createStyle"| value Dom_html.createStyle >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="createStyle"| value Dom_svg.createStyle >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createSub"| value Dom_html.createSub >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createSup"| value Dom_html.createSup >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createSvg"| value Dom_svg.createSvg >> ~[<<a_api | module Dom_svg >>~]||
@@ -325,8 +331,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="createTfoot"| value Dom_html.createTfoot >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createTh"| value Dom_html.createTh >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createThead"| value Dom_html.createThead >> ~[<<a_api | module Dom_html >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="createTitle"| value Dom_svg.createTitle >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createTitle"| value Dom_html.createTitle >> ~[<<a_api | module Dom_html >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="createTitle"| value Dom_svg.createTitle >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createTr"| value Dom_html.createTr >> ~[<<a_api | module Dom_html >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createTref"| value Dom_svg.createTref >> ~[<<a_api | module Dom_svg >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="createTspan"| value Dom_svg.createTspan >> ~[<<a_api | module Dom_svg >>~]||
@@ -428,10 +434,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="div"| value Dom_html.CoerceTo.div >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="dl"| value Dom_html.CoerceTo.dl >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="document"| value File.CoerceTo.document >> ~[<<a_api | module File.CoerceTo >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="document"| value Dom_svg.document >> ~[<<a_api | module Dom_svg >>~]|<<div class="odocwiki_info"|~The current document
+|@@class="odocwiki_index"@ @@<<a_api text="document"| value Dom_html.document >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~The current document
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="document"| value Dom_html.document >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~The current document
+|@@class="odocwiki_index"@ @@<<a_api text="document"| value Dom_svg.document >> ~[<<a_api | module Dom_svg >>~]|<<div class="odocwiki_info"|~The current document
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="domContentLoaded"| value Lwt_js_events.domContentLoaded >> ~[<<a_api | module Lwt_js_events >>~]||
@@ -462,11 +468,11 @@
 |@@class="odocwiki_index"@ @@<<a_api text="durationchange"| value Dom_html.Event.durationchange >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="durationchanges"| value Lwt_js_events.durationchanges >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@ @style="tet-align: left;"@@\\E|
-|@@class="odocwiki_index"@ @@<<a_api text="element"| value Dom_svg.CoerceTo.element >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="element"| value Dom_html.CoerceTo.element >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="element"| value Dom_html.element >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Coercion from a general ~D~O~M element to an ~H~T~M~L element~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="element"| value Dom_svg.CoerceTo.element >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="element"| value Dom.CoerceTo.element >> ~[<<a_api | module Dom.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="elementClientPosition"| value Dom_html.elementClientPosition >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Position of an element relative to the viewport
 >>
@@ -499,8 +505,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="endeds"| value Lwt_js_events.endeds >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="error"| value Lwt_js_events.error >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="error"| value File.ReaderEvent.error >> ~[<<a_api | module File.ReaderEvent >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="error"| value XmlHttpRequest.Event.error >> ~[<<a_api | module XmlHttpRequest.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="error"| value Dom_html.Event.error >> ~[<<a_api | module Dom_html.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="error"| value XmlHttpRequest.Event.error >> ~[<<a_api | module XmlHttpRequest.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="error_constr"| value Js.error_constr >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Constructor of <<span class="odocwiki_inlinecode"|~Error>> objects~:
       <<span class="odocwiki_inlinecode"|jsnew error~_constr ~(msg~)>>
       returns an <<span class="odocwiki_inlinecode"|~Error>> object with the message <<span class="odocwiki_inlinecode"|msg>>~.
@@ -595,7 +601,7 @@
 |
 |@@class="odocwiki_index"@ @@<<a_api text="func_limited_loop"| value Lwt_js_events.func_limited_loop >> ~[<<a_api | module Lwt_js_events >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|func~_limited~_loop event delay~_fun target handler>> will behave like
     <<span class="odocwiki_inlinecode"|~Lwt~_js~_events~.async~_loop event target handler>> but it will run <<span class="odocwiki_inlinecode"|delay~_fun>>
-    first~, and execut <<span class="odocwiki_inlinecode"|handler>> only when <<span class="odocwiki_inlinecode"|delay~_fun>> is finished and
+    first~, and execute <<span class="odocwiki_inlinecode"|handler>> only when <<span class="odocwiki_inlinecode"|delay~_fun>> is finished and
     no other event occurred in the meantime~.
 >>
 |
@@ -611,21 +617,21 @@
 |@@class="odocwiki_index"@ @@<<a_api text="get"| value Js.OPT.get >> ~[<<a_api | module Js.OPT >>~]|<<div class="odocwiki_info"|~Get the value~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="get"| value Typed_array.get >> ~[<<a_api | module Typed_array >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="get"| value Url.Current.get >> ~[<<a_api | module Url.Current >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get ~(~)>> returns a value of type <<a_api | type Url.url >> with fields reflecting the
         state of the current ~Url~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="get"| value Typed_array.get >> ~[<<a_api | module Typed_array >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="getContext"| value WebGL.getContext >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="getContextWithAttributes"| value WebGL.getContextWithAttributes >> ~[<<a_api | module WebGL >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="getDocumentScroll"| value Dom_html.getDocumentScroll >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Viewport top~/left position
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="getElementById"| value Dom_svg.getElementById >> ~[<<a_api | module Dom_svg >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~Element~By~Id id>> returns the element with the id <<span class="odocwiki_inlinecode"|id>> in the
+|@@class="odocwiki_index"@ @@<<a_api text="getElementById"| value Dom_html.getElementById >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~Element~By~Id id>> returns the element with the id <<span class="odocwiki_inlinecode"|id>> in the
     current document~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="getElementById"| value Dom_html.getElementById >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~Element~By~Id id>> returns the element with the id <<span class="odocwiki_inlinecode"|id>> in the
+|@@class="odocwiki_index"@ @@<<a_api text="getElementById"| value Dom_svg.getElementById >> ~[<<a_api | module Dom_svg >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|get~Element~By~Id id>> returns the element with the id <<span class="odocwiki_inlinecode"|id>> in the
     current document~.
 >>
 |
@@ -747,10 +753,10 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="isNaN"| value Js.isNaN >> ~[<<a_api | module Js >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="is_supported"| value Geolocation.is_supported >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="is_supported"| value WebSockets.is_supported >> ~[<<a_api | module WebSockets >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="is_supported"| value Intl.is_supported >> ~[<<a_api | module Intl >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="is_supported"| value MutationObserver.is_supported >> ~[<<a_api | module MutationObserver >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="is_supported"| value Intl.is_supported >> ~[<<a_api | module Intl >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="is_supported"| value Geolocation.is_supported >> ~[<<a_api | module Geolocation >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="iter"| value Js.OPT.iter >> ~[<<a_api | module Js.OPT >>~]|<<div class="odocwiki_info"|~Apply a function to an optional value if it is available~.
 >>
 |
@@ -805,8 +811,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="listen"| value Dom_events.listen >> ~[<<a_api | module Dom_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="load"| value Lwt_js_events.load >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="load"| value File.ReaderEvent.load >> ~[<<a_api | module File.ReaderEvent >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="load"| value XmlHttpRequest.Event.load >> ~[<<a_api | module XmlHttpRequest.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="load"| value Dom_html.Event.load >> ~[<<a_api | module Dom_html.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="load"| value XmlHttpRequest.Event.load >> ~[<<a_api | module XmlHttpRequest.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="loadeddata"| value Lwt_js_events.loadeddata >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="loadeddata"| value Dom_html.Event.loadeddata >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="loadeddatas"| value Lwt_js_events.loadeddatas >> ~[<<a_api | module Lwt_js_events >>~]||
@@ -818,8 +824,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="loads"| value Lwt_js_events.loads >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="loadstart"| value Lwt_js_events.loadstart >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="loadstart"| value File.ReaderEvent.loadstart >> ~[<<a_api | module File.ReaderEvent >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="loadstart"| value XmlHttpRequest.Event.loadstart >> ~[<<a_api | module XmlHttpRequest.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="loadstart"| value Dom_html.Event.loadstart >> ~[<<a_api | module Dom_html.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="loadstart"| value XmlHttpRequest.Event.loadstart >> ~[<<a_api | module XmlHttpRequest.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="loadstarts"| value Lwt_js_events.loadstarts >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="loc"| value JsooTopError.loc >> ~[<<a_api | module JsooTopError >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="location_origin"| value Dom_html.location_origin >> ~[<<a_api | module Dom_html >>~]||
@@ -873,7 +879,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="ml"| value CSS.Color.ml >> ~[<<a_api | module CSS.Color >>~]|<<div class="odocwiki_info"|~Projection from ~Js to ~O~Caml~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="mount"| value Sys_js.mount >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|~Register a callback to the <<span class="odocwiki_inlinecode"|path>> to dynamicly load missing files~.
+|@@class="odocwiki_index"@ @@<<a_api text="mount"| value Sys_js.mount >> ~[<<a_api | module Sys_js >>~]|<<div class="odocwiki_info"|~Register a callback to the <<span class="odocwiki_inlinecode"|path>> to dynamically load missing files~.
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="mount_point"| value Sys_js.mount_point >> ~[<<a_api | module Sys_js >>~]||
@@ -947,27 +953,27 @@
 |@@class="odocwiki_index"@ @@<<a_api text="of_abbr"| value Tyxml_cast_sigs.TO.of_abbr >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_address"| value Tyxml_cast_sigs.TO.of_address >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_anchor"| value Tyxml_cast_sigs.OF.of_anchor >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_area"| value Tyxml_cast_sigs.TO.of_area >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_area"| value Tyxml_cast_sigs.OF.of_area >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_area"| value Tyxml_cast_sigs.TO.of_area >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_arrayBuffer"| value Typed_array.String.of_arrayBuffer >> ~[<<a_api | module Typed_array.String >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_arrayBuffer"| value Typed_array.Bigstring.of_arrayBuffer >> ~[<<a_api | module Typed_array.Bigstring >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_article"| value Tyxml_cast_sigs.TO.of_article >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_aside"| value Tyxml_cast_sigs.TO.of_aside >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_audio"| value Tyxml_cast_sigs.TO.of_audio >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_audio"| value Tyxml_cast_sigs.OF.of_audio >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_audio"| value Tyxml_cast_sigs.TO.of_audio >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_b"| value Tyxml_cast_sigs.TO.of_b >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_base"| value Tyxml_cast_sigs.TO.of_base >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_base"| value Tyxml_cast_sigs.OF.of_base >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_base"| value Tyxml_cast_sigs.TO.of_base >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_bdo"| value Tyxml_cast_sigs.TO.of_bdo >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_blockquote"| value Tyxml_cast_sigs.TO.of_blockquote >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_body"| value Tyxml_cast_sigs.TO.of_body >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_body"| value Tyxml_cast_sigs.OF.of_body >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_br"| value Tyxml_cast_sigs.TO.of_br >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_body"| value Tyxml_cast_sigs.TO.of_body >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_br"| value Tyxml_cast_sigs.OF.of_br >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_button"| value Tyxml_cast_sigs.TO.of_button >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_br"| value Tyxml_cast_sigs.TO.of_br >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_button"| value Tyxml_cast_sigs.OF.of_button >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_canvas"| value Tyxml_cast_sigs.TO.of_canvas >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_button"| value Tyxml_cast_sigs.TO.of_button >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_canvas"| value Tyxml_cast_sigs.OF.of_canvas >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_canvas"| value Tyxml_cast_sigs.TO.of_canvas >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_caption"| value Tyxml_cast_sigs.TO.of_caption >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_cite"| value Tyxml_cast_sigs.TO.of_cite >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_code"| value Tyxml_cast_sigs.TO.of_code >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
@@ -980,15 +986,15 @@
 |@@class="odocwiki_index"@ @@<<a_api text="of_del"| value Tyxml_cast_sigs.TO.of_del >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_details"| value Tyxml_cast_sigs.TO.of_details >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_dfn"| value Tyxml_cast_sigs.TO.of_dfn >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_div"| value Tyxml_cast_sigs.TO.of_div >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_div"| value Tyxml_cast_sigs.OF.of_div >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_div"| value Tyxml_cast_sigs.TO.of_div >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_dl"| value Tyxml_cast_sigs.TO.of_dl >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_dt"| value Tyxml_cast_sigs.TO.of_dt >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_element"| value Tyxml_cast_sigs.TO.of_element >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_element"| value Tyxml_cast_sigs.OF.of_element >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_element"| value Tyxml_cast_sigs.TO.of_element >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_em"| value Tyxml_cast_sigs.TO.of_em >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_embed"| value Tyxml_cast_sigs.TO.of_embed >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_embed"| value Tyxml_cast_sigs.OF.of_embed >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_embed"| value Tyxml_cast_sigs.TO.of_embed >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_event"| value Dom_html.Keyboard_key.of_event >> ~[<<a_api | module Dom_html.Keyboard_key >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_event"| value Dom_html.Keyboard_code.of_event >> ~[<<a_api | module Dom_html.Keyboard_code >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_fieldSet"| value Tyxml_cast_sigs.OF.of_fieldSet >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
@@ -996,71 +1002,71 @@
 |@@class="odocwiki_index"@ @@<<a_api text="of_figcaption"| value Tyxml_cast_sigs.TO.of_figcaption >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_figure"| value Tyxml_cast_sigs.TO.of_figure >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_footer"| value Tyxml_cast_sigs.TO.of_footer >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_form"| value Tyxml_cast_sigs.TO.of_form >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_form"| value Tyxml_cast_sigs.OF.of_form >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_form"| value Tyxml_cast_sigs.TO.of_form >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_h1"| value Tyxml_cast_sigs.TO.of_h1 >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_h2"| value Tyxml_cast_sigs.TO.of_h2 >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_h3"| value Tyxml_cast_sigs.TO.of_h3 >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_h4"| value Tyxml_cast_sigs.TO.of_h4 >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_h5"| value Tyxml_cast_sigs.TO.of_h5 >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_h6"| value Tyxml_cast_sigs.TO.of_h6 >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_head"| value Tyxml_cast_sigs.TO.of_head >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_head"| value Tyxml_cast_sigs.OF.of_head >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_head"| value Tyxml_cast_sigs.TO.of_head >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_header"| value Tyxml_cast_sigs.TO.of_header >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_heading"| value Tyxml_cast_sigs.TO.of_heading >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_heading"| value Tyxml_cast_sigs.OF.of_heading >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_heading"| value Tyxml_cast_sigs.TO.of_heading >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_hgroup"| value Tyxml_cast_sigs.TO.of_hgroup >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_hr"| value Tyxml_cast_sigs.TO.of_hr >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_hr"| value Tyxml_cast_sigs.OF.of_hr >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_html"| value Tyxml_cast_sigs.TO.of_html >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_hr"| value Tyxml_cast_sigs.TO.of_hr >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_html"| value Tyxml_cast_sigs.OF.of_html >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_html"| value Tyxml_cast_sigs.TO.of_html >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_i"| value Tyxml_cast_sigs.TO.of_i >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_iFrame"| value Tyxml_cast_sigs.OF.of_iFrame >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_iframe"| value Tyxml_cast_sigs.TO.of_iframe >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_image"| value Tyxml_cast_sigs.OF.of_image >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_img"| value Tyxml_cast_sigs.TO.of_img >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_input"| value Tyxml_cast_sigs.TO.of_input >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_input"| value Tyxml_cast_sigs.OF.of_input >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_input"| value Tyxml_cast_sigs.TO.of_input >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_ins"| value Tyxml_cast_sigs.TO.of_ins >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_kbd"| value Tyxml_cast_sigs.TO.of_kbd >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_key_code"| value Dom_html.Keyboard_code.of_key_code >> ~[<<a_api | module Dom_html.Keyboard_code >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_keygen"| value Tyxml_cast_sigs.TO.of_keygen >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_label"| value Tyxml_cast_sigs.TO.of_label >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_label"| value Tyxml_cast_sigs.OF.of_label >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_legend"| value Tyxml_cast_sigs.TO.of_legend >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_label"| value Tyxml_cast_sigs.TO.of_label >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_legend"| value Tyxml_cast_sigs.OF.of_legend >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_li"| value Tyxml_cast_sigs.TO.of_li >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_legend"| value Tyxml_cast_sigs.TO.of_legend >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_li"| value Tyxml_cast_sigs.OF.of_li >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_link"| value Tyxml_cast_sigs.TO.of_link >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_li"| value Tyxml_cast_sigs.TO.of_li >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_link"| value Tyxml_cast_sigs.OF.of_link >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_link"| value Tyxml_cast_sigs.TO.of_link >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_main"| value Tyxml_cast_sigs.TO.of_main >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_map"| value Tyxml_cast_sigs.TO.of_map >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_map"| value Tyxml_cast_sigs.OF.of_map >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_map"| value Tyxml_cast_sigs.TO.of_map >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_mark"| value Tyxml_cast_sigs.TO.of_mark >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_menu"| value Tyxml_cast_sigs.TO.of_menu >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_meta"| value Tyxml_cast_sigs.TO.of_meta >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_meta"| value Tyxml_cast_sigs.OF.of_meta >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_meta"| value Tyxml_cast_sigs.TO.of_meta >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_meter"| value Tyxml_cast_sigs.TO.of_meter >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_mod"| value Tyxml_cast_sigs.OF.of_mod >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_nav"| value Tyxml_cast_sigs.TO.of_nav >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_node"| value Tyxml_cast_sigs.TO.of_node >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_noscript"| value Tyxml_cast_sigs.TO.of_noscript >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_oList"| value Tyxml_cast_sigs.OF.of_oList >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_object"| value Tyxml_cast_sigs.TO.of_object >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_object"| value Tyxml_cast_sigs.OF.of_object >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_object"| value Tyxml_cast_sigs.TO.of_object >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_ol"| value Tyxml_cast_sigs.TO.of_ol >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_optGroup"| value Tyxml_cast_sigs.OF.of_optGroup >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_optgroup"| value Tyxml_cast_sigs.TO.of_optgroup >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_option"| value Tyxml_cast_sigs.TO.of_option >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_option"| value Tyxml_cast_sigs.OF.of_option >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_option"| value Tyxml_cast_sigs.TO.of_option >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_output"| value Tyxml_cast_sigs.TO.of_output >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_p"| value Tyxml_cast_sigs.TO.of_p >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_paragraph"| value Tyxml_cast_sigs.OF.of_paragraph >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_param"| value Tyxml_cast_sigs.TO.of_param >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_param"| value Tyxml_cast_sigs.OF.of_param >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_param"| value Tyxml_cast_sigs.TO.of_param >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_pcdata"| value Tyxml_cast_sigs.TO.of_pcdata >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_pre"| value Tyxml_cast_sigs.TO.of_pre >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_pre"| value Tyxml_cast_sigs.OF.of_pre >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_pre"| value Tyxml_cast_sigs.TO.of_pre >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_progress"| value Tyxml_cast_sigs.TO.of_progress >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_q"| value Tyxml_cast_sigs.TO.of_q >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_quote"| value Tyxml_cast_sigs.OF.of_quote >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
@@ -1068,22 +1074,22 @@
 |@@class="odocwiki_index"@ @@<<a_api text="of_rt"| value Tyxml_cast_sigs.TO.of_rt >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_ruby"| value Tyxml_cast_sigs.TO.of_ruby >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_samp"| value Tyxml_cast_sigs.TO.of_samp >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_script"| value Tyxml_cast_sigs.TO.of_script >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_script"| value Tyxml_cast_sigs.OF.of_script >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_script"| value Tyxml_cast_sigs.TO.of_script >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_section"| value Tyxml_cast_sigs.TO.of_section >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_select"| value Tyxml_cast_sigs.TO.of_select >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_select"| value Tyxml_cast_sigs.OF.of_select >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_select"| value Tyxml_cast_sigs.TO.of_select >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_small"| value Tyxml_cast_sigs.TO.of_small >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_source"| value Tyxml_cast_sigs.TO.of_source >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_span"| value Tyxml_cast_sigs.TO.of_span >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_strong"| value Tyxml_cast_sigs.TO.of_strong >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_style"| value Tyxml_cast_sigs.TO.of_style >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_style"| value Tyxml_cast_sigs.OF.of_style >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_style"| value Tyxml_cast_sigs.TO.of_style >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_sub"| value Tyxml_cast_sigs.TO.of_sub >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_summary"| value Tyxml_cast_sigs.TO.of_summary >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_sup"| value Tyxml_cast_sigs.TO.of_sup >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_table"| value Tyxml_cast_sigs.TO.of_table >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_table"| value Tyxml_cast_sigs.OF.of_table >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_table"| value Tyxml_cast_sigs.TO.of_table >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_tableCaption"| value Tyxml_cast_sigs.OF.of_tableCaption >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_tableCell"| value Tyxml_cast_sigs.OF.of_tableCell >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_tableCol"| value Tyxml_cast_sigs.OF.of_tableCol >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
@@ -1097,15 +1103,15 @@
 |@@class="odocwiki_index"@ @@<<a_api text="of_th"| value Tyxml_cast_sigs.TO.of_th >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_thead"| value Tyxml_cast_sigs.TO.of_thead >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_time"| value Tyxml_cast_sigs.TO.of_time >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_title"| value Tyxml_cast_sigs.TO.of_title >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_title"| value Tyxml_cast_sigs.OF.of_title >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_title"| value Tyxml_cast_sigs.TO.of_title >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_tr"| value Tyxml_cast_sigs.TO.of_tr >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_u"| value Tyxml_cast_sigs.TO.of_u >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_uList"| value Tyxml_cast_sigs.OF.of_uList >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_ul"| value Tyxml_cast_sigs.TO.of_ul >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_var"| value Tyxml_cast_sigs.TO.of_var >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="of_video"| value Tyxml_cast_sigs.TO.of_video >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_video"| value Tyxml_cast_sigs.OF.of_video >> ~[<<a_api | module Tyxml_cast_sigs.OF >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="of_video"| value Tyxml_cast_sigs.TO.of_video >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="of_wbr"| value Tyxml_cast_sigs.TO.of_wbr >> ~[<<a_api | module Tyxml_cast_sigs.TO >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="offline"| value Dom_html.Event.offline >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="ol"| value Dom_html.CoerceTo.ol >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
@@ -1151,7 +1157,6 @@
 |@@class="odocwiki_index"@ @@<<a_api text="param"| value Dom_html.CoerceTo.param >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="parseFloat"| value Js.parseFloat >> ~[<<a_api | module Js >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="parseInt"| value Js.parseInt >> ~[<<a_api | module Js >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="parttern"| value Dom_svg.CoerceTo.parttern >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="path"| value Dom_svg.CoerceTo.path >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="path"| value Url.Current.path >> ~[<<a_api | module Url.Current >>~]|<<div class="odocwiki_info"|~The path of the current url as a list of small string~.
 >>
@@ -1162,6 +1167,7 @@
 |@@class="odocwiki_index"@ @@<<a_api text="path_string"| value Url.Current.path_string >> ~[<<a_api | module Url.Current >>~]|<<div class="odocwiki_info"|~The path of the current url as one long string~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="pattern"| value Dom_svg.CoerceTo.pattern >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pause"| value Lwt_js_events.pause >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pause"| value Dom_html.Event.pause >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="pauses"| value Lwt_js_events.pauses >> ~[<<a_api | module Lwt_js_events >>~]||
@@ -1206,8 +1212,8 @@
 >>
 |
 |@@class="odocwiki_index"@ @@<<a_api text="progress"| value File.ReaderEvent.progress >> ~[<<a_api | module File.ReaderEvent >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="progress"| value XmlHttpRequest.Event.progress >> ~[<<a_api | module XmlHttpRequest.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="progress"| value Dom_html.Event.progress >> ~[<<a_api | module Dom_html.Event >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="progress"| value XmlHttpRequest.Event.progress >> ~[<<a_api | module XmlHttpRequest.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="protocol"| value Url.Current.protocol >> ~[<<a_api | module Url.Current >>~]|<<div class="odocwiki_info"|~The protocol of the current url~.
 >>
 |
@@ -1329,8 +1335,8 @@
 >>
 |
 |@@ @style="tet-align: left;"@@\\S|
-|@@class="odocwiki_index"@ @@<<a_api text="script"| value Dom_svg.CoerceTo.script >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="script"| value Dom_html.CoerceTo.script >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="script"| value Dom_svg.CoerceTo.script >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="scroll"| value Lwt_js_events.scroll >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="scroll"| value Dom_html.Event.scroll >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="scrolls"| value Lwt_js_events.scrolls >> ~[<<a_api | module Lwt_js_events >>~]||
@@ -1360,10 +1366,10 @@
 |@@class="odocwiki_index"@ @@<<a_api text="set"| value Js.Unsafe.set >> ~[<<a_api | module Js.Unsafe >>~]|<<div class="odocwiki_info"|~Set an object property~.
 >>
 |
+|@@class="odocwiki_index"@ @@<<a_api text="set"| value Typed_array.set >> ~[<<a_api | module Typed_array >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="set"| value Url.Current.set >> ~[<<a_api | module Url.Current >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|set u>> replaces the current ~Url for <<span class="odocwiki_inlinecode"|u>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="set"| value Typed_array.set >> ~[<<a_api | module Typed_array >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="setTimeout"| value Dom_html.setTimeout >> ~[<<a_api | module Dom_html >>~]|<<div class="odocwiki_info"|~Same as <<span class="odocwiki_inlinecode"|~Dom~_html~.window~#~#set~Timeout cb ms>> but prevents overflow
     with delay greater than ~2~4 days~.
 >>
@@ -1425,8 +1431,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="string_of_url"| value Url.string_of_url >> ~[<<a_api | module Url >>~]|<<div class="odocwiki_info"|<<span class="odocwiki_inlinecode"|string~_of~_url u>> returns a valid string representation of <<span class="odocwiki_inlinecode"|u>>~.
 >>
 |
-|@@class="odocwiki_index"@ @@<<a_api text="style"| value Dom_svg.CoerceTo.style >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="style"| value Dom_html.CoerceTo.style >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="style"| value Dom_svg.CoerceTo.style >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="submit"| value Lwt_js_events.submit >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="submit"| value Dom_html.Event.submit >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="submits"| value Lwt_js_events.submits >> ~[<<a_api | module Lwt_js_events >>~]||
@@ -1460,8 +1466,8 @@
 |@@class="odocwiki_index"@ @@<<a_api text="timeupdate"| value Lwt_js_events.timeupdate >> ~[<<a_api | module Lwt_js_events >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="timeupdate"| value Dom_html.Event.timeupdate >> ~[<<a_api | module Dom_html.Event >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="timeupdates"| value Lwt_js_events.timeupdates >> ~[<<a_api | module Lwt_js_events >>~]||
-|@@class="odocwiki_index"@ @@<<a_api text="title"| value Dom_svg.CoerceTo.title >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="title"| value Dom_html.CoerceTo.title >> ~[<<a_api | module Dom_html.CoerceTo >>~]||
+|@@class="odocwiki_index"@ @@<<a_api text="title"| value Dom_svg.CoerceTo.title >> ~[<<a_api | module Dom_svg.CoerceTo >>~]||
 |@@class="odocwiki_index"@ @@<<a_api text="to_array"| value Js.to_array >> ~[<<a_api | module Js >>~]|<<div class="odocwiki_info"|~Conversion of arrays from ~Javascript to ~O~Caml~.
 >>
 |

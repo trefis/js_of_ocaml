@@ -272,6 +272,13 @@
   val eventTarget : (< .. > as 'a) #Dom.event Js.t -> 'a Js.t
   type event_listener_id
   module Event : sig type 'a typ val make : string -> 'a Dom.Event.typ end
+  val addEventListenerWithOptions :
+    (< .. > as 'a) Js.t ->
+    'b Dom.Event.typ ->
+    ?capture:bool Js.t ->
+    ?once:bool Js.t ->
+    ?passive:bool Js.t ->
+    ('a Js.t, 'b) Dom.event_listener -> Dom.event_listener_id
   val addEventListener :
     (< .. > as 'a) Js.t ->
     'b Dom.Event.typ ->
