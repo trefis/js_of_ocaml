@@ -1,9 +1,0 @@
-<<code language="ocaml" | sig
-  val use : Stdlib.Format.formatter -> string -> bool
-  val execute :
-    bool ->
-    ?pp_code:Stdlib.Format.formatter ->
-    ?highlight_location:(Location.t -> unit) ->
-    Stdlib.Format.formatter -> string -> unit
-  val initialize : unit -> unit
-end >>

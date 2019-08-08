@@ -1,6 +1,0 @@
-<<code language="ocaml" | object
-  method supportedLocalesOf :
-    Js.js_string Js.t Js.js_array Js.t ->
-    Intl.Shared.object_options Js.t Js.optdef ->
-    Js.js_string Js.t Js.js_array Js.t Js.meth
-end >>

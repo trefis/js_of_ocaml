@@ -1,6 +1,0 @@
-<<code language="ocaml" | object
-  method compare :
-    (Js.js_string Js.t -> Js.js_string Js.t -> int) Js.readonly_prop
-  method resolvedOptions :
-    unit -> Intl.Collator.resolved_options Js.t Js.meth
-end >>

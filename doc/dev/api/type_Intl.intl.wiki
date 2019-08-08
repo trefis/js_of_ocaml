@@ -1,9 +1,0 @@
-<<code language="ocaml" | object
-  method _Collator : Intl.Collator._object Js.t Js.readonly_prop
-  method _DateTimeFormat : Intl.DateTimeFormat._object Js.t Js.readonly_prop
-  method _NumberFormat : Intl.NumberFormat._object Js.t Js.readonly_prop
-  method _PluralRules : Intl.PluralRules._object Js.t Js.readonly_prop
-  method getCanonicalLocales :
-    Js.js_string Js.t Js.js_array Js.t ->
-    Js.js_string Js.t Js.js_array Js.t Js.meth
-end >>

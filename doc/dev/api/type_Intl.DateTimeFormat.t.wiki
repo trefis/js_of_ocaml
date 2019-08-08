@@ -1,8 +1,0 @@
-<<code language="ocaml" | object
-  method format : (Js.date Js.t -> Js.js_string Js.t) Js.readonly_prop
-  method formatToParts :
-    Js.date Js.t Js.optdef ->
-    Intl.DateTimeFormat.format_part Js.t Js.js_array Js.t Js.meth
-  method resolvedOptions :
-    unit -> Intl.DateTimeFormat.resolved_options Js.t Js.meth
-end >>

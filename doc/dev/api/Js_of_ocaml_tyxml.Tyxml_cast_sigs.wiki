@@ -1,3 +1,0 @@
-=Module <<a_api_type | module Js_of_ocaml_tyxml.Tyxml_cast_sigs >> =
-<<pre class="ocsforge_color odocwiki_code"|<<span class="ocsforge_color_keyword"|module>> <<span class="ocsforge_color_uid"|<<span class="ocsforge_color_uid"|Tyxml_cast_sigs>>>> <<span class="ocsforge_color_delimiter"|~:>> <<span class="odocwiki_type"|<<span class="ocsforge_color_uid"|Js_of_ocaml_tyxml__.Tyxml_cast_sigs>>>>>>
-----

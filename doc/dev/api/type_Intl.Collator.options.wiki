@@ -1,8 +1,0 @@
-<<code language="ocaml" | object
-  method caseFirst : Js.js_string Js.t Js.prop
-  method ignorePunctuation : bool Js.t Js.prop
-  method localeMatcher : Js.js_string Js.t Js.prop
-  method numeric : bool Js.t Js.prop
-  method sensitivity : Js.js_string Js.t Js.prop
-  method usage : Js.js_string Js.t Js.prop
-end >>

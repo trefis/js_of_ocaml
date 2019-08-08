@@ -1,9 +1,0 @@
-<<code language="ocaml" | object
-  method caseFirst : Js.js_string Js.t Js.readonly_prop
-  method collation : Js.js_string Js.t Js.readonly_prop
-  method ignorePunctuation : bool Js.t Js.readonly_prop
-  method locale : Js.js_string Js.t Js.readonly_prop
-  method numeric : bool Js.t Js.readonly_prop
-  method sensitivity : Js.js_string Js.t Js.readonly_prop
-  method usage : Js.js_string Js.t Js.readonly_prop
-end >>
