@@ -17,7 +17,6 @@ fi
 PACKAGES="js_of_ocaml \
         js_of_ocaml-lwt \
         js_of_ocaml-compiler \
-        js_of_ocaml-ocamlbuild \
         js_of_ocaml-toplevel \
         js_of_ocaml-ppx \
         js_of_ocaml-ppx_deriving_json \
@@ -28,7 +27,6 @@ case $MODE in
         # Pin Js_of_ocaml, install dependencies, and then install Js_of_ocaml.
         opam pin add --no-action -y js_of_ocaml.dev -k path .
         opam pin add --no-action -y js_of_ocaml-compiler.dev -k path .
-        opam pin add --no-action -y js_of_ocaml-ocamlbuild.dev -k path .
         opam pin add --no-action -y js_of_ocaml-ppx.dev -k path .
         opam pin add --no-action -y js_of_ocaml-ppx_deriving_json.dev -k path .
         opam pin add --no-action -y js_of_ocaml-lwt.dev -k path .
@@ -45,7 +43,6 @@ case $MODE in
         # Pin Js_of_ocaml, install dependencies.
         opam pin add --no-action -y js_of_ocaml.dev -k path .
         opam pin add --no-action -y js_of_ocaml-compiler.dev -k path .
-        opam pin add --no-action -y js_of_ocaml-ocamlbuild.dev -k path .
         opam pin add --no-action -y js_of_ocaml-ppx.dev -k path .
         opam pin add --no-action -y js_of_ocaml-ppx_deriving_json.dev -k path .
         opam pin add --no-action -y js_of_ocaml-lwt.dev -k path .
