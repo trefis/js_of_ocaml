@@ -61,8 +61,10 @@ function caml_reify_bytecode (code, _sz) {
 //Requires: caml_failwith
 //Version: >= 4.08
 function caml_reify_bytecode (code, _sz,_) {
-  if(joo_global_object.toplevelCompile)
-    return [0, 0, joo_global_object.toplevelCompile(code)];
+  if(joo_global_object.toplevelCompile) {
+    var x = joo_global_object.toplevelCompile(code);
+    return [0, 0, x];
+  }
   else caml_failwith("Toplevel not initialized (toplevelCompile)")
 }
 

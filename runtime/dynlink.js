@@ -22,7 +22,7 @@ var current_libs = [0, joo_global_object]
 //Provides: caml_dynlink_open_lib
 //Requires: current_libs, caml_failwith
 function caml_dynlink_open_lib (_mode,file) {
-    var name = file.toString();
+    var name = file;
     joo_global_object.console.log("Dynlink: try to open ", name);
     //caml_failwith("file not found: "+name)
     current_libs.push({});
@@ -39,7 +39,7 @@ function caml_dynlink_close_lib (idx) {
 //Provides: caml_dynlink_lookup_symbol
 //Requires: current_libs
 function caml_dynlink_lookup_symbol (idx, fun_name) {
-  var name = fun_name.toString();
+  var name = fun_name;
   joo_global_object.console.log("Dynlink: look for symbol ", name);
   if(current_libs[idx] && current_libs[idx][name])
     return current_libs[idx][name];

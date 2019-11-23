@@ -100,7 +100,6 @@ let setup =
        res);
      Js.Unsafe.global##.toplevelReloc
      := Js.Unsafe.callback (fun name ->
-            let name = Js.to_string name in
             Js_of_ocaml_compiler.Ocaml_compiler.Symtable.reloc_ident name);
      ())
 

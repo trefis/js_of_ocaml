@@ -5,7 +5,7 @@ let flush_all () = flush stdout; flush stderr;;
 let message s = print_string s; print_newline ();;
 
 let error_occurred = ref false;;
-let immediate_failure = ref true;;
+let immediate_failure = ref false;;
 
 let error () =
  if !immediate_failure then exit 2 else begin

@@ -105,9 +105,7 @@ module Share = struct
     let n = try IntMap.find i t.applies with Not_found -> 0 in
     { t with applies = IntMap.add i (n + 1) t.applies }
 
-  let add_code_string s share =
-    let share = add_string s share in
-    add_prim "caml_new_string" share
+  let add_code_string s share = add_string s share
 
   let add_code_istring s share = add_string s share
 
@@ -308,8 +306,7 @@ let rec constant_rec ~ctx x level instrs =
   match x with
   | String s ->
       let e = Share.get_string str_js s ctx.Ctx.share in
-      let p = Share.get_prim (runtime_fun ctx) "caml_new_string" ctx.Ctx.share in
-      J.ECall (p, [ e ], J.N), instrs
+      e, instrs
   | IString s -> Share.get_string str_js s ctx.Ctx.share, instrs
   | Float f -> float_const f, instrs
   | Float_array a ->
@@ -844,9 +841,8 @@ let register_bin_math_prim name prim =
       J.ECall (J.EDot (s_var "Math", prim), [ cx; cy ], loc))
 
 let _ =
-  register_un_prim_ctx "%caml_format_int_special" `Pure (fun ctx cx loc ->
-      let p = Share.get_prim (runtime_fun ctx) "caml_new_string" ctx.Ctx.share in
-      J.ECall (p, [ J.EBin (J.Plus, str_js "", cx) ], loc));
+  register_un_prim_ctx "%caml_format_int_special" `Pure (fun _ctx cx _loc ->
+      J.EBin (J.Plus, str_js "", cx));
   register_bin_prim "caml_array_unsafe_get" `Mutable (fun cx cy _ ->
       Mlvalue.Array.field cx cy);
   register_bin_prim "%int_add" `Pure (fun cx cy _ -> to_int (plus_int cx cy));
@@ -911,8 +907,6 @@ let _ =
   register_un_prim "caml_js_from_bool" `Pure (fun cx _ ->
       J.EUn (J.Not, J.EUn (J.Not, cx)));
   register_un_prim "caml_js_to_bool" `Pure (fun cx _ -> to_int cx);
-  register_un_prim "caml_js_from_string" `Mutable (fun cx loc ->
-      J.ECall (J.EDot (cx, "toString"), [], loc));
   register_tern_prim "caml_js_set" (fun cx cy cz _ ->
       J.EBin (J.Eq, J.EAccess (cx, cy), cz));
   register_bin_prim "caml_js_get" `Mutable (fun cx cy _ -> J.EAccess (cx, cy));
@@ -922,7 +916,11 @@ let _ =
       bool (J.EBin (J.EqEq, cx, cy)));
   register_bin_prim "caml_js_instanceof" `Pure (fun cx cy _ ->
       bool (J.EBin (J.InstanceOf, cx, cy)));
-  register_un_prim "caml_js_typeof" `Pure (fun cx _ -> J.EUn (J.Typeof, cx))
+  register_un_prim "caml_js_typeof" `Pure (fun cx _ -> J.EUn (J.Typeof, cx));
+  register_bin_prim "caml_string_notequal" `Pure (fun cx cy _ ->
+      J.EBin (J.NotEqEq, cx, cy));
+  register_bin_prim "caml_string_equal" `Pure (fun cx cy _ ->
+      bool (J.EBin (J.EqEq, cx, cy)))
 
 (****)
 (* when raising ocaml exception and [improved_stacktrace] is enabled,
